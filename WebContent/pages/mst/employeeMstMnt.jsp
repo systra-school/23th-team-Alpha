@@ -150,10 +150,14 @@
                 </td>
                 <td width="200px" align="center">
                   社員名カナ
+                </td>
+                
+                
+                <!-- 8/22 障害No020対応　掛江　「権限」項目がtdタグで囲んだ -->
+                <td width="100px" align="center">
                   権限
                 </td>
                 
-                  
                 
                 <td width="100px" align="center">
                   削除
