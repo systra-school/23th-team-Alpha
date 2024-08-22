@@ -159,7 +159,11 @@
         </table>
       </div>
       <div id="businessBody">
-        <html:form  action="/shiftMstMntUpdate">
+      
+        <%-- 8/22　坂本　actionを削除 --%>
+        <%-- <html:form  action="/shiftMstMntUpdate"> --%>
+        <html:form>
+        
           <div style="width: 600px; margin: 0 auto;">
             <table class="tableHeader">
               <tr>
