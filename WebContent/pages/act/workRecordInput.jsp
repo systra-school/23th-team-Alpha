@@ -242,7 +242,9 @@
                     <bean:write name="workRecordInputList" property="symbol" /><br>
                   </td>
                   <td width="100px" align="center">
-                    <bean:write style="text-align:center" size="5" maxlength="5" name="workRecordInputList" property="endTime" indexed="true"></bean:write><br>
+                    <%-- 8/23　坂本　障害No006　勤務実績入力一覧表の4列目を bean:write から html:textへ変更>
+                    <%-- <bean:write style="text-align:center" size="5" maxlength="5" name="workRecordInputList" property="endTime" indexed="true"></bean:write><br> --%>
+                    <html:text style="text-align:center" size="5" maxlength="5" name="workRecordInputList" property="endTime" indexed="true"></html:text><br>
                   </td>
                   <td width="100px" align="center">
                     <html:text style="text-align:center" size="5" maxlength="5" name="workRecordInputList" property="startTime" indexed="true"></html:text><br>
