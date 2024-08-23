@@ -84,7 +84,7 @@
             </div>
             <div style="height:450px;overflow:auto">
               <table class="tableBody">
-                <logic:iterate id="baseShiftPatternBeanList" name="baseShiftMstMntForm"  property="baseShiftPatternBean" indexId="idx">
+                <logic:iterate id="baseShiftPatternBeanList" name="baseShiftMstMntForm"  property="baseShiftPatternBeanList" indexId="idx">
                   <tr>
                     <td width="100px" align="center">
                       <bean:write property="shiftName" name="baseShiftPatternBeanList"/>
@@ -110,12 +110,25 @@
                   <td width="250px" align="center">
                     社員名
                   </td>
-                  <td width="50px" align="center">
+                  
+                  
+                  <!-- 8/23　掛江　障害No000　126/129行の「月／火」表示を修正 -->
+                  
+                  <!-- <td width="50px" align="center">
                     火
                   </td>
                   <td width="50px" align="center">
                     月
+                  </td> 
+                  -->
+                  
+                  <td width="50px" align="center">
+                    月
                   </td>
+                  <td width="50px" align="center">
+                    火
+                  </td>
+
                   <td width="50px" align="center">
                     水
                   </td>
