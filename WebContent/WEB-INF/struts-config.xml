@@ -202,6 +202,8 @@
         type="action.shk.WorkDateRequestCheckSearchAction"
         name="workDateRequestCheckForm"
         scope="session">
+            <!--  8/23　泊　障害No005　pagesの前に/を追加-->
+     <!--　<forward name="success" path="pages/shk/workDateRequestCheck.jsp"/>　-->
         <forward name="success" path="/pages/shk/workDateRequestCheck.jsp"/>
       </action>
       <!-- 出勤希望日確認(改ページ) -->
