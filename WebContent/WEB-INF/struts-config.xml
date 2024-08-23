@@ -97,8 +97,13 @@
         scope="session"
         validate="true">
         <forward name="success" path="/pages/mst/employeeMstMnt.jsp"/>
-        <forward name="nodata" path="/pages/mst/employeeMstMntRegister.jsp"/>
+ 
+        <!-- 8/23　掛江　104行目 nodataフォワード先を "/pages/mst/employeeMstMnt.jsp" へ変更 -->
+		<!-- <forward name="nodata" path="/pages/mst/employeeMstMntRegister.jsp"/> -->
+		
+        <forward name="nodata" path="/pages/mst/employeeMstMnt.jsp"/>
       </action>
+      
       <!-- 社員マスタメンテナンス 更新 -->
       <action
         path="/employeeMstMntUpdate"
