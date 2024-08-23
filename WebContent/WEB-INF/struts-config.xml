@@ -74,6 +74,7 @@
         scope="session"
         validate="false">
         <forward name="success" path="/pages/cmn/login.jsp"/>
+<!--    <forward name="success" path="/pages/cmn/menu.jsp"/> -->
 <!--         2024/08/23 10:58 花田 フォワード先のパスをログインJSPに修正 -->
       </action>
 
@@ -267,7 +268,9 @@
         type="action.day.DailyShiftInitAction"
         name="dailyShiftForm"
         scope="session">
+        <!-- 8/22 高田 障害No NODATAのforwardを追加 -->
         <forward name="success" path="/pages/day/dailyShift.jsp"/>
+        <forward name="nodata" path="/pages/day/dailyShift.jsp" />
       </action>
       <!-- 日別シフト改ページ -->
       <action
