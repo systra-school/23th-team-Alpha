@@ -86,12 +86,15 @@
           <tr>
             <td id="headLeft">
               <input value="戻る" type="button" class="smallButton"  onclick="doSubmit('/kikin-for-Struts-bug/employeeMstMntRegisterBack.do')" />
-              <input value="ログアウト" type="button" class="smallButton"  onclick="logout()" />
+              <%--  8/23　坂本　障害No024　ログアウトボタンのコードを移動 --%>
+              <%-- <input value="ログアウト" type="button" class="smallButton"  onclick="logout()" /> --%>
+              
             </td>
             <td id="headCenter">
               社員マスタメンテナンス画面（新規登録）
             </td>
             <td id="headRight">
+            <input value="ログアウト" type="button" class="smallButton"  onclick="logout()" />
             </td>
           </tr>
         </table>
