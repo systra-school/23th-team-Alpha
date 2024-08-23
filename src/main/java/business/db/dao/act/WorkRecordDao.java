@@ -73,7 +73,9 @@ public class WorkRecordDao extends Dao {
 			strSql.append("    FROM ");
 			strSql.append("        t_work_record ");
 			strSql.append("    WHERE ");
-			strSql.append("        employee_id = 'sh0001' AND ");
+//			8/23　坂本　障害No006　'sh0001'をプレイスホルダー(?)に変更
+//			strSql.append("        employee_id = 'sh0001' AND ");
+			strSql.append("        employee_id = ? AND ");
 			strSql.append("        work_day >= ? AND ");
 			strSql.append("        work_day <= ? ");
 			strSql.append("    UNION   ");
