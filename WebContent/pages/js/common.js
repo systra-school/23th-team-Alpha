@@ -17,7 +17,9 @@ function logout() {
 /**
  *  戻るボタンサブミット
  */
+// document.forms[0].action = "/kikin-for-Struts-bug/logout.do";
+// 8/23　花田　障害No023　logoutActionが実行される原因のパスを修正。
 function doSubmit(action) {
-    document.forms[0].action = "/kikin-for-Struts-bug/logout.do";
+    document.forms[0].action = action;
     document.forms[0].submit();
 }
