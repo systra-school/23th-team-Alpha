@@ -174,7 +174,9 @@
         name="shiftMstMntForm" 
         scope="session"
         validate="true">
-        <forward name="success" path="/pages/cmn/menu.jsp" redirect="true"/>
+        <!-- 8/23　坂本　障害No022　pathを menu.jsp から shiftMstMntRegister.jsp へ変更 -->
+        <!-- <forward name="success" path="/pages/cmn/menu.jsp" redirect="true"/> -->
+        <forward name="success" path="/pages/mst/shiftMstMntRegister.jsp" redirect="true"/>
       </action>
       <!-- シフトマスタメンテナンス 登録 -->
       <action
