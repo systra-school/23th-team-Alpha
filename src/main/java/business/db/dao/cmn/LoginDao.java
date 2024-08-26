@@ -49,10 +49,14 @@ public class LoginDao extends Dao {
            
             StringBuffer strSql = new StringBuffer();
             strSql.append("SELECT * FROM m_employee ");
-            strSql.append("WHERE employee_id = 'sh0001' ");
+            // 8/26　坂本　障害No037　'sh0001'をプレイスホルダーに変更
+            //strSql.append("WHERE employee_id = 'sh0001' ");
+            strSql.append("WHERE employee_id = ? ");
             strSql.append("AND password = ?");
             PreparedStatement ps = connection.prepareStatement(strSql.toString());
-            ps.setString(1, m_employeeDtoSearch.getPassword());
+            //ps.setString(1, m_employeeDtoSearch.getPassword());
+            ps.setString(1, m_employeeDtoSearch.getEmployeeId());
+            ps.setString(2, m_employeeDtoSearch.getPassword());
 
             // ログ出力
             log.info(ps);
