@@ -55,23 +55,33 @@ public class ComboListUtilsDao extends Dao {
             this.connect();
 
             StringBuffer strSql = new StringBuffer();
+            
+//             8/26　掛江　障害No031/48　SQL文を修正、それに伴う不要な文章も修正 
+//            
+//            strSql.append("WHERE category_id = ? ");
+//            if (displayBool) {
+//                strSql.append("AND display = ? ");
+//            }
+                        
             strSql.append("SELECT * FROM m_category ");
-            strSql.append("WHERE category_id = ? ");
             if (displayBool) {
-                strSql.append("AND display = ? ");
+                strSql.append("WHERE display = ? ");
             }
             strSql.append("ORDER BY display_order ASC ");
 
             PreparedStatement ps = connection.prepareStatement(strSql.toString());
 
             int index = 1;
-            // 分類ＩＤ
-            ps.setString(index, mcategorySearch.getCategoryId());
-            index++;
+            
+//            // 分類ＩＤ
+
+//            ps.setString(index, mcategorySearch.getCategoryId());
+//            index++;
+            
             // 表示
             if (displayBool) {
                 ps.setBoolean(index, displayBool);
-                index++;
+//                index++;
             }
             // ログ出力
             log.info(ps);
