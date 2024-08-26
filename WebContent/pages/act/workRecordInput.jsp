@@ -134,7 +134,7 @@
       .tableContainer {
         width: 1080px;
       }
-      .tableHeader, .tableBody {
+      .tableHeader,.tableBody {
         margin: 0 auto;
       }
     </style>
@@ -168,9 +168,11 @@
                                       label="value"/>
               </html:select>
             </div>
+            
             <div style="float: left; width: 284px; text-align: left;">
               社員ID&nbsp;<bean:write name="workRecordInputForm" property="employeeId"/>
-              ：社員名&nbsp;残念エラーです
+              ：社員名&nbsp;<bean:write name="workRecordInputForm" property="employeeName"/>
+              <%-- 8/26　花田　障害No025　残念エラーですを削除して、<bean:write name="workRecordInputForm" property="employeeName"/>を追加 --%>
             </div>
           </div>
           <div  id="data">
@@ -212,11 +214,12 @@
           </div>
             
             
-            <div style="height:450px;  margin-left: 18px ">
-            	
+           <%--　8/26　花田　障害No008　余計な記述のあったdivタグを修正 --%>
+	  <%--  <div style="height:450px;  margin-left: 18px "> --%>
+            	<div>
             	<table class="tableBody">
             	<logic:iterate id="workRecordInputList" name="workRecordInputForm" property="workRecordInputList" indexId="idx">
-              
+             
                 <tr>
                   <html:hidden name="workRecordInputList" property="employeeId" />
                   <td width="80px" align="center">
@@ -259,7 +262,9 @@
                     <bean:write name="workRecordInputList" property="actualWorkTime" /><br>
                   </td>
                   <td width="100px" align="center">
-                    <bean:write name="workRecordInputList"  /><br>
+                    <bean:write name="workRecordInputList" property="holidayTime" /><br>
+                    <%-- 8/26　花田　障害No038　property="holidayTime"を追加 --%>
+                    
                   </td>
                   <td width="220px" align="left">
                     <html:text style="text-align:left" size="26" name="workRecordInputList" property="remark" indexed="true">備考がいっぱい</html:text><br>
@@ -276,10 +281,10 @@
         <table>
           <tr>
               <td id="footLeft">
-                　
+                
               </td>
               <td id="footCenter">
-                　
+                
               </td>
               <td id="footRight">
                 <input value="登録"  type="button" class="smallButton"  onclick="register()" />
