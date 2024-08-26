@@ -47,10 +47,10 @@
 				<div>ID・パスワードを入力してください。</div>
 				<html:form action="/login" onsubmit="return validateLoginForm(this)">
 
-					<html:text property="employeeId" size="16" value="sh0001" />
+					<%-- 8/26　坂本　障害No032　ID/パスワードの初期値削除 --%>
+					<html:text property="employeeId" size="16" />
 					<br />
-					<html:password property="password" size="16" redisplay="false"
-						value="sh0002" />
+					<html:password property="password" size="16" redisplay="false" />
 					<br />
 					<br />
 					<html:submit property="submit" value="ログイン" />
