@@ -153,7 +153,7 @@
                 </td>
                 
                 
-                <!-- 8/22 障害No020対応　掛江　「権限」項目がtdタグで囲んだ -->
+                <%-- 8/22 障害No020対応　掛江　「権限」項目がtdタグで囲んだ --%>
                 <td width="100px" align="center">
                   権限
                 </td>
@@ -176,7 +176,11 @@
                     <html:hidden property="employeeId" name="employeeMstMntBeanList" indexed="true"/>
                   </td>
                   <td width="200px"  align="center">
-                    <html:text property="password" name="employeeMstMntBeanList"  size="10" maxlength="6" indexed="true" />
+                  
+                  <%-- 8/26　掛江　障害No034　html:text → html:password へ変更 --%>
+                  <%-- <html:text property="password" name="employeeMstMntBeanList"  size="10" maxlength="6" indexed="true" /> --%>
+                  
+                    <html:password property="password" name="employeeMstMntBeanList"  size="10" maxlength="6" indexed="true" />
                   </td>
                   <td width="200px"  align="center">
                     <html:text property="employeeName" name="employeeMstMntBeanList" size="20" maxlength="10" indexed="true" />
@@ -185,7 +189,11 @@
                     <html:text property="employeeNameKana" name="employeeMstMntBeanList"  size="20" maxlength="10" indexed="true" />
                   </td>
                   <td width="100px"  align="center">
-                    <html:select property="authorityId" name="employeeMstMntBeanList" value="<%= selectAuthorityId %>" indexed="true" disabled="true">
+                  
+                  <%-- 8/26　掛江　障害No043　disabled="true" → disabled="false" へ変更 --%>
+                  <%-- <html:text property="password" name="employeeMstMntBeanList"  size="10" maxlength="6" indexed="true" /> --%>
+                  
+                    <html:select property="authorityId" name="employeeMstMntBeanList" value="<%= selectAuthorityId %>" indexed="true" disabled="false">
                       <html:optionsCollection name="employeeMstMntForm"
                                               property="authorityCmbMap"
                                               value="key"
