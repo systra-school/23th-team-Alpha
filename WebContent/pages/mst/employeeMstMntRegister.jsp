@@ -85,7 +85,9 @@
         <table class="full-width">
           <tr>
             <td id="headLeft">
-              <input value="戻る" type="button" class="smallButton"  onclick="doSubmit('/kikin-for-Struts-bug/employeeMstMntRegisterBack.do')" />
+              <%--  8/26　坂本　障害No030　onclickのパスを employeeMstMntRegisterBack.do から employeeMstMnt.do へ変更 --%>
+              <%-- <input value="戻る" type="button" class="smallButton"  onclick="doSubmit('/kikin-for-Struts-bug/employeeMstMntRegisterBack.do')" /> --%>
+              <input value="戻る" type="button" class="smallButton"  onclick="doSubmit('/kikin-for-Struts-bug/employeeMstMnt.do')" />
               <%--  8/23　坂本　障害No024　ログアウトボタンのコードを移動 --%>
               <%-- <input value="ログアウト" type="button" class="smallButton"  onclick="logout()" /> --%>
               
