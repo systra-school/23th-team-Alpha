@@ -108,7 +108,10 @@
         <table class="full-width">
           <tr>
             <td id="headLeft">
-              <input value="戻る" type="button" class="smallButton"  onclick="doSubmit('/kikin-for-Struts-bug/shiftMstMntRegisterBack.do')" />
+              <%-- 8/26　坂本　障害No036　onclickのパスをshiftMstMntRegisterBack.doからshiftMstMnt.doへ変更 --%>
+              <%-- <input value="戻る" type="button" class="smallButton"  onclick="doSubmit('/kikin-for-Struts-bug/shiftMstMntRegisterBack.do')" /> --%>
+              <input value="戻る" type="button" class="smallButton"  onclick="doSubmit('/kikin-for-Struts-bug/shiftMstMnt.do')" />
+              
             </td>
             <td id="headCenter">
               シフトマスタメンテナンス（新規登録）
