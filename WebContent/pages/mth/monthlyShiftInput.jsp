@@ -86,7 +86,9 @@ if (listSize > intShowLength) {
      * サブウィンドウを開く
      */
     function openWindow(){
-        window.open("/kikin-for-Struts-bug/menu.do?param=", "windowBPopup", "menubar=no, toolbar=no, scrollbars=auto, resizable=yes, width=520px, height=650px");
+    	<%--　8/28　高田　障害No025　[menu.do?]を[shiftPattern.do]へ変更　--%>
+//      window.open("/kikin-for-Struts-bug/menu.do?param=", "windowBPopup", "menubar=no, toolbar=no, scrollbars=auto, resizable=yes, width=520px, height=650px");
+     window.open("/kikin-for-Struts-bug/shiftPattern.do?param=", "windowBPopup", "menubar=no, toolbar=no, scrollbars=auto, resizable=yes, width=520px, height=650px");
     }
     </script>
     <title>月別シフト入力画面</title>

@@ -196,7 +196,9 @@ if (listSize > intShowLength) {
         <table>
           <tr>
             <td id="footLeft">
-              <input value="凡例表示" type="button" class="longButton"  onclick="openWindo()" />
+                        <%-- 　8/28　高田　障害No015　[openWindo()]をopenWindo()へ変更　 --%>
+<!--               <input value="凡例表示" type="button" class="longButton"  onclick="openWindo()" /> -->
+              <input value="凡例表示" type="button" class="longButton"  onclick="openWindow()" />
 <!--               <input value="印刷" type="button" class="smallButton"  onclick="submitPrin()" /> -->
 <!--             8/23　花田　障害No014　onclickのPrinをPrintに修正まえう -->
               <input value="印刷" type="button" class="smallButton"  onclick="submitPrint()" />
