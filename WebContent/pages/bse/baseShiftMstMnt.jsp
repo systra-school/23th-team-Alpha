@@ -32,7 +32,9 @@
      */
     function register() {
         // サブミット
-        doSubmit('/kikin-for-Struts-bug/baseShiftRegiste.do');
+//         doSubmit('/kikin-for-Struts-bug/baseShiftRegiste.do');
+//         8/26 花田　綴りが違ってtが抜けていたので修正
+    	   doSubmit('/kikin-for-Struts-bug/baseShiftRegister.do');
     }
     </script>
 
@@ -65,7 +67,9 @@
           <%-- 凡例 --%>
           <div id="pattern" style="width:476px; margin-left:80px; float:left">
             <div>
-              <table>
+            <%-- <table> --%>
+            <%-- 　8/28 花田　障害No045　記入漏れのタグを追加　 --%>
+             <table class="tableHeader">
                 <tr>
                   <td width="100px" align="center">
                     シフト名
@@ -84,7 +88,7 @@
             </div>
             <div style="height:450px;overflow:auto">
               <table class="tableBody">
-                <logic:iterate id="baseShiftPatternBeanList" name="baseShiftMstMntForm"  property="baseShiftPatternBeanList" indexId="idx">
+                <logic:iterate id="baseShiftPatternBeanList" name="baseShiftMstMntForm" property="baseShiftPatternBeanList" indexId="idx">
                   <tr>
                     <td width="100px" align="center">
                       <bean:write property="shiftName" name="baseShiftPatternBeanList"/>
@@ -111,16 +115,17 @@
                     社員名
                   </td>
                   
+                 <%-- 8/23　掛江　障害No000　126/129行の「月／火」表示を修正 --%>
+                  <%--
                   
-                  <!-- 8/23　掛江　障害No000　126/129行の「月／火」表示を修正 -->
-                  
-                  <!-- <td width="50px" align="center">
+                   <td width="50px" align="center">
                     火
                   </td>
                   <td width="50px" align="center">
                     月
                   </td> 
-                  -->
+                  
+                   --%>
                   
                   <td width="50px" align="center">
                     月
@@ -128,7 +133,6 @@
                   <td width="50px" align="center">
                     火
                   </td>
-
                   <td width="50px" align="center">
                     水
                   </td>
@@ -144,7 +148,9 @@
                   <td width="50px" align="center">
                     日
                   </td>
-                  <td width="50px" align="center"> </td>
+                  <%-- 　<td width="50px" align="center">　 --%>
+				  <%-- </td> --%>
+				  <%-- 　8/28 花田　障害No045　不要な項目欄をコメントアウト　 --%>
                 </tr>
               </table>
             </div>
@@ -153,42 +159,46 @@
                 <logic:iterate id="baseShiftMstMntBeanList" name="baseShiftMstMntForm" property="baseShiftMstMntBeanList" indexId="idx">
                   <tr>
                     <html:hidden name="baseShiftMstMntBeanList" property="employeeId" />
-                    <td width="230px" align="center">
+<%--                <td width="230px" align="center"> --%>
+<%-- 　8/28 花田　障害No045　間違っていた数値を修正　230から250へ　 --%>
+                    <td width="250px" align="center">
                       <bean:write property="employeeName" name="baseShiftMstMntBeanList"/>
                     </td>
                     
+                    <%-- <html:select property="shiftIdOnTuesday" name="baseShiftMstMntBeanList" indexed="true" disabled="true"> --%>
+                    <%-- 8/28　花田　障害No　disabledはなくすかfalseで修正できるが、どっちが最適か謎なのでとりあえず消してますしてます --%>
                     <td width="50px" align="center">
-                      <html:select property="shiftIdOnTuesday" name="baseShiftMstMntBeanList" indexed="true" disabled="true">
+                      <html:select property="shiftIdOnTuesday" name="baseShiftMstMntBeanList" indexed="true">
                       <html:optionsCollection name="baseShiftMstMntForm" property="shiftCmbMap" value="key" label="value"/>
                       </html:select>
                     </td>
                     <td width="50px" align="center">
-                      <html:select property="shiftIdOnMonday" name="baseShiftMstMntBeanList" indexed="true" disabled="true">
+                      <html:select property="shiftIdOnMonday" name="baseShiftMstMntBeanList" indexed="true">
                       <html:optionsCollection name="baseShiftMstMntForm" property="shiftCmbMap" value="key" label="value"/>
                       </html:select>
                     </td>
                     <td width="50px" align="center">
-                      <html:select property="shiftIdOnWednesday" name="baseShiftMstMntBeanList" indexed="true" disabled="true">
+                      <html:select property="shiftIdOnWednesday" name="baseShiftMstMntBeanList" indexed="true">
                       <html:optionsCollection name="baseShiftMstMntForm" property="shiftCmbMap" value="key" label="value"/>
                       </html:select>
                     </td>
                     <td width="50px" align="center">
-                      <html:select property="shiftIdOnThursday" name="baseShiftMstMntBeanList" indexed="true" disabled="true">
+                      <html:select property="shiftIdOnThursday" name="baseShiftMstMntBeanList" indexed="true">
                       <html:optionsCollection name="baseShiftMstMntForm" property="shiftCmbMap" value="key" label="value"/>
                       </html:select>
                     </td>
                     <td width="50px" align="center">
-                      <html:select property="shiftIdOnFriday" name="baseShiftMstMntBeanList" indexed="true" disabled="true">
+                      <html:select property="shiftIdOnFriday" name="baseShiftMstMntBeanList" indexed="true">
                       <html:optionsCollection name="baseShiftMstMntForm" property="shiftCmbMap" value="key" label="value"/>
                       </html:select>
                     </td>
                     <td width="50px" align="center">
-                      <html:select property="shiftIdOnSaturday" name="baseShiftMstMntBeanList" indexed="true" disabled="true">
+                      <html:select property="shiftIdOnSaturday" name="baseShiftMstMntBeanList" indexed="true">
                       <html:optionsCollection name="baseShiftMstMntForm" property="shiftCmbMap" value="key" label="value"/>
                       </html:select>
                     </td>
                     <td width="50px" align="center">
-                      <html:select property="shiftIdOnSunday" name="baseShiftMstMntBeanList" indexed="true" disabled="true">
+                      <html:select property="shiftIdOnSunday" name="baseShiftMstMntBeanList" indexed="true">
                       <html:optionsCollection name="baseShiftMstMntForm" property="shiftCmbMap" value="key" label="value"/>
                       </html:select>
                     </td>
@@ -210,7 +220,7 @@
               　
             </td>
             <td id="footRight">
-              <input value="登録"  type="button" class="smallButton"  onclick="registe()" />
+              <input value="登録"  type="button" class="smallButton"  onclick="register()" />
             </td>
           </tr>
         </table>

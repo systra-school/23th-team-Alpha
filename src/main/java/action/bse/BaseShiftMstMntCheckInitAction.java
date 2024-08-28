@@ -158,8 +158,12 @@ public class BaseShiftMstMntCheckInitAction extends Action {
             baseShiftMstMntBean.setShiftIdOnWednesday(baseShiftDto.getShiftIdOnWednesday());
             baseShiftMstMntBean.setShiftIdOnThursday(baseShiftDto.getShiftIdOnThursday());
             baseShiftMstMntBean.setShiftIdOnFriday(baseShiftDto.getShiftIdOnFriday());
-            baseShiftMstMntBean.setShiftIdOnSaturday(baseShiftDto.getShiftIdOnSunday());
-            baseShiftMstMntBean.setShiftIdOnSunday(baseShiftDto.getShiftIdOnSaturday());
+            baseShiftMstMntBean.setShiftIdOnSaturday(baseShiftDto.getShiftIdOnSaturday());
+            baseShiftMstMntBean.setShiftIdOnSunday(baseShiftDto.getShiftIdOnSunday());
+            
+//            baseShiftMstMntBean.setShiftIdOnSaturday(baseShiftDto.getShiftIdOnSunday());
+//            baseShiftMstMntBean.setShiftIdOnSunday(baseShiftDto.getShiftIdOnSaturday());
+//            8/26　花田　曜日が日土だったので土日に修正
 
             returnList.add(baseShiftMstMntBean);
         }

@@ -17,9 +17,17 @@ public class BaseShiftPatternBean {
     private String shiftName;
     /** シンボル */
     private String symbol;
+//  8/26 花田　シンボルのセッターゲッターがリターンでshiftNameを返したりしてたので修正
     /** 時間帯 */
     private String timeZone;
-    /** 休憩 */
+    
+    public String getSymbol() {
+		return symbol;
+	}
+	public void setSymbol(String symbol) {
+		this.symbol = symbol;
+	}
+	/** 休憩 */
     private String breakTime;
     
 	public String getShiftName() {
@@ -28,12 +36,12 @@ public class BaseShiftPatternBean {
 	public void setShiftName(String shiftName) {
 		this.shiftName = shiftName;
 	}
-	public String getSymbol() {
-		return shiftName;
-	}
-	public void setSymbol(String shiftName) {
-		this.shiftName = shiftName;
-	}
+//	public String getSymbol() {
+//		return shiftName;
+//	}
+//	public void setSymbol(String shiftName) {
+//		this.shiftName = shiftName;
+//	}
 	public String getTimeZone() {
 		return timeZone;
 	}

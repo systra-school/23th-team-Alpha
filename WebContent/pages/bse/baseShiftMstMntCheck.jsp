@@ -41,6 +41,7 @@
     </title>
     <link href="/kikin-for-Struts-bug/pages/css/common.css" rel="stylesheet" type="text/css" />
   </head>
+  
   <body>
     <div id="wrapper">
       <div id="header">
@@ -88,6 +89,12 @@
                       <bean:write property="shiftName" name="baseShiftPatternBeanList"/>
                     </td>
                    
+                   
+                    <td width="150px" align="center">
+                      <bean:write property="symbol" name="baseShiftPatternBeanList"/>
+                    </td>
+                   
+                   
                     <td width="150px" align="center">
                       <bean:write property="timeZone" name="baseShiftPatternBeanList" filter="false"/>
                     </td>
@@ -103,6 +110,12 @@
             <div>
               <table class="tableHeader">
                 <tr>
+                  
+                  <%-- 　8/28 花田　障害No053　社員名タブがなかったので追加　 --%>
+                  <td width="250px" align="center">
+                    社員名
+                  </td>
+                  
                   
                   <td width="50px" align="center">
                     月
@@ -133,7 +146,9 @@
                 <logic:iterate id="baseShiftMstMntBeanList" name="baseShiftMstMntForm" property="baseShiftMstMntBeanList" indexId="idx">
                   <tr>
                     <html:hidden name="baseShiftMstMntBeanList" property="employeeId" />
-                    <td width="230px" align="center">
+                    
+                    <%-- 　8/28 花田　障害No053　タブの長さがことなるので230から250へ修正　 --%>
+                    <td width="250px" align="center">
                       <bean:write property="employeeName" name="baseShiftMstMntBeanList"/>
                     </td>
                     <td width="50px" align="center">
