@@ -163,14 +163,19 @@
         <%-- 8/22　坂本　actionを削除 --%>
         <%-- <html:form  action="/shiftMstMntUpdate"> --%>
         <html:form>
-        
-          <div style="width: 600px; margin: 0 auto;">
+                  <%-- 8/28　泊　障害No051　600pxを730pxに変更
+                 <td width="70px" align="center"> --%>
+          <div style="width: 730px; margin: 0 auto;">
             <table class="tableHeader">
               <tr>
                 <td width="100px" align="center">
                   シフト名
                 </td>
-                <td width="70px" align="center">
+                
+                
+                 <%-- 8/28　泊　障害No051　70pxを100pxに変更
+                 <td width="70px" align="center"> --%>
+                <td width="100px" align="center">
                   シンボル
                 </td>
                 <td width="230px" align="center">
@@ -185,7 +190,9 @@
               </tr>
             </table>
           </div>
-          <div style="overflow: auto; height: 80%; width: 600px; margin: 0 auto;">
+           <%-- 8/28　泊　障害No051　600pxを730pxに変更
+                   <div style="overflow: auto; height: 100%; width: 600px; margin: 0 auto;">"> --%>
+          <div style="overflow: auto; height: 100%; width: 730px; margin: 0 auto;">
             <table class="tableBody">
               <logic:iterate indexId="idx" id="shiftMstMntBeanList" name="shiftMstMntForm"  property="shiftMstMntBeanList">
               <bean:define id="shiftId" name= "shiftMstMntBeanList" property="shiftId" type="java.lang.String"/>
@@ -194,8 +201,10 @@
                     <html:text property="shiftName" name="shiftMstMntBeanList" size="5" maxlength="10" indexed="true"/>
                     <html:hidden property="shiftId" name="shiftMstMntBeanList" indexed="true"/>
                   </td>
-                  <td width="70px"  align="center">
-                    <html:text property="symbol" name="shiftMstMntBeanList"  size="1" maxlength="2" indexed="true"/>
+                  <%-- 8/28　泊　障害No051　70pxを100pxに変更
+                  <td width="70px"  align="center"> --%>
+                  <td width="100px"  align="center">
+                    <html:text property="symbol" name="shiftMstMntBeanList"  size="2" maxlength="2" indexed="true"/>
                   </td>
                   <td width="230px"  align="center">
                     <table class="full-width">
@@ -212,10 +221,18 @@
                       </tr>
                     </table>
                   </td>
+                    <%-- 8/28　泊　障害No051　 <td align="center" class="non-border"></td>を追加--%>
+                    <%--
                     <html:text property="breakTime" name="shiftMstMntBeanList"  size="5" maxlength="5" indexed="true"/>
-                 
+                 　--%>
+                  <td width="100px"  align="center">
+                    <html:text property="breakTime" name="shiftMstMntBeanList"  size="5" maxlength="5" indexed="true"/>
+                 </td>
                   <td width="70px"  align="center">
-                    <html:hidden property="deleteShiftId" name="shiftMstMntBeanList"  value="<%= shiftId %>"  onchange='<%="checkDeleteFlg(" + idx + ")" %>'></html:hidden>
+             
+                  <%-- 8/28　泊　障害No051　html:hiddenを html:checkboxに変更--%>
+                    <%--<html:checkbox property="deleteShiftId" name="shiftMstMntBeanList"  value="<%= shiftId %>"  onchange='<%="checkDeleteFlg(" + idx + ")" %>'></html:checkbox>--%>
+                    <html:checkbox property="deleteShiftId" name="shiftMstMntBeanList"  value="<%= shiftId %>"  onchange='<%="checkDeleteFlg(" + idx + ")" %>'></html:checkbox>
                     <html:hidden property="deleteFlg" name="shiftMstMntBeanList" value="false" indexed="true"/>
                   </td>
                 </tr>
