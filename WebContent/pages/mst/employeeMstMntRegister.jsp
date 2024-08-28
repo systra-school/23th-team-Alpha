@@ -13,8 +13,11 @@
 <%@taglib uri="http://struts.apache.org/tags-bean" prefix="bean"%>
 <%@taglib uri="http://struts.apache.org/tags-logic" prefix="logic"%>
 <%@taglib uri="http://struts.apache.org/tags-html" prefix="html"%>
+
 <html lang="ja">
+
   <head>
+
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Cache-Control" content="no-cache">
     <meta http-equiv="Expires" content="Thu, 01 Dec 1994 16:00:00 GMT">
@@ -57,10 +60,24 @@
                 password.style.backgroundColor = 'red';
             }
             // 社員名カナ
+            
+            <%-- 
+            8/28　掛江　障害No55　チェック処理の内容を、半角カナチェックに修正
+            
             if (!checkTime(employeeNameKanaVar)) {
+             --%>
+            
+            if (!checkHalfWidthKana(employeeNameKanaVar)) {
                 // エラー有り
                 var strArr = ['社員名カナ'];
+                
+                <%--
+                8/28　掛江　障害No54　エラーメッセージ内容を「E-MSG-000003」へ修正 
+                
                 errorMsg += getMessage('E-MSG-000006', strArr);
+                 --%>
+                
+                errorMsg += getMessage('E-MSG-000003', strArr);
                 employeeNameKana.style.backgroundColor = 'red';
             }
 
@@ -109,11 +126,24 @@
                 <td width="150px" align="center">
                   パスワード
                 </td>
+                
+                
+                <%-- 
+                8/28　掛江　障害No050　社員名カナと社員名の順番を修正
+                
                 <td width="200px" align="center">
                   社員名カナ
                 </td>
                 <td width="200px" align="center">
                   社員名
+                </td>                
+                 --%>
+                
+                <td width="200px" align="center">
+                  社員名
+                </td>
+                <td width="200px" align="center">
+                  社員名カナ
                 </td>
                 <td width="100px" align="center">
                   権限
@@ -131,8 +161,11 @@
                   <html:text property="employeeName" value="" size="20" />
                 </td>
                 
-                <!-- 8/23　掛江　133行目を<td>タグで囲む修正 -->
-				<!-- <html:text property="employeeNameKana" value="" size="20" /> -->
+                <%--
+                8/23　掛江　下記コードを<td>タグで囲む
+                
+                <html:text property="employeeNameKana" value="" size="20" />
+                 --%>
                 
                 <td width="200px"  align="center">
                   <html:text property="employeeNameKana" value="" size="20" />
