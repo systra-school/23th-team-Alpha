@@ -158,8 +158,12 @@
         
       </action>
       <!-- シフトマスタメンテナンス 更新 -->
+      <!--  9/2 泊　障害No62
+      path="/shiftMstMntUpdata"を
+  　　path="/shiftMstMntUpdate"に変更
+      -->
       <action
-        path="/shiftMstMntUpdata"
+        path="/shiftMstMntUpdate"
         type="action.mst.ShiftMstMntUpdateAction"
         name="shiftMstMntForm"
         scope="session"
