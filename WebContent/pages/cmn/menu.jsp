@@ -58,11 +58,11 @@
             <html:form action="/dailyShiftInit">
               <input type="submit" value="日別シフト確認" class="bigButton" />
             </html:form>
-            
+            <%-- 8/28 稲永　障害No039　下記コードを削除
             <html:form action="/baseShiftInit">
               <input type="submit" value="基本シフト登録" class="bigButton" />
             </html:form>
-            
+            --%>
           </div>
 
           <div class="menuBlock">
@@ -91,11 +91,15 @@
             <html:form action="/shiftMstMnt">
               <input type="submit" value="シフトマスタメンテナンス" class="bigButton" />
             </html:form>
-            
-            <html:form action="/workDateRequestInputInit">
-              <input type="submit" value="出勤希望日入力" class="bigButton" />
+            <%-- 8/28　稲永　出勤希望日入力を削除して、基本シフト登録に修正 --%>
+            <html:form action="/baseShiftInit">
+              <input type="submit" value="基本シフト登録" class="bigButton" />
             </html:form>
-            
+             <%--
+            <html:form action="/workDateRequestInputInit">
+              <input type="submit" value="基本シフト登録" class="bigButton" />
+            </html:form>
+            --%>
             
           </div>
           </div>
@@ -134,9 +138,13 @@
             </html:form>
           </div>
           
+          
+          <%-- 8/28 稲永　障害No049　下記をコメントアウトして不要個所を削除 
+          
            <html:form action="/shiftMstMnt">
               <input type="submit" value="シフトマスタメンテナンス" class="bigButton" />
             </html:form>
+          --%>
           
           </div>
            </logic:equal>
