@@ -50,7 +50,9 @@
         <logic:equal name="<%=RequestSessionNameConstant.SESSION_CMN_LOGIN_USER_INFO %>"
                      property="authorityId"
                      value="<%=CommonConstant.Authority.ADMIN.getId() %>">
-          <div  style="margin-left:15%;">
+                     
+          <%-- 9/2 稲永　障害No.059 marginを変更 --%>          
+          <div  style="margin:auto;">    
           <div class="menuBlock">
             <html:form action="/monthlyShiftCheckInit">
               <input type="submit" value="月別シフト確認" class="bigButton" />
@@ -58,6 +60,7 @@
             <html:form action="/dailyShiftInit">
               <input type="submit" value="日別シフト確認" class="bigButton" />
             </html:form>
+            
             <%-- 8/28 稲永　障害No039　下記コードを削除
             <html:form action="/baseShiftInit">
               <input type="submit" value="基本シフト登録" class="bigButton" />
@@ -108,8 +111,9 @@
         <logic:equal name="<%=RequestSessionNameConstant.SESSION_CMN_LOGIN_USER_INFO %>"
                      property="authorityId"
                      value="<%=CommonConstant.Authority.USER.getId() %>">
-          
-          <div  style="margin-left:15%;">
+                     
+          <%-- 9/2 稲永　障害No.060 marginを変更 --%>
+          <div  style="margin:auto;">
           <div class="menuBlock">
             <html:form action="/monthlyShiftCheckInit">
               <input type="submit" value="月別シフト確認" class="bigButton" />
