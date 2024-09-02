@@ -105,7 +105,11 @@
                     }
                 }
                 if (!breakTimeErrMsg) {
-                    if (!checkHalfWidthKana(breakTime)) {
+                	 <%--  9/2　泊　障害No62
+                	 if (!checkHalfWidthKana(breakTime))を
+                	 if (!checkTime(breakTime))に変更
+                	 --%>
+                    if (!checkTime(breakTime)) {
                         var strArr = ['休憩時間'];
                         breakTimeErrMsg = getMessage('E-MSG-000006', strArr);
                         namedItem('shiftMstMntBeanList['+ i +'].breakTime').style.backgroundColor = 'blue';
@@ -113,6 +117,8 @@
                 }
 
                 // from - to のチェック
+                
+                
                 if (!checkTimeCompare(startTime, endTime)) {
                   if (checkTime(startTime) && checkTime(endTime)) {
                       fromToErrMsg = getMessageCodeOnly('E-MSG-000005');
