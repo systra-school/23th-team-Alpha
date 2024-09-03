@@ -38,7 +38,9 @@ public class EmployeeMstMntDto {
     
     
 	public String getEmployeeId() {
-		return password;
+		// 9/3 障害No085　getEmployeeIdのreturnがpasswordになっていた為修正
+		// return password;
+		return employeeId;
 	}
 
 	public void setEmployeeId(String employeeId) {
@@ -46,7 +48,9 @@ public class EmployeeMstMntDto {
 	}
 
 	public String getPassword() {
-		return employeeId;
+		// 9/3 障害No085　getPasswordのreturnがemployeeIdになっていた為修正
+		// return employeeId;
+		return password;
 	}
 
 	public void setPassword(String password) {
