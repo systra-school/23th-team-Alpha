@@ -87,7 +87,8 @@ public class ShiftMstMntUpdateAction extends Action{
             shiftMstMntForm.setShiftMstMntBeanList(dtoToForm(shiftMstMntDtoList));
         }
 
-        return null;
+//        9/3　花田　障害No062　リターンがnullになっているのを修正
+        return mapping.findForward(forward);
     }
 
     /**

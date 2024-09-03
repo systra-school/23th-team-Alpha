@@ -167,8 +167,8 @@
       <div id="businessBody">
       
         <%-- 8/22　坂本　actionを削除 --%>
-        <%-- <html:form  action="/shiftMstMntUpdate"> --%>
-        <html:form>
+        <html:form  action="/shiftMstMntUpdate">
+<%--         <html:form> --%>
                   <%-- 8/28　泊　障害No051　600pxを730pxに変更
                  <td width="70px" align="center"> --%>
           <div style="width: 730px; margin: 0 auto;">
