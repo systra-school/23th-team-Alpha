@@ -48,7 +48,9 @@ public class ShiftMstMntLogic {
 
                 if (deleteFlg) {
                     // 削除
-                    shiftMstMntDao.deleteShiftMst(shiftMstMntDto.getShiftName());
+//                　9/3　花田　障害No077　引数が間違っていたので修正
+//                　正 getShitId() 誤 getShifrName()
+                    shiftMstMntDao.deleteShiftMst(shiftMstMntDto.getShiftId());
                 } else {
                     // 更新
                     shiftMstMntDao.updateShiftMst(shiftMstMntDto, loginUserDto);
