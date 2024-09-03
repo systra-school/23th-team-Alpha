@@ -54,8 +54,14 @@
     function openWindow(){
         window.open("https://tomcat.apache.org/?param=", "windowBPopup", "menubar=no, toolbar=no, scrollbars=auto, resizable=yes, width=520px, height=650px");
     }
+    
+    <%--
+	9/3 稲永 障害No069 遷移先ファイル名を修正
+	
+	window.open("/kikin-for-Struts-bug/workDateCheckSubInit.do", "searchPopup", "menubar=no, toolbar=no, scrollbars=auto, resizable=yes, width=1000px, height=600px")
+	 --%>
     function openSearch(){
-    	window.open("/kikin-for-Struts-bug/workDateCheckSubInit.do", "searchPopup", "menubar=no, toolbar=no, scrollbars=auto, resizable=yes, width=1000px, height=600px")
+    	window.open("/kikin-for-Struts-bug/workDateRequestCheckSubInit.do", "searchPopup", "menubar=no, toolbar=no, scrollbars=auto, resizable=yes, width=1000px, height=600px")
     }
     
     var str = user_Id;
@@ -85,7 +91,7 @@
         	</table>
       	</div>
       	<div id="businessBody" style="overflow: hidden;">
-        <div style="margin-left:20%;">
+      	<div style="margin-left:20%;"> 
           <html:form action="/workDateRequestInputInit" >
             表示年月：
             <html:select name="workDateRequestInputForm" property="yearMonth" onchange="submitSearch()">
