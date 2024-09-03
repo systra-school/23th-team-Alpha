@@ -260,9 +260,10 @@
         scope="session">
         <forward name="success"  path="/menu.do"/>
       </action>
-		<!-- 月別シフト入力基本シフト反映 -->
+      <!-- 月別シフト入力基本シフト反映 -->
+      <!-- 9/3　坂本　障害No071  pathを変更（typeと揃える）-->
       <action
-        path="/monthlyShiftInputImportKihon"
+        path="/monthlyShiftInputImportBase"
         type="action.mth.MonthlyShiftInputImportBaseAction"
         name="monthlyShiftInputForm"
         scope="session">
