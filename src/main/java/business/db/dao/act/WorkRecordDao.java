@@ -59,8 +59,13 @@ public class WorkRecordDao extends Dao {
 			strSql.append("    shift.break_time_shift AS break_time_shift, ");
 			strSql.append("    (CASE WHEN shift.work_day IS NULL THEN twr.work_day  ");
 			strSql.append("    ELSE shift.work_day END) AS work_day, ");
-			strSql.append("    twr.end_time         AS start_time, ");
-			strSql.append("    twr.start_time           AS end_time, ");
+			
+//			9/2 掛江 障害No074 SQL文のendTimeとstartTimeを入れ替え
+//			strSql.append("    twr.end_time         AS start_time, ");
+//			strSql.append("    twr.start_time           AS end_time, ");
+			
+			strSql.append("    twr.start_time         AS start_time, ");
+			strSql.append("    twr.end_time           AS end_time, ");
 			strSql.append("    twr.break_time         AS break_time, ");
 			strSql.append("    twr.actual_work_time      AS actual_work_time, ");
 			strSql.append("    twr.over_time      AS over_time, ");
@@ -73,8 +78,10 @@ public class WorkRecordDao extends Dao {
 			strSql.append("    FROM ");
 			strSql.append("        t_work_record ");
 			strSql.append("    WHERE ");
-//			8/23　坂本　障害No006　'sh0001'をプレイスホルダー(?)に変更
+			
+//			8/23 坂本 障害No006 'sh0001'をプレイスホルダー(?)に変更
 //			strSql.append("        employee_id = 'sh0001' AND ");
+			
 			strSql.append("        employee_id = ? AND ");
 			strSql.append("        work_day >= ? AND ");
 			strSql.append("        work_day <= ? ");
@@ -449,7 +456,11 @@ public class WorkRecordDao extends Dao {
 			ps.setString(5, workRecordDto.getBreakTime());
 			ps.setString(6, workRecordDto.getActualWorkTime());
 			ps.setString(7, workRecordDto.getOverTime());
-			ps.setString(8, workRecordDto.getActualWorkTime());
+			
+//			9/2 掛江 障害No076 getHolidayTime()に修正
+//			ps.setString(8, workRecordDto.getActualWorkTime());
+			
+			ps.setString(8, workRecordDto.getHolidayTime());
 			ps.setString(9, workRecordDto.getRemark());
 			ps.setString(10, employeeId);
 			ps.setString(11, employeeId);
