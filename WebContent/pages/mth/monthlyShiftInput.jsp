@@ -57,7 +57,9 @@ if (listSize > intShowLength) {
      */
     function submitImportKihon() {
         // サブミット
-        doSubmit('/kikin-for-Struts-bug/monthlyShiftInputImportKihon.do');
+        // 9/3　坂本　障害No071　struts-configのパス変更に伴い修正
+        // doSubmit('/kikin-for-Struts-bug/monthlyShiftInputImportKihon.do');
+    	doSubmit('/kikin-for-Struts-bug/monthlyShiftInputImportBase.do');
     }
     /**
      * 出勤希望反映
