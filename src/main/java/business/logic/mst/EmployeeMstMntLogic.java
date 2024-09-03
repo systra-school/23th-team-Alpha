@@ -49,7 +49,11 @@ public class EmployeeMstMntLogic {
 
                 if (deleteFlg) {
                     // 削除
-                    employeeMstMntDao.updateEmployeeMst(employeeMstMntDto, loginUserDto);
+                	// 9/3　泊　障害No81
+                	//employeeMstMntDao.updateEmployeeMst(employeeMstMntDto, loginUserDto);を
+                	//employeeMstMntDao.deleteEmployeeMst(employeeMstMntDto.getEmployeeId());に変更
+                	
+                    employeeMstMntDao.deleteEmployeeMst(employeeMstMntDto.getEmployeeId());
                 } else {
                     // 更新
                     employeeMstMntDao.updateEmployeeMst(employeeMstMntDto, loginUserDto);
