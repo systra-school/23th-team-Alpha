@@ -64,11 +64,7 @@ function checkTime(str) {
  * param str チェック対象文字列
  * return true:開始が終了以下 false:開始が終了より大きい
  */
- 
- /* 9/2 掛江 障害No074 引数の順番入れ替え */
- /* function checkTimeCompare(end, start) { */
- 
-function checkTimeCompare(start, end) {
+function checkTimeCompare(end, start) {
 
     var vStart = start.replace(":", "");
     var vEnd = end.replace(":", "");
