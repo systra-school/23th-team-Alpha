@@ -168,12 +168,16 @@
                     <%-- <html:select property="shiftIdOnTuesday" name="baseShiftMstMntBeanList" indexed="true" disabled="true"> --%>
                     <%-- 8/28　花田　障害No　disabledはなくすかfalseで修正できるが、どっちが最適か謎なのでとりあえず消してますしてます --%>
                     <td width="50px" align="center">
-                      <html:select property="shiftIdOnTuesday" name="baseShiftMstMntBeanList" indexed="true">
+                      <%-- 9/3　坂本　障害No070 shiftIdOnTuesdayをshiftIdOnMondayへ変更--%>
+                      <%-- <html:select property="shiftIdOnTuesday" name="baseShiftMstMntBeanList" indexed="true"> --%>
+                      <html:select property="shiftIdOnMonday" name="baseShiftMstMntBeanList" indexed="true">
                       <html:optionsCollection name="baseShiftMstMntForm" property="shiftCmbMap" value="key" label="value"/>
                       </html:select>
                     </td>
                     <td width="50px" align="center">
-                      <html:select property="shiftIdOnMonday" name="baseShiftMstMntBeanList" indexed="true">
+                      <%-- 9/3　坂本　障害No070 shiftIdOnMondayをshiftIdOnTuesdayへ変更--%>
+                      <%-- <html:select property="shiftIdOnMonday" name="baseShiftMstMntBeanList" indexed="true"> --%>
+                      <html:select property="shiftIdOnTuesday" name="baseShiftMstMntBeanList" indexed="true">
                       <html:optionsCollection name="baseShiftMstMntForm" property="shiftCmbMap" value="key" label="value"/>
                       </html:select>
                     </td>
