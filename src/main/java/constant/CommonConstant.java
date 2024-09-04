@@ -25,7 +25,8 @@ public class CommonConstant {
     /** 空白ID */
     public static final String BLANK_ID = "-1";
     /** ハイフン */
-    public static final String HYPHEN = "?";
+//   9/4　花田　障害No089 ハイフンなのに？になっているのを修正
+    public static final String HYPHEN = "-";
 
     /** 次 **/
     public static final String NEXT = "next";
