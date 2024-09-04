@@ -76,13 +76,16 @@
                       <bean:write property="shiftName" name="shiftPatternBeanList"/>
                     </td>
                     <td width="150px" align="center">
-                      <bean:write property="shiftName" name="shiftPatternBeanList"/>
+                      <bean:write property="symbol" name="shiftPatternBeanList"/>
                     </td>
                     <td width="150px" align="center">
                       <bean:write property="timeZone" name="shiftPatternBeanList" filter="false"/>
                     </td>
                     <td width="50px" align="center">
-                      <bean:write property="shiftName" name="shiftPatternBeanList"/>
+                      <bean:write property="breakTime" name="shiftPatternBeanList"/>
+                      
+                      <%-- 障害Ｎｏ092.093　シンボルと休憩時間部分が違うものになってたので修正 --%>
+                      
                     </td>
                   </tr>
                 </logic:iterate>
