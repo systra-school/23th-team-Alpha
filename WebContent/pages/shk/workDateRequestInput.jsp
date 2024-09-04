@@ -52,7 +52,14 @@
      * サブウィンドウを開く
      */
     function openWindow(){
-        window.open("https://tomcat.apache.org/?param=", "windowBPopup", "menubar=no, toolbar=no, scrollbars=auto, resizable=yes, width=520px, height=650px");
+    	
+    	<%--
+    	9/4 掛江 障害No026/047 遷移先のアドレス変更
+    	
+    	window.open("https://tomcat.apache.org/?param=", "windowBPopup", "menubar=no, toolbar=no, scrollbars=auto, resizable=yes, width=520px, height=650px");
+    	--%>
+    	
+        window.open("/kikin-for-Struts-bug/shiftPattern.do?param=", "windowBPopup", "menubar=no, toolbar=no, scrollbars=auto, resizable=yes, width=520px, height=650px");
     }
     
     <%--
