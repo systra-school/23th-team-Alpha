@@ -160,7 +160,14 @@
           <tr>
             <td id="footLeft">
 	          <div style="margin-left:50px;">
-	            <input value="凡例表示" type="button" class="longButton"  onclick="openDow()" />
+	          
+	          <%-- 
+	          9/3 掛江 障害No.83 onclick属性のメソッド名修正
+	          
+	          <input value="凡例表示" type="button" class="longButton"  onclick="openDow()" />
+	           --%>
+	           
+	            <input value="凡例表示" type="button" class="longButton"  onclick="openWindow()" />
 	          </div>
             </td>
             <td id="footCenter">
