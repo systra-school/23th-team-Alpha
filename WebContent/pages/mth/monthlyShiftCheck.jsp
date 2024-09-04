@@ -112,7 +112,14 @@ if (listSize > intShowLength) {
               </div>
               <div style="float: left; width: 244px; text-align: center;">
 	              <html:link href="/kikin-for-Struts-bug/monthlyShiftCheckPage.do?paging=back">前へ</html:link>
+	              
+	              <%-- 
+	              9/4 掛江 障害No94 次への遷移先を修正
+	              
 	              <html:link href="/kikin-for-Struts-bug/menu.do?paging=next">次へ</html:link>
+	               --%>
+	               
+	              <html:link href="/kikin-for-Struts-bug/monthlyShiftCheckPage.do?paging=next">次へ</html:link>
 	              <bean:write name="monthlyShiftCheckForm" property="countPage"/>/
 	              <bean:write name="monthlyShiftCheckForm" property="maxPage"/>
               </div>
