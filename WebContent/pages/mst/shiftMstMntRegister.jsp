@@ -164,13 +164,17 @@
                   <table class="full-width" >
                     <tr>
                       <td align="center" class="non-border">
-                        <html:text property="endTime" size="5" maxlength="10" value=""/>
+                        <%-- 9/4　坂本　障害No087　プロパティをstartTimeへ変更 --%>
+                        <%-- <html:text property="endTime" size="5" maxlength="10" value=""/> --%>
+                        <html:text property="startTime" size="5" maxlength="10" value=""/>
                       </td>
                       <td align="center" class="non-border">
                           &#xFF5E;
                       </td>
                       <td align="center" class="non-border">
-                        <html:text property="startTime" size="5" maxlength="10" value=""/>
+                        <%-- 9/4　坂本　障害No087　プロパティをendTimeへ変更 --%>
+                        <%-- <html:text property="startTime" size="5" maxlength="10" value=""/> --%>
+                        <html:text property="endTime" size="5" maxlength="10" value=""/>
                       </td>
                     </tr>
                   </table>
