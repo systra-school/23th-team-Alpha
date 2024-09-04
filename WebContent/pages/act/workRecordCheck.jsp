@@ -158,13 +158,16 @@ String color = "";
                   </td>
                   <td width="100px" align="center">
                     <bean:write name="workRecordInputList" property="actualWorkTime" />
+                    <%-- 9/4　高田　障害No091　holidayを削除
                     <bean:write name="workRecordInputList" property="holidayTime" /><br>
+                    --%>
                   </td>
                   <td width="100px" align="center">
                     <bean:write name="workRecordInputList" property="overTime" /><br>
                   </td>
                   <td width="100px" align="center">
-                    
+                  <%-- 9/4　高田　障害No091　holidayを追加 --%>
+                  <bean:write name="workRecordInputList" property="holidayTime" /><br>
                   </td>
                   <td width="250px" align="left">
                     <bean:write name="workRecordInputList" property="remark" /><br>
