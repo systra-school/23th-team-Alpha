@@ -79,7 +79,10 @@
                                     label="value"/>
             </html:select>
             <html:link href="/kikin-for-Struts-bug/workDateRequestCheckPage.do?paging=back">前へ</html:link>
-            <html:link href="https://tomcat.apache.org/?paging=next">次へ</html:link>
+            <%--9/5 障害No90 泊
+            URLがトムキャットに飛ぶようになってたので変更
+             --%>
+            <html:link href="/kikin-for-Struts-bug/workDateRequestCheckPage.do?paging=next">次へ</html:link>
             <bean:write name="workDateRequestCheckForm" property="countPage"/>/
             <bean:write name="workDateRequestCheckForm" property="maxPage"/>
               <table class="widthTable">
