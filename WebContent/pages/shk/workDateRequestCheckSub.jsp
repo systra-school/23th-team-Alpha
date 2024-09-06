@@ -49,14 +49,16 @@
   <body>
     <div id="wrapper">
       <div id="header">
-        <table>
-          <tr>
+      <%-- 障害No109 9/6 稲永 下記<table>にclass属性を追加--%>
+        <table  class="centered-container">
+           <tr>
             <td id="headLeft">
               　
             </td>
             <td id="headCenter">
               出勤希望確認
             </td>
+            
             <td id="headRight">
               　
             </td>
