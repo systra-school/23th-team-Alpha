@@ -173,6 +173,10 @@ public class MonthlyShiftDao extends Dao{
             strSql.append("? ");
             strSql.append(",? ");
             strSql.append(",? ");
+            
+//            9/6 掛江 障害No097 プレースホルダ追加
+            strSql.append(",? ");
+           
             strSql.append(", current_timestamp()");
             strSql.append(",? ");
             strSql.append(", current_timestamp()");
