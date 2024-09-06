@@ -153,7 +153,9 @@ public class CommonUtils {
             newId.append(M_employee.PREFIX.getName());
         } else if (M_shift.TABLE_NAME.getName().equals(tableName)) {
             // シフトマスタ
-            newId.append(M_shift.SHIFT_ID.getName());
+        	// 9/6 坂本　障害No.108 シフトIDの"sh"が"sf"になるように変更
+            // newId.append(M_shift.SHIFT_ID.getName());
+        	newId.append(M_shift.PREFIX.getName());
         }
 
         newId.append(ID);
