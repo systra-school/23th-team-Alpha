@@ -23,7 +23,9 @@
 <bean:size id="dateBeanListSize" name="workDateRequestCheckForm"  property="dateBeanList"/>
 <bean:define id="offset" name="workDateRequestCheckForm" property="offset" />
 <bean:define id="color" value="" type="java.lang.String"/>
-<bean:define id="showLength" value="10" type="java.lang.String"/>
+
+<%-- 	9/6　花田　10行しか出てない部分を20に修正 --%>
+<bean:define id="showLength" value="20" type="java.lang.String"/>
 <bean:define id="symbol" value="" type="java.lang.String"/>
 <html lang="ja">
   <head>
