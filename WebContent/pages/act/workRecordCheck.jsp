@@ -61,7 +61,8 @@ String color = "";
         <html:form action="/employeeMstMntRegister" >
         <br>
           <div style="float: left; width: 100%;">
-            <div style="float: left; width: 804px; text-align: left; margin-left:22%;">
+         	<%--障害No.121 9/7 稲永　下記要素内 margin-left:22%;→10% に変更--%>
+            <div style="float: left; width: 804px; text-align: left; margin-left:10%;">
               表示年月：
               <html:select name="workRecordCheckForm" property="yearMonth" onchange="submitSearch()">
               <html:optionsCollection name="workRecordCheckForm"
