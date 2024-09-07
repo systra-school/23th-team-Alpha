@@ -19,5 +19,7 @@ public abstract class WorkDateRequestAbstractAction extends Action {
     // ログ出力クラス
     protected Log log = LogFactory.getLog(this.getClass());
     // 表示データ数
-    protected final int SHOW_LENGTH = 18;
+    
+//    9/7　障害No112　出勤云々の原因はだいたいこいつ、18から19に修正しました
+    protected final int SHOW_LENGTH = 19;
 }
