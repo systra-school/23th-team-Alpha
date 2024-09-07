@@ -138,7 +138,8 @@ public class WorkDateRequestDao extends Dao{
             strSql.append("ORDER BY ");
             strSql.append("employee_id,");
             strSql.append("year_month_day");
-            strSql.append(" limit 90");
+//          9/7　花田　障害No112.113　余計なものをコメントアウト
+//            strSql.append(" limit 90");
 
             PreparedStatement ps = connection.prepareStatement(strSql.toString());
 

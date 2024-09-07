@@ -24,8 +24,8 @@
 <bean:define id="offset" name="workDateRequestCheckForm" property="offset" />
 <bean:define id="color" value="" type="java.lang.String"/>
 
-<%-- 	9/6　花田　18行しか出てない部分を20に修正 --%>
-<bean:define id="showLength" value="20" type="java.lang.String"/>
+<!-- 	9/7　花田　間違ってなかったのでもどします -->
+<bean:define id="showLength" value="18" type="java.lang.String"/>
 <bean:define id="symbol" value="" type="java.lang.String"/>
 
 <html lang="ja">
