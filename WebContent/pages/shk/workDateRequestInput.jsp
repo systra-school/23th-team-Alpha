@@ -98,7 +98,8 @@
         	</table>
       	</div>
       	<div id="businessBody" style="overflow: hidden;">
-      	<div style="margin-left:20%;"> 
+      	<%--障害No65 9/7 稲永　初期表示右寄りを解消 --%>
+      	<div style="margin:aout;"> 
           <html:form action="/workDateRequestInputInit" >
             表示年月：
             <html:select name="workDateRequestInputForm" property="yearMonth" onchange="submitSearch()">
