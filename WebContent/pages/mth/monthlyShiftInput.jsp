@@ -441,6 +441,17 @@ if (listSize > intShowLength) {
                             </html:select>
                           </td>
                           <% } %>
+                          <%-- 9/7 　坂本　障害No.115　31日分のif文を追加 --%>
+                          <% if (dateBeanListSize >= 31) { %>
+                          <td width="40px" align="center" valign="middle">
+                            <html:select property="shiftId31" name="monthlyShiftInputBeanList" indexed="true">
+                            <html:optionsCollection name="monthlyShiftInputForm"
+                                                    property="shiftCmbMap"
+                                                    value="key"
+                                                    label="value"/>
+                            </html:select>
+                          </td>
+                          <% } %>
                           
                         </tr>
                       </logic:iterate>
