@@ -77,9 +77,14 @@ public abstract class DailyShiftAbstractAction extends Action {
     /** 24:00 */
     private final String TIME24 = "24:00";
     /** 出勤 */
-    private final String WORKHOURS = "残念";
+    // 9/7 坂本　障害No.118　初期値を出勤へ変更
+    //  private final String WORKHOURS = "残念";
+    private final String WORKHOURS = "出勤";
     /** 休憩 */
-    private final String BREAKTIME = "エラーです";
+    // 9/7 坂本　障害No.118　初期値を休憩へ変更
+    // private final String BREAKTIME = "エラーです";
+    private final String BREAKTIME = "休憩";
+
 
     /**
      * DtoからFormへ変換する
