@@ -165,7 +165,8 @@
               </tr>
             </table>
           </div>
-          <div style="overflow: auto; height:440px; width:1030px;  margin: 0 auto; ">
+          <%-- 9/9　障害No126　height:420px;に変更 --%>
+          <div style="overflow: auto; height:420px; width:1030px;  margin: 0 auto; ">
             <table class="tableBody" >
               <logic:iterate indexId="idx" id="employeeMstMntBeanList" name="employeeMstMntForm"  property="employeeMstMntBeanList">
                 <bean:define id="employeeId" name= "employeeMstMntBeanList" property="employeeId" type="java.lang.String"/>
