@@ -62,6 +62,9 @@
 
         // パスワードエラーメッセージ
         var passwordErrorMsg = '';
+        // 9/9 坂本　障害No.127　社員名エラーメッセージ追加
+        // 社員名エラーメッセージ
+        var employeeNameErrorMsg = '';
         // 社員名カナエラーメッセージ
         var employeeNameKanaErrorMsg = '';
         var errorMsg = '';
@@ -70,13 +73,19 @@
             for (var i = 0; i < listSize; i++) {
                 // パスワードを取得する。
                 var password = namedItem('employeeMstMntBeanList['+ i +'].password').value;
+                // 9/9 坂本　障害No.127　社員名取得を追加
+                // 社員名を取得する。
+                var employeeName = namedItem('employeeMstMntBeanList['+ i +'].employeeName').value;
                 // 社員名カナを取得する。
                 var employeeNameKana = namedItem('employeeMstMntBeanList['+ i +'].employeeNameKana').value;
 
                 // 背景色をクリアする
                 namedItem('employeeMstMntBeanList['+ i +'].password').style.backgroundColor = 'white';
                 namedItem('employeeMstMntBeanList['+ i +'].employeeNameKana').style.backgroundColor = 'white';
+                namedItem('employeeMstMntBeanList['+ i +'].employeeName').style.backgroundColor = 'white';
 
+                
+                
                 // パスワードチェック
                 if (!passwordErrorMsg) {
                     if (!checkRequired(password)) {
@@ -85,7 +94,26 @@
                         namedItem('employeeMstMntBeanList['+ i +'].password').style.backgroundColor = 'red';
                     }
                 }
+                // 9/9 坂本　障害No.127　社員名の必須チェック追加
+                // 社員名チェック
+                if (!employeeNameErrorMsg) {
+                    if (!checkRequired(employeeName)) {
+                        var strArr = ['社員名'];
+                        employeeNameErrorMsg = getMessage('E-MSG-000001', strArr);
+                        namedItem('employeeMstMntBeanList['+ i +'].employeeName').style.backgroundColor = 'red';
+                    }
+                }
                 // 社員名カナチェック
+                // 必須チェック
+                // 9/9 坂本　障害No.127　社員名カナの必須チェック追加
+                if (!employeeNameKanaErrorMsg) {
+                    if (!checkRequired(employeeNameKana)) {
+                        var strArr = ['社員名カナ'];
+                        employeeNameKanaErrorMsg = getMessage('E-MSG-000001', strArr);
+                        namedItem('employeeMstMntBeanList['+ i +'].employeeNameKana').style.backgroundColor = 'red';
+                    }
+                }
+                // 半角チェック
                 if (!employeeNameKanaErrorMsg) {
                     if (!checkHalfWidthKana(employeeNameKana)) {
                         var strArr = ['社員名カナ'];
@@ -94,14 +122,14 @@
                     }
                 }
 
-                if (passwordErrorMsg && employeeNameKanaErrorMsg) {
+                if (passwordErrorMsg && employeeNameKanaErrorMsg && employeeNameKanaErrorMsg) {
                     // パスワード 、社員名カナが共にエラーの場合
                     break;
                 }
             }
         }
         // エラーメッセージ
-        errorMsg = passwordErrorMsg + employeeNameKanaErrorMsg;
+        errorMsg = passwordErrorMsg + employeeNameErrorMsg + employeeNameKanaErrorMsg;
 
         if (errorMsg) {
             alert(errorMsg);

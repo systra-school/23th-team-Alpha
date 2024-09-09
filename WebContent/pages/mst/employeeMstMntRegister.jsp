@@ -43,6 +43,9 @@
         with (document.forms[0]) {
             // パスワード
             var passwordVar = password.value;
+            // 9/9　坂本　障害No.127 社員名を追加
+            // 社員名
+            var employeeNameVar = employeeName.value
             // 社員名カナ
             var employeeNameKanaVar = employeeNameKana.value;
             // エラーメッセージ
@@ -51,6 +54,7 @@
             // 背景色をクリアする
             password.style.backgroundColor = 'white';
             employeeNameKana.style.backgroundColor = 'white';
+            employeeName.style.backgroundColor = 'white';
 
             // パスワード
             if (!checkRequired(passwordVar)) {
@@ -59,7 +63,24 @@
                 errorMsg += getMessage('E-MSG-000001', strArr);
                 password.style.backgroundColor = 'red';
             }
+            
+            // 9/9　坂本　障害No.127　社員名の必須チェックを追加
+            // 社員名
+            if (!checkRequired(employeeNameVar)) {
+                // エラー有り
+                var strArr = ['社員名'];
+                errorMsg += getMessage('E-MSG-000001', strArr);
+                employeeName.style.backgroundColor = 'red';
+            }
+            
             // 社員名カナ
+            // 9/9　坂本　障害No.127　社員名カナの必須チェックを追加
+            if (!checkRequired(employeeNameKanaVar)) {
+                // エラー有り
+                var strArr = ['社員名カナ'];
+                errorMsg += getMessage('E-MSG-000001', strArr);
+                employeeNameKana.style.backgroundColor = 'red';
+            }
             
             <%-- 
             8/28　掛江　障害No55　チェック処理の内容を、半角カナチェックに修正
