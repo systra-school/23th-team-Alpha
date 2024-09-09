@@ -111,8 +111,11 @@
                 	 --%>
                     if (!checkTime(breakTime)) {
                         var strArr = ['休憩時間'];
-                        breakTimeErrMsg = getMessage('E-MSG-000006', strArr);
-                        namedItem('shiftMstMntBeanList['+ i +'].breakTime').style.backgroundColor = 'blue';
+//                      9/9　高田　障害No124　エラー表示内容を変更し、背景色を青から赤へ変更
+//                         breakTimeErrMsg = getMessage('E-MSG-000006', strArr);
+//                         namedItem('shiftMstMntBeanList['+ i +'].breakTime').style.backgroundColor = 'blue';
+                        breakTimeErrMsg = getMessage('E-MSG-000004', strArr);
+                        namedItem('shiftMstMntBeanList['+ i +'].breakTime').style.backgroundColor = 'red';
                     }
                 }
 
