@@ -45,6 +45,8 @@ public class DateBean {
 		return publicHolidayFlg;
 	}
 	public void setPublicHolidayFlg(boolean publicHolidayFlg) {
-		this.publicHolidayFlg = false;
+//		9/9　高田　障害No130　setする値を引数へ変更
+//		this.publicHolidayFlg = false;
+		this.publicHolidayFlg = publicHolidayFlg;
 	}
 }
