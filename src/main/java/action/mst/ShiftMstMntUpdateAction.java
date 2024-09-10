@@ -82,6 +82,8 @@ public class ShiftMstMntUpdateAction extends Action{
         if (CheckUtils.isEmpty(shiftMstMntDtoList)) {
             // データなし
             forward = CommonConstant.NODATA;
+            // 9/10 坂本　障害No.128　更新後データをセットする処理を追加
+            shiftMstMntForm.setShiftMstMntBeanList(dtoToForm(shiftMstMntDtoList));
         } else {
             // フォームへ一覧をセットする
             shiftMstMntForm.setShiftMstMntBeanList(dtoToForm(shiftMstMntDtoList));
