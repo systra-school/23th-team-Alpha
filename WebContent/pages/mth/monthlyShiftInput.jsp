@@ -62,14 +62,16 @@ if (listSize > intShowLength) {
         // サブミット
         // 9/3　坂本　障害No071　struts-configのパス変更に伴い修正
         // doSubmit('/kikin-for-Struts-bug/monthlyShiftInputImportKihon.do');
-    	doSubmit('/kikin-for-Struts-bug/monthlyShiftInputImportBase.do');
+        doSubmit('/kikin-for-Struts-bug/monthlyShiftInputImportBase.do');
     }
     /**
      * 出勤希望反映
      */
     function submitWorkDateRequest() {
         // サブミット
-        doSubmit('/kikin-for-Struts-bug/monthlyShiftInputWorkDateRequest.do');
+        //　9/10　高田　デザイン障害No023　出勤希望日確認doSubmitをwindow.openへ変更
+        //         doSubmit('/kikin-for-Struts-bug/monthlyShiftInputWorkDateRequest.do');
+        window.open("/kikin-for-Struts-bug/workDateRequestCheckSubInit.do?param=", "windowBPopup", "menubar=no, toolbar=no, scrollbars=auto, resizable=yes, width=1000px, height=250px");
     }
 
     /**
@@ -474,10 +476,17 @@ if (listSize > intShowLength) {
             <td id="footLeft">
             <div style="margin-left:50px;white-space: nowrap;">
 	          <input value="凡例表示" type="button" class="longButton"  onclick="openWindow()" />
+	          <%--
+	          9/10　高田　障害No023　基本シフト反映と出勤希望日確認の位置を変更
 	          <input value="基本シフト反映" type="button" class="longButton"   onclick="submitImportKihon()"/>
+	          --%>
+	          <input value="出勤希望日確認" type="button" class="longButton"  onclick="submitWorkDateRequest()" />	          
 	          <%-- 9/6 坂本　障害No110　出勤希望日反映ボタン押下時のパスを変更 --%>
 	          <%-- <input value="出勤希望日反映" type="button" class="longButton"  onclick="submitImportKihon()" /> --%>
-	          <input value="出勤希望日反映" type="button" class="longButton"  onclick="submitWorkDateRequest()" />
+	          <%--
+	          9/10　高田　デザイン障害No023　基本シフト反映と出勤希望日確認の位置を変更
+ 	          <input value="出勤希望日反映" type="button" class="longButton"  onclick="submitWorkDateRequest()" /> --%>
+	          <input value="基本シフト反映" type="button" class="longButton"   onclick="submitImportKihon()"/>
 	        </div>
             </td>
             <td id="footCenter" style="text-align: right;">
