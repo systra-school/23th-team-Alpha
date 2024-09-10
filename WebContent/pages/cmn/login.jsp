@@ -32,6 +32,7 @@
 
 	<div id="wrapper">
 		<div id="header">
+		<%-- 
 			<table class="full-width">
 				<tr>
 					<td id="headLeft"></td>
@@ -39,21 +40,31 @@
 					<td id="headRight"></td>
 				</tr>
 			</table>
+		--%>
 		</div>
 
 
 		<div id="businessBody">
 			<div align="center">
-				<div>ID・パスワードを入力してください。</div>
+				<div></div>
 				<html:form action="/login" onsubmit="return validateLoginForm(this)">
+					<h1>ログイン</h1>
 
 					<%-- 8/26　坂本　障害No032　ID/パスワードの初期値削除 --%>
-					<html:text property="employeeId" size="16" />
+					<label style="width: 100px; display: inline-block; text-align: right;">ID :</label>
+					<html:text property="employeeId" size="16"  />
+					<script>
+  					document.getElementsByName('employeeId')[0].setAttribute('placeholder', 'sh＋４桁の数字');
+					</script>
 					<br />
+					<label style="width: 100px; display: inline-block; text-align: right;">パスワード :</label>
 					<html:password property="password" size="16" redisplay="false" />
+					<script>
+  					document.getElementsByName('password')[0].setAttribute('placeholder', '５桁のパスワード');
+					</script>
 					<br />
 					<br />
-					<html:submit property="submit" value="ログイン" />
+					<html:submit property="submit" value="ログイン" />　
 					<html:reset value="リセット" />
 				</html:form>
 			</div>
@@ -68,5 +79,7 @@
 			</table>
 		</div>
 	</div>
+	
+	
 </body>
 </html>
