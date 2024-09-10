@@ -133,8 +133,11 @@ if (listSize > intShowLength) {
                        次へのbackをnextに変更--%>
                                 
               </html:select>
-              <html:link href="/kikin-for-Struts-bug/monthlyShiftInputPage.do?paging=back">前へ</html:link>
-              <html:link href="/kikin-for-Struts-bug/monthlyShiftInputPage.do?paging=next">次へ</html:link>
+<%--              9/10　高田　障害No004　前へ・次への文言変更
+               <html:link href="/kikin-for-Struts-bug/monthlyShiftInputPage.do?paging=back">前へ</html:link>
+               <html:link href="/kikin-for-Struts-bug/monthlyShiftInputPage.do?paging=next">次へ</html:link> --%>
+              <html:link href="/kikin-for-Struts-bug/monthlyShiftInputPage.do?paging=back">前の社員へ</html:link>
+              <html:link href="/kikin-for-Struts-bug/monthlyShiftInputPage.do?paging=next">次の社員へ</html:link>
               <bean:write name="monthlyShiftInputForm" property="countPage"/>/
               <bean:write name="monthlyShiftInputForm" property="maxPage"/>
             

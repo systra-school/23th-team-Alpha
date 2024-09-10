@@ -80,11 +80,15 @@
                                     value="key"
                                     label="value"/>
             </html:select>
-            <html:link href="/kikin-for-Struts-bug/workDateRequestCheckPage.do?paging=back">前へ</html:link>
+<%--            9/10　高田　障害No003　前への文言を変更
+             <html:link href="/kikin-for-Struts-bug/workDateRequestCheckPage.do?paging=back">前へ</html:link> --%>
+            <html:link href="/kikin-for-Struts-bug/workDateRequestCheckPage.do?paging=back">前の社員へ</html:link>
             <%--9/5 障害No90 泊
             URLがトムキャットに飛ぶようになってたので変更
              --%>
-            <html:link href="/kikin-for-Struts-bug/workDateRequestCheckPage.do?paging=next">次へ</html:link>
+<%--             9/10　高田　障害No003　次への文言変更
+             <html:link href="/kikin-for-Struts-bug/workDateRequestCheckPage.do?paging=next">次へ</html:link> --%>
+            <html:link href="/kikin-for-Struts-bug/workDateRequestCheckPage.do?paging=next">次の社員へ</html:link>
             <bean:write name="workDateRequestCheckForm" property="countPage"/>/
             <bean:write name="workDateRequestCheckForm" property="maxPage"/>
               <table class="widthTable">
