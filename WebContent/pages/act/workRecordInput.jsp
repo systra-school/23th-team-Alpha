@@ -305,19 +305,7 @@
         </html:form>
       </div>
       <div id="footer">
-        <table>
-          <tr>
-              <td id="footLeft">
-                
-              </td>
-              <td id="footCenter">
-                
-              </td>
-              <td id="footRight">
-                <input value="登録"  type="button" class="smallButton"  onclick="register()" />
-              </td>
-          </tr>
-        </table>
+                <input value="登録"  type="button" class="smallButtonSubmit"  onclick="register()" />
     </div>
     </div>
   </body>

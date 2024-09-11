@@ -2,10 +2,15 @@
 * body定義
 */
 body {
-    background-color: #e6e6fa;
+    /* background-color: #e6e6fa; */
+    background  :  linear-gradient(135deg, #ffffff, #e7c9ff, #d1a1ff);;
     overflow: hidden;
     width:100%;
 }
+
+
+
+
 errorbody {
     background-color: red;
 }
@@ -39,7 +44,7 @@ errorbody {
 #headCenter {
     font-size: 24px;
     color: #522886;
-    width:70%;
+    width:10%;
     text-align:center;
 
 }
@@ -50,11 +55,14 @@ errorbody {
 /*
 * メニュー画面のボタン
 */
-.menuBlock {
+/* .menuBlock {
     margin-left:60px;
     float:left;
     text-align:center;
     padding:30px;
+} */
+.menuBlock {
+    text-align:center;
 }
 
 /*
@@ -141,7 +149,51 @@ errorbody {
 */
 .smallButton {
     width: 100px;
-    height: 30px;
+    height: 25px;
+}
+
+.smallButton {
+  display       : inline-block;
+  border-radius : 5%;          /* 角丸       */
+  font-size     : 10pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  background    : #b3b3b3;     /* 背景色     */
+  color         : #ffffff;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  box-shadow    : 2px 2px 3px #666666;  /* 影の設定 */
+  border        : 2px solid #b3b3b3;    /* 枠の指定 */
+}
+.smallButton:hover {
+  box-shadow    : none;        /* カーソル時の影消去 */
+  color         : #b3b3b3;     /* 背景色     */
+  background    : #ffffff;     /* 文字色     */
+}
+
+
+
+.smallButtonSubmit {
+    width: 100px;
+    height: 25px;
+}
+.smallButtonSubmit {
+  display       : inline-block;
+  border-radius : 5%;          /* 角丸       */
+  font-size     : 10pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  background    : #5900b3;     /* 背景色     */
+  color         : #ffffff;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  box-shadow    : 2px 2px 3px #666666;  /* 影の設定 */
+  border        : 2px solid #5900b3;    /* 枠の指定 */
+}
+.smallButtonSubmit:hover {
+  box-shadow    : none;        /* カーソル時の影消去 */
+  color         : #5900b3;     /* 背景色     */
+  background    : #ffffff;     /* 文字色     */
 }
 
 /*
@@ -149,7 +201,54 @@ errorbody {
 */
 .bigButton {
     width: 300px;
-    height: 50px;
+    height: 40px;
+}
+.bigButton {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 9999px;
+    max-width: 300px;
+    padding: 0px 25px;
+    font-family: "Noto Sans Japanese";
+    color: #522886;
+    line-height: 1.8;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    font-weight: 500;
+    background: linear-gradient(270deg, #fa96c8  0%, #fac8e1   25%, #6464fa 51%, #c8c8fa  100%);
+    background-position: 1% 50%;
+    background-size: 200% auto;
+    transition: all 0.3s ease-out;
+    border: none;
+    font-size:20px;
+}
+.bigButton:hover {
+    color: #522886;
+    background-position: 99% 50%;
+    transform: scale(1.05);
+    /*ボックスの影*/  
+    box-shadow: 0 15px 15px rgba(87,111,230,0.4);
+}
+.bigButton:after {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-top: 3px solid #fff;
+    border-right: 3px solid #fff;
+    transform: rotate(45deg) translateY(-50%);
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    border-radius: 1px;
+    transition: 0.3s ease-in-out;
+}
+body{
+    vertical-align:middle; 
+    padding: 50px 0;
+    text-align: center;
 }
 
 /*
@@ -254,52 +353,25 @@ errorbody {
 }
 
 
+.box {
+  position    : relative;
+  margin      : auto;                 /* サンプル用 中央寄せ     */
+  box-sizing  : border-box;           /* 罫線も含む長さ          */
+  border      : 1px solid #ccc;       /* サンプル用 枠線指定     */
+  width       : 550px;                /* BOXの幅                 */
+  max-width   : 100%;                 /* 最大のBOX幅             */
+  height      : 250px;                /* BOXの高さ               */
+  background  : linear-gradient(135deg, #eaeaea, #ead4ff, #d2a4ff);  /* BOXのグラデーション */
+}
+.box span {
+  position    : absolute;             /* 親要素からの絶対位置    */
+  display     : inline-block;         /* Transform用にブロック化 */
+  color       : #ffffff;              /* 文字色                  */
+  font-size   : 24pt;                 /* 文字サイズ              */
+  top         : 50%;                  /* 文字位置（縦）          */
+  left        : 50%;                  /* 文字位置（横）          */
+  transform   : translateY(-50%)
+                translateX(-50%);     /* 文字の高さ分ずらす      */
+}
 
-.bigButton {
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0 auto;
-    border-radius: 9999px;
-    max-width: 300px;
-    padding: 10px 25px;
-    font-family: "Noto Sans Japanese";
-    color: #522886;
-    line-height: 1.8;
-    text-decoration: none;
-    transition: 0.3s ease-in-out;
-    font-weight: 500;
-    background: linear-gradient(270deg, #fa96c8  0%, #fac8e1   25%, #6464fa 51%, #c8c8fa  100%);
-    background-position: 1% 50%;
-    background-size: 200% auto;
-    transition: all 0.3s ease-out;
-    border: none;
-    font-size:20px;
-}
-.bigButton:hover {
-    color: #522886;
-    background-position: 99% 50%;
-    transform: scale(1.05);
-    /*ボックスの影*/  
-    box-shadow: 0 15px 15px rgba(87,111,230,0.4);
-}
-.bigButton:after {
-    content: '';
-    width: 5px;
-    height: 5px;
-    border-top: 3px solid #fff;
-    border-right: 3px solid #fff;
-    transform: rotate(45deg) translateY(-50%);
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    border-radius: 1px;
-    transition: 0.3s ease-in-out;
-}
-body{
-    vertical-align:middle; 
-    padding: 50px 0;
-    text-align: center;
-}
 
