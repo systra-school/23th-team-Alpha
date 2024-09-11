@@ -2,7 +2,7 @@
 * body定義
 */
 body {
-    background-color: #66CCFF;
+    background-color: #e6e6fa;
     overflow: hidden;
     width:100%;
 }
@@ -38,7 +38,7 @@ errorbody {
 }
 #headCenter {
     font-size: 24px;
-    color: #FFFF00;
+    color: #522886;
     width:70%;
     text-align:center;
 
@@ -148,7 +148,7 @@ errorbody {
 * ボタンサイズ大
 */
 .bigButton {
-    width: 200px;
+    width: 300px;
     height: 50px;
 }
 
@@ -251,5 +251,55 @@ errorbody {
 */
 .fontRed {
     color: red;
+}
+
+
+
+.bigButton {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 9999px;
+    max-width: 300px;
+    padding: 10px 25px;
+    font-family: "Noto Sans Japanese";
+    color: #522886;
+    line-height: 1.8;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    font-weight: 500;
+    background: linear-gradient(270deg, #fa96c8  0%, #fac8e1   25%, #6464fa 51%, #c8c8fa  100%);
+    background-position: 1% 50%;
+    background-size: 200% auto;
+    transition: all 0.3s ease-out;
+    border: none;
+    font-size:20px;
+}
+.bigButton:hover {
+    color: #522886;
+    background-position: 99% 50%;
+    transform: scale(1.05);
+    /*ボックスの影*/  
+    box-shadow: 0 15px 15px rgba(87,111,230,0.4);
+}
+.bigButton:after {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-top: 3px solid #fff;
+    border-right: 3px solid #fff;
+    transform: rotate(45deg) translateY(-50%);
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    border-radius: 1px;
+    transition: 0.3s ease-in-out;
+}
+body{
+    vertical-align:middle; 
+    padding: 50px 0;
+    text-align: center;
 }
 
