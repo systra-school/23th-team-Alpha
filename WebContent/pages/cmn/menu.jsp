@@ -78,9 +78,9 @@
               <input type="submit" value="出勤希望日確認" class="bigButton" />
             </html:form>
             <br/>
-            <html:form action="/workDateRequestInputInit">
+            <html:form action="/baseShiftInit">
               <input type="submit" value="基本シフト登録" class="bigButton" />
-            </html:form>
+            </html:form> 
             <html:form action="/shiftMstMnt">
               <input type="submit" value="シフトマスタメンテナンス" class="bigButton" />
             </html:form>

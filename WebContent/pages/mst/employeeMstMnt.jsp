@@ -240,11 +240,20 @@
         </html:form>
       </div>
       <div id="footer">
-
-              <input value="新規登録" type="button" class="smallButtonSubmit"  onclick="employeeMstMntRegisterInit()" />
+        <table>
+          <tr>
+            <td id="footLeft">
               　
+            </td>
+            <td id="footCenter">
+              　
+            </td>
+            <td id="footRight">
+              <input value="新規登録" type="button" class="smallButtonSubmit"  onclick="employeeMstMntRegisterInit()" />
               <input value="更新" type="button" class="smallButtonSubmit"  onclick="employeeMstMntUpdate()" />
-
+            </td>
+          </tr>
+        </table>
       </div>
     </div>
   </body>

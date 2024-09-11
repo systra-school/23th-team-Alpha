@@ -264,8 +264,8 @@
               　
             </td>
             <td id="footRight">
-              <input value="新規登録" type="button" class="smallButton"  onclick="shiftMstMntRegisterInit()" />
-              <input value="更新" type="button" class="smallButton"  onclick="shiftMstMntUpdate()" />
+              <input value="新規登録" type="button" class="smallButtonSubmit"  onclick="shiftMstMntRegisterInit()" />
+              <input value="更新" type="button" class="smallButtonSubmit"  onclick="shiftMstMntUpdate()" />
             </td>
           </tr>
         </table>

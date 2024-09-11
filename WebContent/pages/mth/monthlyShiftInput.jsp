@@ -493,7 +493,7 @@ if (listSize > intShowLength) {
 
             </td>
             <td id="footRight">
-              <input value="登録" type="button" class="smallButton"  onclick="submitRegister()" />
+              <input value="登録" type="button" class="smallButtonSubmit"  onclick="submitRegister()" />
             </td>
           </tr>
         </table>

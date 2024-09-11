@@ -204,7 +204,7 @@
             </td>
             <td id="footRight">
     	        <input value="出勤希望日参照" type="button" class="longButton"  onclick="openSearch()" />
-            	<input value="登録" type="button" class="smallButton"  onclick="submitRegister()" />
+            	<input value="登録" type="button" class="smallButtonSubmit"  onclick="submitRegister()" />
             </td>
           </tr>
         </table>

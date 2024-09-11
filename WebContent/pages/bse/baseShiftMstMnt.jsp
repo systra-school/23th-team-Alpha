@@ -224,7 +224,7 @@
               　
             </td>
             <td id="footRight">
-              <input value="登録"  type="button" class="smallButton"  onclick="register()" />
+              <input value="登録"  type="button" class="smallButtonSubmit"  onclick="register()" />
             </td>
           </tr>
         </table>

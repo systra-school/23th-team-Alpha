@@ -212,7 +212,7 @@ if (listSize > intShowLength) {
               <input value="凡例表示" type="button" class="longButton"  onclick="openWindow()" />
 <!--               <input value="印刷" type="button" class="smallButton"  onclick="submitPrin()" /> -->
 <!--             8/23　花田　障害No014　onclickのPrinをPrintに修正まえう -->
-              <input value="印刷" type="button" class="smallButton"  onclick="submitPrint()" />
+              <input value="印刷" type="button" class="smallButtonSubmit"  onclick="submitPrint()" />
 
             </td>
             <td id="footCenter" style="text-align: right;">
