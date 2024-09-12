@@ -32,17 +32,17 @@
               <input type="image" src="img/カレーさん.png" style="widows: 70px; height: 70px"/>
               <input type="image" src="img/カレーさん.png" style="widows: 70px; height: 70px"/>
             </td>
-            <td id="headCenter" style="font-family: Gotu;">
+            <td id="headCenter" style="font-family: Gotu; font-size: 55px;">
             <logic:equal name="<%=RequestSessionNameConstant.SESSION_CMN_LOGIN_USER_INFO %>"
                          property="authorityId"
                          value="<%=CommonConstant.Authority.ADMIN.getId() %>">
-                MENU（प्रशासक）
+                MENU(प्रशासक)
             </logic:equal>
 
             <logic:equal name="<%=RequestSessionNameConstant.SESSION_CMN_LOGIN_USER_INFO %>"
                          property="authorityId"
                          value="<%=CommonConstant.Authority.USER.getId() %>">
-                MENU（सामान्य）
+                MENU(सामान्य)
             </logic:equal>
             </td>
             <td id="headRight" style="display: flex">
@@ -295,6 +295,8 @@
             </td>
           </tr>
         </table>
+        
       </div>
+      
   </body>
 </html>
