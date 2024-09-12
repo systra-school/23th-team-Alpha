@@ -59,15 +59,13 @@ errorbody {
 /*
 * メニュー画面のボタン
 */
-/* .menuBlock {
+.menuBlock {
     margin-left:60px;
     float:left;
     text-align:center;
     padding:30px;
-} */
-.menuBlock {
-    text-align:center;
 }
+
 
 /*
 * 業務body定義
