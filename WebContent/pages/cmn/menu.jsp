@@ -21,38 +21,53 @@
     <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Gajraj+One&family=Gotu&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div id="wrapper">    
+     <div id="wrapper">    
       <div id="header">
         <table class="full-width">
           <tr>
             <td id="headLeft" style="display: flex;">
-              <input type="image" src="img/カレーさん.png" style="widows: 70px; height: 70px"/>
-              <input type="image" src="img/カレーさん.png" style="widows: 70px; height: 70px"/>
-              <input type="image" src="img/カレーさん.png" style="widows: 70px; height: 70px"/>
-              <input type="image" src="img/カレーさん.png" style="widows: 70px; height: 70px"/>
-              <input type="image" src="img/カレーさん.png" style="widows: 70px; height: 70px"/>
+               <a href="https://ciao-curry.com/">
+              <input type="image" src="img/カレーさん.png" style="widows: 70px; height: 70px" />
+              </a>
+              <a href="https://100hourscurry.jp/">
+              <input type="image" src="img/カレーさん.png" style="widows: 70px; height: 70px" />
+              </a>
+              <a href="https://tokyomixcurry.com/">
+              <input type="image" src="img/カレーさん.png" style="widows: 70px; height: 70px" />
+              </a>
+              <a href="https://www.soupcurry-king.shop/">
+              <input type="image" src="img/カレーさん.png" style="widows: 70px; height: 70px" />
+              </a>
+              <a href="https://chancurry.com/">
+              <input type="image" src="img/カレーさん.png" style="widows: 70px; height: 70px" />
+              </a>
             </td>
-            <td id="headCenter" style="font-family: Gotu; font-size: 55px;">
+            <td id="headCenter" style="font-family: Gotu;">
             <logic:equal name="<%=RequestSessionNameConstant.SESSION_CMN_LOGIN_USER_INFO %>"
                          property="authorityId"
                          value="<%=CommonConstant.Authority.ADMIN.getId() %>">
-                MENU(प्रशासक)
+                MENU（प्रशासक）
             </logic:equal>
 
             <logic:equal name="<%=RequestSessionNameConstant.SESSION_CMN_LOGIN_USER_INFO %>"
                          property="authorityId"
                          value="<%=CommonConstant.Authority.USER.getId() %>">
-                MENU(सामान्य)
+                MENU（सामान्य）
             </logic:equal>
             </td>
             <td id="headRight" style="display: flex">
-  
-              <input type="image" src="img/カレーさん.png" style="widows: 70px; height: 70px"/>
-              <input type="image" src="img/カレーさん.png" style="widows: 70px; height: 70px"/>
-              <input type="image" src="img/カレーさん.png" style="widows: 70px; height: 70px"/>
-              <html:form action="/logout">
-              <input type="image" src="img/カレーさん.png" style="widows: 70px; height: 70px"/>
-              </html:form>
+              <a href="http://yoyogi-curry.com/">
+              <input type="image" src="img/カレーさん.png" style="widows: 70px; height: 70px" />
+              </a>
+              <a href="https://bishnu.co.jp/">
+              <input type="image" src="img/カレーさん.png" style="widows: 70px; height: 70px" />
+              </a>
+              <a href="https://higemeganecurry.com/">
+              <input type="image" src="img/カレーさん.png" style="widows: 70px; height: 70px" />
+              </a>
+              <a href="https://mikazuki-curry.com/">
+              <input type="image" src="img/カレーさん.png" style="widows: 70px; height: 70px" />
+              </a>
               <input type="image" src="img/カレーさん.png" style="widows: 70px; height: 70px"  onclick="logout()" />
             </td>
           </tr>
@@ -69,7 +84,7 @@
             <!-- 勤務実績入力 -->
             <div class="menuBlock">	
             <html:form action="/workRecordInputInit">
-              <input type="image" src="img/神1.png" style="widows: 170px; height: 170px"/>
+              <input type="image" src="img/神1.png" style="widows: 150px; height: 150px"/>
               <br/>
               <input type="submit" value="कर्मचारियों का प्रदर्शन दर्ज करें" class="button1" onclick="workRecordInputInit()" style="font-family: Bakbak One;" />
             </html:form>
@@ -78,7 +93,7 @@
             <!-- 勤務実績確認 -->
             <div class="menuBlock">	
             <html:form action="/workRecordCheckInit">
-              <input type="image" src="img/神2.png " style="widows: 170px; height: 170px"/>
+              <input type="image" src="img/神2.png " style="widows: 150px; height: 150px"/>
               <br/>
               <input type="submit" value="कर्मचारियों का प्रदर्शन सत्यापित करें" class="button2" onclick="workRecordInputInit()" style="font-family: Bakbak One;"/>
             </html:form>
@@ -87,7 +102,7 @@
              <!-- 月別シフト確認 -->
             <div class="menuBlock">	
             <html:form action="/monthlyShiftCheckInit">
-              <input type="image" src="img/神3.png" style="widows: 170px; height: 170px"/>
+              <input type="image" src="img/神3.png" style="widows: 150px; height: 150px"/>
               <br/>
               <input type="submit" value="मासिक शिफ्ट की जाँच" class="button3" onclick="workRecordInputInit()" style="font-family: Bakbak One;"/>
             </html:form>
@@ -96,7 +111,7 @@
              <!-- 日別シフト確認 -->
             <div class="menuBlock">	
             <html:form action="/dailyShiftInit">
-              <input type="image" src="img/神4.png" style="widows: 170px; height: 170px"/>
+              <input type="image" src="img/神4.png" style="widows: 150px; height: 150px"/>
               <br/>
               <input type="submit" value="दैनिक शिफ्ट की जाँच" class="button4" onclick="workRecordInputInit()" style="font-family: Bakbak One;"/>
             </html:form>
@@ -105,7 +120,7 @@
             <!-- 月別シフト入力 -->
             <div class="menuBlock">	
             <html:form action="/monthlyShiftInputInit">
-              <input type="image" src="img/神5.png" style="widows: 170px; height: 170px"/>
+              <input type="image" src="img/神5.png" style="widows: 150px; height: 150px"/>
               <br/>
               <input type="submit" value="मासिक शिफ्ट इनपुट" class="button5" onclick="workRecordInputInit()" style="font-family: Bakbak One;"/>
             </html:form>
@@ -114,7 +129,7 @@
             <!-- 出勤希望日確認 -->
             <div class="menuBlock">	
             <html:form action="/workDateRequestCheckInit">
-              <input type="image" src="img/神6.png" style="widows: 170px; height: 170px"/>
+              <input type="image" src="img/神6.png" style="widows: 150px; height: 150px"/>
               <br/>
               <input type="submit" value="कार्य दिवस की इच्छा की जाँच" class="button6" onclick="workRecordInputInit()" style="font-family: Bakbak One;"/>
             </html:form>
@@ -123,7 +138,7 @@
             <!-- 基本シフト登録 -->
             <div class="menuBlock">	
             <html:form action="/baseShiftInit">
-              <input type="image" src="img/神7.png" style="widows: 170px; height: 170px"/>
+              <input type="image" src="img/神7.png" style="widows: 150px; height: 150px"/>
               <br/>
               <input type="submit" value="मूल शिफ्ट पंजीकरण" class="button7" onclick="workRecordInputInit()" style="font-family: Bakbak One;"/>
             </html:form>
@@ -132,7 +147,7 @@
             <!-- シフトマスタメンテナンス -->
             <div class="menuBlock">	
             <html:form action="/shiftMstMnt">
-              <input type="image" src="img/神8.png" style="widows: 170px; height: 170px"/>
+              <input type="image" src="img/神8.png" style="widows: 150px; height: 150px"/>
               <br/>
               <input type="submit" value="शिफ्ट मास्टर मेंटेनेंस" class="button8" onclick="workRecordInputInit()" style="font-family: Bakbak One;"/>
             </html:form>
@@ -141,7 +156,7 @@
             <!-- 社員マスタメンテナンス -->
              <div class="menuBlock">	
             <html:form action="/employeeMstMnt">
-              <input type="image" src="img/神9.png" style="widows: 170px; height: 170px"/>
+              <input type="image" src="img/神9.png" style="widows: 150px; height: 150px"/>
               <br/>
               <input type="submit" value="कर्मचारी मास्टर मेंटेनेंस" class="button9" onclick="workRecordInputInit()" style="font-family: Bakbak One;"/>
             </html:form>
@@ -229,51 +244,49 @@
           <div  style="margin:auto;">
           
           <!-- 勤務実績入力 -->
-          <div class="menuBlock">	
+            <div class="menuBlock">	
             <html:form action="/workRecordInputInit">
-              <input type="image" src="img/神1.png" style="widows: 170px; height: 170px"/>
+              <input type="image" src="img/神1.png" style="widows: 150px; height: 150px"/>
               <br/>
               <input type="submit" value="कर्मचारियों का प्रदर्शन दर्ज करें" class="button1" onclick="workRecordInputInit()" style="font-family: Bakbak One;" />
             </html:form>
-          </div> 
-          
-          <!-- 出勤希望日入力 -->
-          <div class="menuBlock">	
+            </div> 
+            
+            <!-- 出勤希望日入力 -->
+            <div class="menuBlock">	
             <html:form action="/workDateRequestInputInit">
-              <input type="image" src="img/神6.png" style="widows: 170px; height: 170px"/>
+              <input type="image" src="img/神6.png" style="widows: 150px; height: 150px"/>
               <br/>
               <input type="submit" value="कार्य दिवस की इच्छा की जाँच" class="button6" onclick="workRecordInputInit()" style="font-family: Bakbak One;"/>
-           </html:form>
-          </div>
-          
-          <!-- 月別シフト確認 -->
-           <div class="menuBlock">	
+            </html:form>
+            </div>
+            
+            <!-- 月別シフト確認 -->
+            <div class="menuBlock">	
             <html:form action="/monthlyShiftCheckInit">
-              <input type="image" src="img/神3.png" style="widows: 170px; height: 170px"/>
+              <input type="image" src="img/神3.png" style="widows: 150px; height: 150px"/>
               <br/>
               <input type="submit" value="मासिक शिफ्ट की जाँच" class="button3" onclick="workRecordInputInit()" style="font-family: Bakbak One;"/>
             </html:form>
-           </div>
-          
-          <!-- 日別シフト確認 -->
-          <div class="menuBlock">	
+            </div>
+             
+             <!-- 日別シフト確認 -->
+            <div class="menuBlock">	
             <html:form action="/dailyShiftInit">
-              <input type="image" src="img/神4.png" style="widows: 170px; height: 170px"/>
+              <input type="image" src="img/神4.png" style="widows: 150px; height: 150px"/>
               <br/>
               <input type="submit" value="दैनिक शिफ्ट की जाँच" class="button4" onclick="workRecordInputInit()" style="font-family: Bakbak One;"/>
             </html:form>
-           </div>
-          
-         <!--  基本シフト確認 -->
-          <div class="menuBlock">	
+            </div>
+            
+            <!-- 基本シフト確認 -->
+            <div class="menuBlock">	
             <html:form action="/baseShiftCheckInit">
-              <input type="image" src="img/神7.png" style="widows: 170px; height: 170px"/>
+              <input type="image" src="img/神7.png" style="widows: 150px; height: 150px"/>
               <br/>
               <input type="submit" value="मूल शिफ्ट पंजीकरण" class="button7" onclick="workRecordInputInit()" style="font-family: Bakbak One;"/>
             </html:form>
-           </div>
-          
-
+            </div>
           
           
           <%-- <div class="menuBlock">
@@ -295,6 +308,8 @@
               <input type="submit" value="基本シフト確認" class="bigButton" />
             </html:form>
           </div> --%>
+          
+          
           
           <%-- <div class="menuBlock">
             <html:form action="/workRecordInputInit">
