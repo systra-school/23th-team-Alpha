@@ -49,9 +49,10 @@
               <input type="image" src="img/カレーさん.png" style="widows: 70px; height: 70px"/>
               <input type="image" src="img/カレーさん.png" style="widows: 70px; height: 70px"/>
               <input type="image" src="img/カレーさん.png" style="widows: 70px; height: 70px"/>
+              <html:form action="/logout">
               <input type="image" src="img/カレーさん.png" style="widows: 70px; height: 70px"/>
-
-              <input value="ログアウト" type="button" class="smallButton"  onclick="logout()" />
+              </html:form>
+              <input type="image" src="img/カレーさん.png" style="widows: 70px; height: 70px"  onclick="logout()" />
             </td>
           </tr>
         </table>
