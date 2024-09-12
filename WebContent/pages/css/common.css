@@ -1,4 +1,4 @@
-body {
+/*body {
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -10,6 +10,48 @@ body {
 @keyframes rainbowAnimation {
     0% { background-position: 0% 0%; }
     100% { background-position: 100% 100%; }
+}*/
+
+body {
+	overflow: hidden;
+    width:100%;
+	margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;  
+    background-image: repeating-linear-gradient(
+        to bottom right,
+        transparent,
+        #fff
+    );
+    animation: colorRotation 10s linear 0s infinite;
+    
+    box-sizing: border-box;
+    border: 16px solid red; 
+}
+
+@keyframes colorRotation {
+  0% {
+    background-color: hsl(0deg, 80%, 50%);
+  }
+  16.66% {
+    background-color: hsl(60deg, 80%, 50%);
+  }
+  33.33% {
+    background-color: hsl(120deg, 80%, 50%);
+  }
+  50% {
+    background-color: hsl(180deg, 80%, 50%);
+  }
+  66.66% {
+    background-color: hsl(240deg, 80%, 50%);
+  }
+  83.33% {
+    background-color: hsl(300deg, 80%, 50%);
+  }
+  100% {
+    background-color: hsl(360deg, 80%, 50%);
+  }
 }
 
 errorbody {
@@ -34,7 +76,7 @@ errorbody {
 * ヘッダー定義
 */
 #header {
-    top: 2px;
+	margin-top: 15px;
     height: 100px;
     /* background: rgba(0, 0, 0, 0.6); */
     color: #fff;
@@ -46,7 +88,7 @@ errorbody {
     text-align:center;
 }
 #headCenter {
-    font-size: 24px;
+    font-size: 35px;
     color: #522886;
     width:70%;
     text-align:center;
@@ -85,6 +127,8 @@ errorbody {
     /* background: rgba(0, 0, 0, 0.6); */
     color: #fff;
     /* box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3); */
+                position: absolute;
+            bottom: 0;
 }
 
 #footLeft {
@@ -614,3 +658,4 @@ errorbody {
   color         : #ff00ff;     /* 背景色     */
   background    : #ffffff;     /* 文字色     */
 }
+
