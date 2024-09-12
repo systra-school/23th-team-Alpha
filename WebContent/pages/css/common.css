@@ -35,10 +35,10 @@ errorbody {
 */
 #header {
     top: 2px;
-    height: 40px;
-    background: rgba(0, 0, 0, 0.6);
+    height: 100px;
+    /* background: rgba(0, 0, 0, 0.6); */
     color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); */
 }
 
 #headLeft {
@@ -82,9 +82,9 @@ errorbody {
     bottom: 1%;
     height: 70px;
     width: 100%;
-    background: rgba(0, 0, 0, 0.6);
+    /* background: rgba(0, 0, 0, 0.6); */
     color: #fff;
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+    /* box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3); */
 }
 
 #footLeft {
@@ -438,4 +438,179 @@ errorbody {
   left        : 50%;                  /* 文字位置（横）          */
   transform   : translateY(-50%)
                 translateX(-50%);     /* 文字の高さ分ずらす      */
+}
+
+
+/* 
+メニューボタン
+ */
+.button1 {
+  display       : inline-block;
+  font-size     : 8pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 12px 12px;   /* 余白       */
+  background    : #ff007f;     /* 背景色     */
+  color         : #ffffff;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  box-shadow    : 2px 2px 3px #666666;  /* 影の設定 */
+  border        : 2px solid #ff007f;    /* 枠の指定 */
+}
+.button1:hover {
+  box-shadow    : none;        /* カーソル時の影消去 */
+  color         : #ff007f;     /* 背景色     */
+  background    : #ffffff;     /* 文字色     */
+}
+
+.button2 {
+  display       : inline-block;
+  font-size     : 8pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 12px 12px;   /* 余白       */
+  background    : #00007f;     /* 背景色     */
+  color         : #ffffff;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  box-shadow    : 2px 2px 3px #666666;  /* 影の設定 */
+  border        : 2px solid #00007f;    /* 枠の指定 */
+}
+.button2:hover {
+  box-shadow    : none;        /* カーソル時の影消去 */
+  color         : #00007f;     /* 背景色     */
+  background    : #ffffff;     /* 文字色     */
+}
+
+.button3 {
+  display       : inline-block;
+  font-size     : 8pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 12px 12px;   /* 余白       */
+  background    : #66ff66;     /* 背景色     */
+  color         : #ffffff;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  box-shadow    : 2px 2px 3px #666666;  /* 影の設定 */
+  border        : 2px solid #66ff66;    /* 枠の指定 */
+}
+.button3:hover {
+  box-shadow    : none;        /* カーソル時の影消去 */
+  color         : #66ff66;     /* 背景色     */
+  background    : #ffffff;     /* 文字色     */
+}
+
+.button4 {
+  display       : inline-block;
+  font-size     : 8pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 12px 12px;   /* 余白       */
+  background    : #ff7f00;     /* 背景色     */
+  color         : #ffffff;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  box-shadow    : 2px 2px 3px #666666;  /* 影の設定 */
+  border        : 2px solid #ff7f00;    /* 枠の指定 */
+}
+.button4:hover {
+  box-shadow    : none;        /* カーソル時の影消去 */
+  color         : #ff7f00;     /* 背景色     */
+  background    : #ffffff;     /* 文字色     */
+}
+
+.button5 {
+  display       : inline-block;
+  font-size     : 8pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 12px 12px;   /* 余白       */
+  background    : #666600;     /* 背景色     */
+  color         : #ffffff;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  box-shadow    : 2px 2px 3px #666666;  /* 影の設定 */
+  border        : 2px solid #666600;    /* 枠の指定 */
+}
+.button5:hover {
+  box-shadow    : none;        /* カーソル時の影消去 */
+  color         : #666600;     /* 背景色     */
+  background    : #ffffff;     /* 文字色     */
+}
+
+.button6 {
+  display       : inline-block;
+  font-size     : 8pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 12px 12px;   /* 余白       */
+  background    : #ff0000;     /* 背景色     */
+  color         : #ffffff;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  box-shadow    : 2px 2px 3px #666666;  /* 影の設定 */
+  border        : 2px solid #ff0000;    /* 枠の指定 */
+}
+.button6:hover {
+  box-shadow    : none;        /* カーソル時の影消去 */
+  color         : #ff0000;     /* 背景色     */
+  background    : #ffffff;     /* 文字色     */
+}
+
+.button7 {
+  display       : inline-block;
+  font-size     : 8pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 12px 12px;   /* 余白       */
+  background    : #00b3b3;     /* 背景色     */
+  color         : #ffffff;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  box-shadow    : 2px 2px 3px #666666;  /* 影の設定 */
+  border        : 2px solid #00b3b3;    /* 枠の指定 */
+}
+.button7:hover {
+  box-shadow    : none;        /* カーソル時の影消去 */
+  color         : #00b3b3;     /* 背景色     */
+  background    : #ffffff;     /* 文字色     */
+}
+
+.button8 {
+  display       : inline-block;
+  font-size     : 8pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 12px 12px;   /* 余白       */
+  background    : #7f00ff;     /* 背景色     */
+  color         : #ffffff;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  box-shadow    : 2px 2px 3px #666666;  /* 影の設定 */
+  border        : 2px solid #7f00ff;    /* 枠の指定 */
+}
+.button8:hover {
+  box-shadow    : none;        /* カーソル時の影消去 */
+  color         : #7f00ff;     /* 背景色     */
+  background    : #ffffff;     /* 文字色     */
+}
+
+.button9 {
+  display       : inline-block;
+  font-size     : 8pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 12px 12px;   /* 余白       */
+  background    : #ff00ff;     /* 背景色     */
+  color         : #ffffff;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  box-shadow    : 2px 2px 3px #666666;  /* 影の設定 */
+  border        : 2px solid #ff00ff;    /* 枠の指定 */
+}
+.button9:hover {
+  box-shadow    : none;        /* カーソル時の影消去 */
+  color         : #ff00ff;     /* 背景色     */
+  background    : #ffffff;     /* 文字色     */
 }
