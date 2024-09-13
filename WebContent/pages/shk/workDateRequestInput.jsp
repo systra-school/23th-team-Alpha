@@ -86,20 +86,22 @@
 			<table class="full-width">
           		<tr>
             		<td id="headLeft">
-              			<input value="戻る" type="button" class="smallButton"  onclick="doSubmit('/kikin-for-Struts-bug/menu.do')" />
+              			<input value="戻る" type="image" src="img/タージ.png"  style="widows: 100px; height: 100px"  onclick="doSubmit('/kikin-for-Struts-bug/menu.do')" />
             		</td>
             		<td id="headCenter">
               			出勤希望入力
             		</td>
             		<td id="headRight">
-              			<input value="ログアウト" type="button" class="smallButton"  onclick="logout()" />
+              			<input value="ログアウト" type="image" src="img/カレーさん.png"  style="widows: 100px; height: 100px"  onclick="logout()" />
             		</td>
           		</tr>
         	</table>
       	</div>
       	<div id="businessBody" style="overflow: hidden;">
-      	<%--障害No65 9/7 稲永　初期表示右寄りを解消 --%>
-      	<div style="margin:aout;"> 
+      	<%--障害No65 9/7 稲永　初期表示右寄りを解消
+      	<div style="margin:aout;"> --%>
+      	<%-- 訂正 --%>
+      	<div style="margin:80px 120px;">
           <html:form action="/workDateRequestInputInit" >
             表示年月：
             <html:select name="workDateRequestInputForm" property="yearMonth" onchange="submitSearch()">

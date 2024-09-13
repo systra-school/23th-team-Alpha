@@ -48,19 +48,19 @@
         <table class="full-width">
           <tr>
             <td id="headLeft">
-              <input value="戻る" type="button" class="smallButton"  onclick="doSubmit('/kikin-for-Struts-bug/menu.do')" />
+              <input value="戻る" type="image" src="img/タージ.png"  style="widows: 100px; height: 100px"  onclick="doSubmit('/kikin-for-Struts-bug/menu.do')" />
             </td>
             <td id="headCenter">
               基本シフト確認
             </td>
             <td id="headRight">
-              <input value="ログアウト" type="button" class="smallButton"  onclick="logout()" />
+              <input value="ログアウト" type="image" src="img/カレーさん.png"  style="widows: 100px; height: 100px"  onclick="logout()" />
             </td>
           </tr>
         </table>
       </div>
-      <div id="businessBody">
-        <html:form action="/baseShiftRegister" >
+      <div id="businessBody" style="margin:80px auto;">
+        <html:form action="/baseShiftRegister">
           <%-- 凡例 --%>
           <div id="pattern" style="width:476px; margin-left:20%; float:left">
             <div>

@@ -85,13 +85,13 @@ if (listSize > intShowLength) {
         <table class="full-width">
           <tr>
             <td id="headLeft">
-              <input value="戻る" type="button" class="smallButton"  onclick="doSubmit('/kikin-for-Struts-bug/menu.do')" />
+              <input value="戻る" type="image" src="img/タージ.png"  style="widows: 100px; height: 100px" onclick="doSubmit('/kikin-for-Struts-bug/menu.do')" />
             </td>
             <td id="headCenter">
               月別シフト確認
             </td>
             <td id="headRight">
-              <input value="ログアウト" type="button" class="smallButton"  onclick="logout()" />
+              <input value="ログアウト" type="image" src="img/カレーさん.png"  style="widows: 100px; height: 100px"  onclick="logout()" />
             </td>
           </tr>
         </table>
@@ -99,8 +99,8 @@ if (listSize > intShowLength) {
       <div id="businessBody" style="overflow: hidden;">
         <html:form action="/workDateRequestCheckInit" >
           <div>
-            <div id="resize" class="full-width" style="margin-left:9%;">
-              <div style="float: left; width: 804px; text-align: left; margin-left:13%;">
+            <div id="resize" class="full-width" style="margin:30px 150px ;">
+              <div style="float: left; width: 700px; text-align: left; margin-left:10%;">
 	              表示年月：
 	              <bean:define id="sessionYearMonth" name="monthlyShiftCheckForm" property="yearMonth" type="String"/>
 	              <html:select property="yearMonth" name="monthlyShiftCheckForm"  onchange="submitSearch()">
