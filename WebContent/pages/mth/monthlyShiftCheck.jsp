@@ -78,6 +78,7 @@ if (listSize > intShowLength) {
     <title>月別シフト確認画面</title>
 
     <link href="/kikin-for-Struts-bug/pages/css/common.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Gajraj+One&family=Gotu&display=swap" rel="stylesheet">
   </head>
   <body>
     <div id="wrapper">
@@ -88,7 +89,7 @@ if (listSize > intShowLength) {
               <input value="戻る" type="image" src="img/タージ.png"  style="widows: 100px; height: 100px; margin-right: 50px" onclick="doSubmit('/kikin-for-Struts-bug/menu.do')" />
             </td>
             <td id="headCenter">
-              月別シフト確認
+              मासिक शिफ्ट की जाँच / 月別シフト確認
             </td>
             <td id="headRight">
                <input value="ログアウト" type="image" src="img/カレーさん.png"  style="widows: 100px; height: 100px; margin-left: 80px"  onclick="logout()" />
@@ -99,9 +100,8 @@ if (listSize > intShowLength) {
       <div id="businessBody" style="overflow: hidden;">
         <html:form action="/workDateRequestCheckInit" >
           <div>
-            <div id="resize" class="full-width" style="margin-left:9%;">
-              <div style="float: left; width: 804px; text-align: left; margin-left:13%;">
-	              प्रदर्शित माह और वर्ष：
+            <div id="resize" class="full-width" style="margin-left:11%; margin-top: 50px;">
+              <div style="float: left; width: 804px; text-align: left; margin-left:1%;">
 	              <bean:define id="sessionYearMonth" name="monthlyShiftCheckForm" property="yearMonth" type="String"/>
 	              <html:select property="yearMonth" name="monthlyShiftCheckForm"  onchange="submitSearch()">
 	              <html:optionsCollection name="monthlyShiftCheckForm"
@@ -110,10 +110,10 @@ if (listSize > intShowLength) {
 	                                      label="value"/>
 	              </html:select>
               </div>
-              <div style="float: left; width: 244px; text-align: center;">
+              <div style="float: left; width: 300px; text-align: center;">
 <%--               9/10　高田　障害デザインNo002　前への文言変更
  	              <html:link href="/kikin-for-Struts-bug/monthlyShiftCheckPage.do?paging=back">前へ</html:link> --%>
-	              <html:link href="/kikin-for-Struts-bug/monthlyShiftCheckPage.do?paging=back"> पिछले कर्मचारी को</html:link>
+	              <html:link href="/kikin-for-Struts-bug/monthlyShiftCheckPage.do?paging=back" style="font-family: Bakbak One;"> पिछले कर्मचारी को</html:link>
 	              
 	              <%-- 
 	              9/4 掛江 障害No94 次への遷移先を修正
@@ -123,7 +123,7 @@ if (listSize > intShowLength) {
 	               9/10　高田　障害デザインNo002　次への文言変更
 	              <html:link href="/kikin-for-Struts-bug/monthlyShiftCheckPage.do?paging=next">次へ</html:link>
 	              --%>
-	              <html:link href="/kikin-for-Struts-bug/monthlyShiftCheckPage.do?paging=next">अगले कर्मचारी को</html:link>
+	              <html:link href="/kikin-for-Struts-bug/monthlyShiftCheckPage.do?paging=next" style="font-family: Bakbak One;">अगले कर्मचारी को</html:link>
 	              <bean:write name="monthlyShiftCheckForm" property="countPage"/>/
 	              <bean:write name="monthlyShiftCheckForm" property="maxPage"/>
               </div>
@@ -143,7 +143,7 @@ if (listSize > intShowLength) {
                     </tr>
                     <logic:iterate offset="offset" length="<%=showLength %>"  id="monthlyShiftCheckBeanList" name="monthlyShiftCheckForm" property="monthlyShiftCheckBeanList">
                       <tr  class="tableBody"  height="<%=heightSize %>px">
-                        <td width="150px" align="center">
+                        <td width="150px" align="center" style="background-color: #FF6633; color: f9f95a">
                           <bean:write property="employeeName" name="monthlyShiftCheckBeanList"/><br>
                         </td>
                       </tr>
