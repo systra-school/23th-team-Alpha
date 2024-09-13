@@ -108,13 +108,13 @@ if (listSize > intShowLength) {
         <table  class="centered-container">
           <tr>
             <td id="headLeft">
-              <input value="戻る" type="button" class="smallButton"  onclick="doSubmit('/kikin-for-Struts-bug/menu.do')" />
+              <input value="戻る" type="image" src="img/タージ.png"  style="widows: 80px; height: 80px; " onclick="doSubmit('/kikin-for-Struts-bug/menu.do')" />
             </td>
             <td id="headCenter">
               月別シフト入力
             </td>
             <td id="headRight">
-              <input value="ログアウト" type="button" class="smallButton"  onclick="logout()" />
+              <input value="ログアウト" type="image" src="img/カレーさん.png"  style="widows: 80px; height: 80px;"  onclick="logout()" />
             </td>
           </tr>
         </table>
@@ -123,7 +123,7 @@ if (listSize > intShowLength) {
         <html:form action="/monthlyShiftInputInit" >
           <div>
             <div id="resize"> 
-              表示年月：
+              प्रदर्शित माह और वर्ष：
               <bean:define id="sessionYearMonth" name="monthlyShiftInputForm" property="yearMonth" type="String"/>
               <html:select property="yearMonth" name="monthlyShiftInputForm"  onchange="submitSearch()">
               <html:optionsCollection name="monthlyShiftInputForm"
@@ -138,8 +138,8 @@ if (listSize > intShowLength) {
 <%--              9/10　高田　障害No004　前へ・次への文言変更
                <html:link href="/kikin-for-Struts-bug/monthlyShiftInputPage.do?paging=back">前へ</html:link>
                <html:link href="/kikin-for-Struts-bug/monthlyShiftInputPage.do?paging=next">次へ</html:link> --%>
-              <html:link href="/kikin-for-Struts-bug/monthlyShiftInputPage.do?paging=back">前の社員へ</html:link>
-              <html:link href="/kikin-for-Struts-bug/monthlyShiftInputPage.do?paging=next">次の社員へ</html:link>
+              <html:link href="/kikin-for-Struts-bug/monthlyShiftInputPage.do?paging=back">पिछले कर्मचारी को</html:link>
+              <html:link href="/kikin-for-Struts-bug/monthlyShiftInputPage.do?paging=next">अगले कर्मचारी को</html:link>
               <bean:write name="monthlyShiftInputForm" property="countPage"/>/
               <bean:write name="monthlyShiftInputForm" property="maxPage"/>
             
@@ -475,25 +475,48 @@ if (listSize > intShowLength) {
           <tr>
             <td id="footLeft">
             <div style="margin-left:50px;white-space: nowrap;">
-	          <input value="凡例表示" type="button" class="longButton"  onclick="openWindow()" />
+              <input type="image" src="img/花うるさい.webp"  style="widows: 60px; height: 60px;">
+	          <input value="凡例表示" type="image" src="img/インドおじ.png"  style="widows: 60px; height: 60px; margin-right: 20px;"  onclick="openWindow()" />
 	          <%--
 	          9/10　高田　障害No023　基本シフト反映と出勤希望日確認の位置を変更
 	          <input value="基本シフト反映" type="button" class="longButton"   onclick="submitImportKihon()"/>
 	          --%>
-	          <input value="出勤希望日確認" type="button" class="longButton"  onclick="submitWorkDateRequest()" />	          
+	          <!-- <input value="出勤希望日確認" type="button" class="longButton"  onclick="submitWorkDateRequest()" /> -->
+	           <input value="出勤希望日確認" type="image" src="img/インドおば.png"  style="widows: 60px; height: 60px;margin-right: 20px;"  onclick="submitWorkDateRequest()" />          
 	          <%-- 9/6 坂本　障害No110　出勤希望日反映ボタン押下時のパスを変更 --%>
 	          <%-- <input value="出勤希望日反映" type="button" class="longButton"  onclick="submitImportKihon()" /> --%>
 	          <%--
 	          9/10　高田　デザイン障害No023　基本シフト反映と出勤希望日確認の位置を変更
  	          <input value="出勤希望日反映" type="button" class="longButton"  onclick="submitWorkDateRequest()" /> --%>
-	          <input value="基本シフト反映" type="button" class="longButton"   onclick="submitImportKihon()"/>
+	         <!--  <input value="基本シフト反映" type="button" class="longButton"   onclick="submitImportKihon()"/> -->
+	           <input value="基本シフト反映" type="image" src="img/インドおにい.png"  style="widows: 60px; height: 60px;margin-right: 20px;"  onclick="submitImportKihon()" /> 
+	           <input type="image" src="img/花うるさい.webp"  style="widows: 60px; height: 60px;"> 
+	           <input type="image" src="img/花うるさい.webp"  style="widows: 60px; height: 60px;">
+	           <input type="image" src="img/花うるさい.webp"  style="widows: 60px; height: 60px;">
+	           <input type="image" src="img/花うるさい.webp"  style="widows: 60px; height: 60px;">
+	           <input type="image" src="img/花うるさい.webp"  style="widows: 60px; height: 60px;">
+	           <input type="image" src="img/花うるさい.webp"  style="widows: 60px; height: 60px;">
+	           <input type="image" src="img/花うるさい.webp"  style="widows: 60px; height: 60px;">
+	           <input type="image" src="img/花うるさい.webp"  style="widows: 60px; height: 60px;">
+	           <input type="image" src="img/花うるさい.webp"  style="widows: 60px; height: 60px;">
+	           <input type="image" src="img/花うるさい.webp"  style="widows: 60px; height: 60px;">
+	           <input type="image" src="img/花うるさい.webp"  style="widows: 60px; height: 60px;">
+	           <input type="image" src="img/花うるさい.webp"  style="widows: 60px; height: 60px;">
+	           <input type="image" src="img/花うるさい.webp"  style="widows: 60px; height: 60px;">
+	           <input type="image" src="img/花うるさい.webp"  style="widows: 60px; height: 60px;">
+	           <input type="image" src="img/花うるさい.webp"  style="widows: 60px; height: 60px;">
+	           <input type="image" src="img/花うるさい.webp"  style="widows: 60px; height: 60px;">
 	        </div>
             </td>
             <td id="footCenter" style="text-align: right;">
-
+               <!-- <input type="image" src="img/花うるさい.webp"  style="widows: 60px; height: 60px;">
+               <input type="image" src="img/花うるさい.webp"  style="widows: 60px; height: 60px;">
+               <input type="image" src="img/花うるさい.webp"  style="widows: 60px; height: 60px;">
+               <input type="image" src="img/花うるさい.webp"  style="widows: 60px; height: 60px;"> -->
             </td>
             <td id="footRight">
-              <input value="登録" type="button" class="smallButtonSubmit"  onclick="submitRegister()" />
+              <!-- <input value="登録" type="button" class="smallButtonSubmit"  onclick="submitRegister()" /> -->
+              <input value="登録"  type="image" src="img/ラブガンジー.png" style="widows: 72px; height: 72px" onclick="submitRegister()" />
             </td>
           </tr>
         </table>
