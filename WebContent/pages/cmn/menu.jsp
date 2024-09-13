@@ -19,6 +19,13 @@
     <title>メニュー画面</title>
     <link href="/kikin-for-Struts-bug/pages/css/common.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Gajraj+One&family=Gotu&display=swap" rel="stylesheet">
+    
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+   
   </head>
   <body>
      <div id="wrapper">    
@@ -38,21 +45,21 @@
               <a href="https://www.soupcurry-king.shop/">
               <input type="image" src="img/カレーさん.png" style="widows: 70px; height: 70px" />
               </a>
-              <a href="https://chancurry.com/">
-              <input type="image" src="img/カレーさん.png" style="widows: 70px; height: 70px" />
-              </a>
+              <input type="image" src="img/カレーさん.png" name="翻訳" style="widows: 70px; height: 70px"  onclick="tranText()" />
             </td>
             <td id="headCenter" style="font-family: Gotu;">
             <logic:equal name="<%=RequestSessionNameConstant.SESSION_CMN_LOGIN_USER_INFO %>"
                          property="authorityId"
                          value="<%=CommonConstant.Authority.ADMIN.getId() %>">
-                MENU（प्रशासक）
+                         <div id="content"><p id="hiText">MENU（प्रशासक）</p>
+                         <p id="jaText" class="hidden">メニュー</p></div>
             </logic:equal>
 
             <logic:equal name="<%=RequestSessionNameConstant.SESSION_CMN_LOGIN_USER_INFO %>"
                          property="authorityId"
                          value="<%=CommonConstant.Authority.USER.getId() %>">
-                MENU（सामान्य）
+                         <div id="content"><p id="hiText">MENU（प्रशासक）</p>
+                         <p id="jaText" class="hidden">メニュー</p></div>
             </logic:equal>
             </td>
             <td id="headRight" style="display: flex">
@@ -363,5 +370,21 @@
          <audio src="/kikin-for-Struts-bug/pages/sounds/click.mp3" autoplay loop>
  
     </audio>
+    
+    <script>
+      function tranText() {
+    		var hiText = document.getElementById('hiText');
+    	    var jaText = document.getElementById('jaText');
+    	    
+    	    if (hiText.classList.contains('hidden')) {
+    	    	hiText.classList.remove('hidden');
+    	    	jaText.classList.add('hidden');
+    	    } else {
+    	    	hiText.classList.add('hidden');
+    	    	jaText.classList.remove('hidden');
+    		}
+    	}
+    </script>
+
   </body>
 </html>
