@@ -92,7 +92,7 @@
       </div>
       <br>
       <div id="businessBody" style="overflow: hidden;">
-        <div style="margin-left:22%;">
+        <div style="margin-left:14%;">
           <html:form>
             <div style="height: 20px; margin-left:405px;">
               表示年月：
@@ -165,7 +165,7 @@
                           <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" >
                           --%>
                           
-                            <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" bgcolor="#b17acc" style="color: white;">
+                            <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" bgcolor="#9900CC" style="color: white;">
                           
                               <logic:empty name="dailyShiftBean" property="strTime00" >
                                 <br>
@@ -208,7 +208,7 @@
                           <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" >
                           --%>
                           
-                            <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" bgcolor="#b17acc" style="color: white;">
+                            <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" bgcolor="#9900CC" style="color: white;">
                             
                               <logic:empty name="dailyShiftBean" property="strTime01" >
                                 <br>
@@ -251,7 +251,7 @@
                           <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" >
                           --%>
                           
-                            <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" bgcolor="#b17acc" style="color: white;">
+                            <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" bgcolor="#9900CC" style="color: white;">
                           
                               <logic:empty name="dailyShiftBean" property="strTime02" >
                                 <br>
@@ -294,7 +294,7 @@
                           <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" >
                           --%>
                           
-                            <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" bgcolor="#b17acc" style="color: white;">
+                            <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" bgcolor="#9900CC" style="color: white;">
                             
                               <logic:empty name="dailyShiftBean" property="strTime03" >
                                 <br>
@@ -337,7 +337,7 @@
                           <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" >
                           --%>
                           
-                            <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" bgcolor="#b17acc" style="color: white;">
+                            <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" bgcolor="#9900CC" style="color: white;">
                           
                               <logic:empty name="dailyShiftBean" property="strTime04" >
                                 <br>
@@ -380,7 +380,7 @@
                           <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" >
                           --%>
                                                     
-                            <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" bgcolor="#b17acc" style="color: white;">
+                            <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" bgcolor="#9900CC" style="color: white;">
                             
                               <logic:empty name="dailyShiftBean" property="strTime05" >
                                 <br>
@@ -423,7 +423,7 @@
                           <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" >
                           --%>
                           
-                            <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" bgcolor="#b17acc" style="color: white;">
+                            <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" bgcolor="#9900CC" style="color: white;">
                             
                               <logic:empty name="dailyShiftBean" property="strTime06" >
                                 <br>
@@ -466,7 +466,7 @@
                           <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" >
                           --%>
                                                     
-                            <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" bgcolor="#b17acc" style="color: white;">
+                            <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" bgcolor="#9900CC" style="color: white;">
                           
                               <logic:empty name="dailyShiftBean" property="strTime07" >
                                 <br>
@@ -509,7 +509,7 @@
                           <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" >
                           --%>
                                                     
-                            <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" bgcolor="#b17acc" style="color: white;">
+                            <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" bgcolor="#9900CC" style="color: white;">
                               <logic:empty name="dailyShiftBean" property="strTime08" >
                                 <br>
                               </logic:empty>
@@ -551,7 +551,7 @@
                           <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" >
                           --%>
                           
-                            <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" bgcolor="#b17acc" style="color: white;">
+                            <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" bgcolor="#9900CC" style="color: white;">
                               <logic:empty name="dailyShiftBean" property="strTime09" >
                                 <br>
                               </logic:empty>
@@ -593,7 +593,7 @@
                           <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" >
                           --%>
                                                     
-                            <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" bgcolor="#b17acc" style="color: white;">
+                            <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" bgcolor="#9900CC" style="color: white;">
                               <logic:empty name="dailyShiftBean" property="strTime10" >
                                 <br>
                               </logic:empty>
@@ -635,7 +635,7 @@
                           <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" >
                           --%>
                           
-                            <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" bgcolor="#b17acc" style="color: white;">
+                            <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" bgcolor="#9900CC" style="color: white;">
 
                               <logic:empty name="dailyShiftBean" property="strTime11" >
                                 <br>
@@ -678,7 +678,7 @@
                           <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" >
                           --%>
                                                     
-                            <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" bgcolor="#b17acc" style="color: white;">
+                            <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" bgcolor="#9900CC" style="color: white;">
                               <logic:empty name="dailyShiftBean" property="strTime12" >
                                 <br>
                               </logic:empty>
@@ -720,7 +720,7 @@
                           <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" >
                           --%>
                                                     
-                            <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" bgcolor="#b17acc" style="color: white;">
+                            <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" bgcolor="#9900CC" style="color: white;">
                             
                               <logic:empty name="dailyShiftBean" property="strTime13" >
                                 <br>
@@ -763,7 +763,7 @@
                           <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" >
                           --%>
                           
-                            <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" bgcolor="#b17acc" style="color: white;">
+                            <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" bgcolor="#9900CC" style="color: white;">
                             
                               <logic:empty name="dailyShiftBean" property="strTime14" >
                                 <br>
@@ -806,7 +806,7 @@
                           <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" >
                           --%>
                           
-                            <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" bgcolor="#b17acc" style="color: white;">
+                            <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" bgcolor="#9900CC" style="color: white;">
                             
                               <logic:empty name="dailyShiftBean" property="strTime15" >
                                 <br>
@@ -833,7 +833,7 @@
                           <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" bgcolor="LightPink">
                           --%>
                           
-                            <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" bgcolor="#b17acc" style="color: white;">
+                            <td width="<%=tdWidth %>px" nowrap="nowrap" align="center">
                             
                               <logic:empty name="dailyShiftBean" property="strTime15" >
                                 <br>
@@ -857,7 +857,7 @@
                           <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" >
                           --%>
                           
-                            <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" bgcolor="#b17acc" style="color: white;">
+                            <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" bgcolor="#9900CC" style="color: white;">
                             
                               <logic:empty name="dailyShiftBean" property="strTime16" >
                                 <br>
@@ -900,7 +900,7 @@
                           <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" >
                           --%>
                           
-                            <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" bgcolor="#b17acc" style="color: white;">
+                            <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" bgcolor="#9900CC" style="color: white;">
                             
                               <logic:empty name="dailyShiftBean" property="strTime17" >
                                 <br>
@@ -943,7 +943,7 @@
                           <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" >
                           --%>
                           
-                            <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" bgcolor="#b17acc" style="color: white;">
+                            <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" bgcolor="#9900CC" style="color: white;">
                             
                               <logic:empty name="dailyShiftBean" property="strTime18" >
                                 <br>
@@ -979,7 +979,7 @@
                         <logic:iterate id="dailyShiftBean" name="dailyShiftForm" property="dailyShiftBeanList">
                           <logic:equal value="true" name="dailyShiftBean" property="boolTime19">
                           <% // 出勤予定の時間帯 %>
-                            <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" bgcolor="#b17acc" style="color: white;">
+                            <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" bgcolor="#9900CC" style="color: white;">
                               <logic:empty name="dailyShiftBean" property="strTime19" >
                                 <br>
                               </logic:empty>
@@ -1021,7 +1021,7 @@
                           <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" >
                           --%>
                           
-                            <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" bgcolor="#b17acc" style="color: white;">
+                            <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" bgcolor="#9900CC" style="color: white;">
                             
                               <logic:empty name="dailyShiftBean" property="strTime20" >
                                 <br>
@@ -1064,7 +1064,7 @@
                           <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" >
                           --%>
                           
-                            <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" bgcolor="#b17acc" style="color: white;">
+                            <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" bgcolor="#9900CC" style="color: white;">
                             
                               <logic:empty name="dailyShiftBean" property="strTime21" >
                                 <br>
@@ -1107,7 +1107,7 @@
                           <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" >
                           --%>
                           
-                            <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" bgcolor="#b17acc" style="color: white;">
+                            <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" bgcolor="#9900CC" style="color: white;">
                             
                               <logic:empty name="dailyShiftBean" property="strTime22" >
                                 <br>
@@ -1143,7 +1143,7 @@
                         <logic:iterate id="dailyShiftBean" name="dailyShiftForm" property="dailyShiftBeanList">
                           <logic:equal value="true" name="dailyShiftBean" property="boolTime23">
                           <% // 出勤予定の時間帯 %>
-                            <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" bgcolor="#b17acc" style="color: white;">
+                            <td width="<%=tdWidth %>px" nowrap="nowrap" align="center" bgcolor="#9900CC" style="color: white;">
                               <logic:empty name="dailyShiftBean" property="strTime23" >
                                 <br>
                               </logic:empty>
