@@ -85,13 +85,13 @@ if (listSize > intShowLength) {
         <table class="full-width">
           <tr>
             <td id="headLeft">
-              <input value="戻る" type="image" src="img/タージ.png"  style="widows: 100px; height: 100px" onclick="doSubmit('/kikin-for-Struts-bug/menu.do')" />
+              <input value="戻る" type="image" src="img/タージ.png"  style="widows: 100px; height: 100px; margin-right: 50px" onclick="doSubmit('/kikin-for-Struts-bug/menu.do')" />
             </td>
             <td id="headCenter">
               月別シフト確認
             </td>
             <td id="headRight">
-              <input value="ログアウト" type="image" src="img/カレーさん.png"  style="widows: 100px; height: 100px"  onclick="logout()" />
+               <input value="ログアウト" type="image" src="img/カレーさん.png"  style="widows: 100px; height: 100px; margin-left: 80px"  onclick="logout()" />
             </td>
           </tr>
         </table>
@@ -99,9 +99,9 @@ if (listSize > intShowLength) {
       <div id="businessBody" style="overflow: hidden;">
         <html:form action="/workDateRequestCheckInit" >
           <div>
-            <div id="resize" class="full-width" style="margin:30px 150px ;">
-              <div style="float: left; width: 700px; text-align: left; margin-left:10%;">
-	              表示年月：
+            <div id="resize" class="full-width" style="margin-left:9%;">
+              <div style="float: left; width: 804px; text-align: left; margin-left:13%;">
+	              प्रदर्शित माह और वर्ष：
 	              <bean:define id="sessionYearMonth" name="monthlyShiftCheckForm" property="yearMonth" type="String"/>
 	              <html:select property="yearMonth" name="monthlyShiftCheckForm"  onchange="submitSearch()">
 	              <html:optionsCollection name="monthlyShiftCheckForm"
@@ -113,7 +113,7 @@ if (listSize > intShowLength) {
               <div style="float: left; width: 244px; text-align: center;">
 <%--               9/10　高田　障害デザインNo002　前への文言変更
  	              <html:link href="/kikin-for-Struts-bug/monthlyShiftCheckPage.do?paging=back">前へ</html:link> --%>
-	              <html:link href="/kikin-for-Struts-bug/monthlyShiftCheckPage.do?paging=back">前の社員へ</html:link>
+	              <html:link href="/kikin-for-Struts-bug/monthlyShiftCheckPage.do?paging=back"> पिछले कर्मचारी को</html:link>
 	              
 	              <%-- 
 	              9/4 掛江 障害No94 次への遷移先を修正
@@ -123,7 +123,7 @@ if (listSize > intShowLength) {
 	               9/10　高田　障害デザインNo002　次への文言変更
 	              <html:link href="/kikin-for-Struts-bug/monthlyShiftCheckPage.do?paging=next">次へ</html:link>
 	              --%>
-	              <html:link href="/kikin-for-Struts-bug/monthlyShiftCheckPage.do?paging=next">次の社員へ</html:link>
+	              <html:link href="/kikin-for-Struts-bug/monthlyShiftCheckPage.do?paging=next">अगले कर्मचारी को</html:link>
 	              <bean:write name="monthlyShiftCheckForm" property="countPage"/>/
 	              <bean:write name="monthlyShiftCheckForm" property="maxPage"/>
               </div>
@@ -209,15 +209,36 @@ if (listSize > intShowLength) {
             <td id="footLeft">
                         <%-- 　8/28　高田　障害No015　[openWindo()]をopenWindo()へ変更　 --%>
 <!--               <input value="凡例表示" type="button" class="longButton"  onclick="openWindo()" /> -->
-              <input value="凡例表示" type="button" class="longButton"  onclick="openWindow()" />
+              <!-- <input value="凡例表示" type="button" class="longButton"  onclick="openWindow()" /> -->
+              <input type="image" src="img/花うるさい.webp"  style="widows: 60px; height: 60px;">
+              <input type="image" src="img/花うるさい.webp"  style="widows: 60px; height: 60px;">
+              <input type="image" src="img/花うるさい.webp"  style="widows: 60px; height: 60px;">
+              <input value="凡例表示" type="image" src="img/インドおじ.png"  style="widows: 60px; height: 60px; margin-left: 60px"  onclick="openWindow()" />
+              <input value="印刷" type="image" src="img/インドキッズ.png"  style="widows: 60px; height: 60px;"  onclick="submitPrint()" />
+              
 <!--               <input value="印刷" type="button" class="smallButton"  onclick="submitPrin()" /> -->
 <!--             8/23　花田　障害No014　onclickのPrinをPrintに修正まえう -->
-              <input value="印刷" type="button" class="smallButtonSubmit"  onclick="submitPrint()" />
-
+             <!--  <input value="印刷" type="button" class="smallButtonSubmit"  onclick="submitPrint()" /> -->
             </td>
             <td id="footCenter" style="text-align: right;">
+              <input type="image" src="img/花うるさい.webp"  style="widows: 60px; height: 60px;">
+              <input type="image" src="img/花うるさい.webp"  style="widows: 60px; height: 60px;">
+              <input type="image" src="img/花うるさい.webp"  style="widows: 60px; height: 60px;">
+              <input type="image" src="img/花うるさい.webp"  style="widows: 60px; height: 60px;">
+              <input type="image" src="img/花うるさい.webp"  style="widows: 60px; height: 60px;">
+              <input type="image" src="img/花うるさい.webp"  style="widows: 60px; height: 60px;">
+              <input type="image" src="img/花うるさい.webp"  style="widows: 60px; height: 60px;">
+              <input type="image" src="img/花うるさい.webp"  style="widows: 60px; height: 60px;">
+              <input type="image" src="img/花うるさい.webp"  style="widows: 60px; height: 60px;">
+              <input type="image" src="img/花うるさい.webp"  style="widows: 60px; height: 60px;">
             </td>
             <td id="footRight">
+              <input type="image" src="img/花うるさい.webp"  style="widows: 60px; height: 60px;">
+              <input type="image" src="img/花うるさい.webp"  style="widows: 60px; height: 60px;">
+              <input type="image" src="img/花うるさい.webp"  style="widows: 60px; height: 60px;">
+              <input type="image" src="img/花うるさい.webp"  style="widows: 60px; height: 60px;">
+              <input type="image" src="img/花うるさい.webp"  style="widows: 60px; height: 60px;">
+              <input type="image" src="img/花うるさい.webp"  style="widows: 60px; height: 60px;">
             </td>
           </tr>
         </table>
