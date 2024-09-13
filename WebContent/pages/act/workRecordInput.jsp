@@ -145,13 +145,13 @@
         <table class="full-width">
           <tr>
             <td id="headLeft">
-              <input value="戻る" type="button" class="smallButton"  onclick="doSubmit('/kikin-for-Struts-bug/menu.do')" />
+              <input value="戻る" type="image" src="img/タージ.png"  style="widows: 100px; height: 100px" onclick="doSubmit('/kikin-for-Struts-bug/menu.do')" />
             </td>
             <td id="headCenter">
               勤務実績入力
             </td>
             <td id="headRight">
-                <input value="ログアウト" type="button" class="smallButton"  onclick="logout()" />
+                <input value="ログアウト" type="image" src="img/カレーさん.png"  style="widows: 100px; height: 100px"  onclick="logout()" />
               </td>
           </tr>
         </table>
@@ -309,12 +309,35 @@
           <tr>
               <td id="footLeft">
                 
+                <input value="登録"  type="image" src="img/ガンジー2.png" style="widows: 32px; height: 32px" />
+                <input value="登録"  type="image" src="img/ガンジー2.png" style="widows: 34px; height: 34px" />
+                <input value="登録"  type="image" src="img/ガンジー2.png" style="widows: 36px; height: 36px" />
+                <input value="登録"  type="image" src="img/ガンジー2.png" style="widows: 38px; height: 38px" />
+                <input value="登録"  type="image" src="img/ガンジー2.png" style="widows: 40px; height: 40px" />
+                <input value="登録"  type="image" src="img/ガンジー2.png" style="widows: 42px; height: 42px" />
+                <input value="登録"  type="image" src="img/ガンジー2.png" style="widows: 44px; height: 44px" />
+                <input value="登録"  type="image" src="img/ガンジー2.png" style="widows: 46px; height: 46px" />
+                <input value="登録"  type="image" src="img/ガンジー2.png" style="widows: 48px; height: 48px" />
               </td>
               <td id="footCenter">
-                
+                <input value="登録"  type="image" src="img/ガンジー2.png" style="widows: 50px; height: 50px" />
+                <input value="登録"  type="image" src="img/ガンジー2.png" style="widows: 52px; height: 52px" />
+                <input value="登録"  type="image" src="img/ガンジー2.png" style="widows: 54px; height: 54px" />
+                <input value="登録"  type="image" src="img/ガンジー2.png" style="widows: 56px; height: 56px" />
+                <input value="登録"  type="image" src="img/ガンジー2.png" style="widows: 58px; height: 58px" />
+                <input value="登録"  type="image" src="img/ガンジー2.png" style="widows: 60px; height: 60px" />
+                <input value="登録"  type="image" src="img/ガンジー2.png" style="widows: 62px; height: 62px" />
+                <input value="登録"  type="image" src="img/ガンジー2.png" style="widows: 64px; height: 64px" />
+                <input value="登録"  type="image" src="img/ガンジー2.png" style="widows: 66px; height: 66px" />
+                <input value="登録"  type="image" src="img/ガンジー2.png" style="widows: 68px; height: 68px" />
+                <input value="登録"  type="image" src="img/ガンジー2.png" style="widows: 70px; height: 70px" />
               </td>
               <td id="footRight">
-                <input value="登録"  type="button" class="smallButtonSubmit"  onclick="register()" />
+                <input value="登録"  type="image" src="img/ガンジー2.png" style="widows: 72px; height: 72px" />
+                <input value="登録"  type="image" src="img/ガンジー2.png" style="widows: 74px; height: 74px" />
+                <input value="登録"  type="image" src="img/ガンジー2.png" style="widows: 76px; height: 76px" />
+                <input value="登録"  type="image" src="img/ガンジー2.png" style="widows: 78px; height: 78px" />
+                <input value="登録"  type="image" src="img/ラブガンジー.png" style="widows: 80px; height: 80px" onclick="register()" />
               </td>
           </tr>
         </table>
