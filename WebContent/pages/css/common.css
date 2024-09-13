@@ -75,7 +75,7 @@ errorbody {
 */
 #header {
     top: 2px;
-    height: 40px;
+    height: 75px;
 }
 #headLeft {
     width:15%;
@@ -109,7 +109,7 @@ errorbody {
 * 業務body定義
 */
 #businessBody {
-    height: 82%;
+    height: 77%;
     overflow: auto;
 }
 

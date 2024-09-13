@@ -126,6 +126,8 @@
     <title>勤務実績入力画面</title>
 
     <link href="/kikin-for-Struts-bug/pages/css/common.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Gajraj+One&family=Gotu&display=swap" rel="stylesheet">
+    
      <style>
       #businessBody {
         display: flex;
@@ -148,7 +150,7 @@
               <input value="戻る" type="image" src="img/タージ.png"  style="widows: 100px; height: 100px" onclick="doSubmit('/kikin-for-Struts-bug/menu.do')" />
             </td>
             <td id="headCenter">
-              勤務実績入力
+              कर्मचारियों का प्रदर्शन दर्ज करें
             </td>
             <td id="headRight">
                 <input value="ログアウト" type="image" src="img/カレーさん.png"  style="widows: 100px; height: 100px"  onclick="logout()" />
@@ -159,8 +161,7 @@
       <div id="businessBody">
         <html:form action="/employeeMstMntRegister" >
           <div style="width: 100%;">
-            <div style="float: left; width: 804px; text-align: left; margin-left:100px;">
-              表示年月：
+            <div style="float: left; width: 720px; text-align: left; margin-left:100px;">
               <html:select name="workRecordInputForm" property="yearMonth" onchange="submitSearch()">
               <html:optionsCollection name="workRecordInputForm"
                                       property="yearMonthCmbMap"
@@ -169,9 +170,9 @@
               </html:select>
             </div>
             
-            <div style="float: left; width: 284px; text-align: left;">
-              社員ID&nbsp;<bean:write name="workRecordInputForm" property="employeeId"/>
-              ：社員名&nbsp;<bean:write name="workRecordInputForm" property="employeeName"/>
+            <div style="float: left; width: 400px; text-align: left; font-family: Bakbak One; color: #9900CC;">
+              कर्मचारीID&nbsp;<bean:write name="workRecordInputForm" property="employeeId"/>
+              ：कर्मचारी का नाम&nbsp;<bean:write name="workRecordInputForm" property="employeeName"/>
               <%-- 8/26　花田　障害No025　残念エラーですを削除して、<bean:write name="workRecordInputForm" property="employeeName"/>を追加 --%>
             </div>
           </div>
@@ -180,34 +181,34 @@
             <table class="tableHeader">
               <tr>
                 <td width="80px" align="center">
-                  日付
+                  तारीख
                 </td>
-                <td width="50px" align="center">
-                  曜日
-                </td>
-                <td width="100px" align="center">
-                  シフト
+                <td width="50px" align="center" style="font-size: 7px;">
+                  सप्ताह का दिन
                 </td>
                 <td width="100px" align="center">
-                  開始時刻
+                  बदलाव
                 </td>
                 <td width="100px" align="center">
-                  終了時刻
+                  समय शुरू
                 </td>
                 <td width="100px" align="center">
-                  休憩
+                  अंत समय
                 </td>
                 <td width="100px" align="center">
-                  実働時間
+                  तोड़ना
+                </td>
+                <td width="100px" align="center" style="font-size: 12px;">
+                  वास्तविक कार्य
+                </td>
+                <td width="100px" align="center" style="font-size: 12px;">
+                  बाहर के घंटे
                 </td>
                 <td width="100px" align="center">
-                  時間外
-                </td>
-                <td width="100px" align="center">
-                  休日
+                  छुट्टी
                 </td>
                 <td width="220px" align="center">
-                  備考
+                  टिप्पणी
                 </td>
               </tr>
             </table>
