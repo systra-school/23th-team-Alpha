@@ -191,9 +191,13 @@
             </div>
 		 </html:form>
 		 <div style="margin-left:50px;">
-            <input value="凡例表示" type="button" class="longButton"  onclick="openWindow()" />        
+		    <input type="image" src="img/花うるさい2.gif"  style="widows: 70px; height: 70px;"  onclick="openWindow()" /> 
+            <input value="凡例表示" type="image" src="img/インドおじ.png"  style="widows: 100px; height: 100px;"  onclick="openWindow()" />
+            <input type="image" src="img/花うるさい2.gif"  style="widows: 70px; height: 70px;"  onclick="openWindow()" />        
          </div>
         </div>
+        <input value="出勤希望日確認" type="image" src="img/インドおば.png"  style="widows: 100px; height: 100px;margin-right: 20px; float: right; margin-right: 100px;"  onclick="openSearch()" />
+        <input value="登録"  type="image" src="img/ラブガンジー.png" style="widows: 100px; height: 100px; float: right; margin-right: 30px; " onclick="submitRegister()" />
        </div>
 	<div id="footer">
         <table>
@@ -205,8 +209,8 @@
               　
             </td>
             <td id="footRight">
-    	        <input value="出勤希望日参照" type="button" class="longButton"  onclick="openSearch()" />
-            	<input value="登録" type="button" class="smallButtonSubmit"  onclick="submitRegister()" />
+    	        <!-- <input value="出勤希望日参照" type="button" class="longButton"  onclick="openSearch()" /> -->
+            	<!-- <input value="登録" type="button" class="smallButtonSubmit"  onclick="submitRegister()" /> -->
             </td>
           </tr>
         </table>
