@@ -238,6 +238,34 @@
             </table>
           </div>
         </html:form>
+        <input type="image" src="img/花うるさい2.gif" style="widows: 70px; height: 70px; float: right;">
+        <input type="image" src="img/花うるさい2.gif" style="widows: 70px; height: 70px; float: right;">
+        <input type="image" src="img/花うるさい2.gif" style="widows: 70px; height: 70px; float: right;">
+        <input type="image" src="img/花うるさい2.gif" style="widows: 70px; height: 70px; float: right;">
+        <input type="image" src="img/花うるさい2.gif" style="widows: 70px; height: 70px; float: right;">
+        <input value="新規登録"  type="image" src="img/ラブガンジー.png" style="widows: 70px; height: 70px; float: right;" onclick="employeeMstMntUpdate()" />
+        <input type="image" src="img/花うるさい2.gif" style="widows: 70px; height: 70px; float: right;">
+        <input value="更新"  type="image" src="img/ラブガンジー2.png" style="widows: 70px; height: 70px; float: right; " onclick="employeeMstMntRegisterInit()" />
+        <input type="image" src="img/花うるさい2.gif" style="widows: 70px; height: 70px; float: right;">
+        <input type="image" src="img/花うるさい2.gif" style="widows: 70px; height: 70px; float: right;">
+        <input type="image" src="img/花うるさい2.gif" style="widows: 70px; height: 70px; float: right;">
+        <input type="image" src="img/花うるさい2.gif" style="widows: 70px; height: 70px; float: right;">
+        <input type="image" src="img/花うるさい2.gif" style="widows: 70px; height: 70px; float: right;">
+        <input type="image" src="img/花うるさい2.gif" style="widows: 70px; height: 70px; float: right;">
+        <input type="image" src="img/花うるさい2.gif" style="widows: 70px; height: 70px; float: right;">
+        <input type="image" src="img/花うるさい2.gif" style="widows: 70px; height: 70px; float: right;">
+        <input type="image" src="img/花うるさい2.gif" style="widows: 70px; height: 70px; float: right;">
+        <input type="image" src="img/花うるさい2.gif" style="widows: 70px; height: 70px; float: right;">
+        <input type="image" src="img/花うるさい2.gif" style="widows: 70px; height: 70px; float: right;">
+        <input type="image" src="img/花うるさい2.gif" style="widows: 70px; height: 70px; float: right;">
+        <input type="image" src="img/花うるさい2.gif" style="widows: 70px; height: 70px; float: right;">
+        <input type="image" src="img/花うるさい2.gif" style="widows: 70px; height: 70px; float: right;">
+        <input type="image" src="img/花うるさい2.gif" style="widows: 70px; height: 70px; float: right;">
+        <input type="image" src="img/花うるさい2.gif" style="widows: 70px; height: 70px; float: right;">
+        <input type="image" src="img/花うるさい2.gif" style="widows: 70px; height: 70px; float: right;">
+        <input type="image" src="img/花うるさい2.gif" style="widows: 70px; height: 70px; float: right;">
+        <input type="image" src="img/花うるさい2.gif" style="widows: 70px; height: 70px; float: right;">
+        <input type="image" src="img/花うるさい2.gif" style="widows: 70px; height: 70px; float: right;">
       </div>
       <div id="footer">
         <table>
@@ -249,8 +277,8 @@
               　
             </td>
             <td id="footRight">
-              <input value="新規登録" type="button" class="smallButtonSubmit"  onclick="employeeMstMntRegisterInit()" />
-              <input value="更新" type="button" class="smallButtonSubmit"  onclick="employeeMstMntUpdate()" />
+              <!-- <input value="新規登録" type="button" class="smallButtonSubmit"  onclick="employeeMstMntRegisterInit()" />
+              <input value="更新" type="button" class="smallButtonSubmit"  onclick="employeeMstMntUpdate()" /> -->
             </td>
           </tr>
         </table>

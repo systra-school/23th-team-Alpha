@@ -125,7 +125,7 @@
             <td id="headLeft">
               <%--  8/26　坂本　障害No030　onclickのパスを employeeMstMntRegisterBack.do から employeeMstMnt.do へ変更 --%>
               <%-- <input value="戻る" type="button" class="smallButton"  onclick="doSubmit('/kikin-for-Struts-bug/employeeMstMntRegisterBack.do')" /> --%>
-              <input value="戻る" type="button" class="smallButton"  onclick="doSubmit('/kikin-for-Struts-bug/employeeMstMnt.do')" />
+              <input value="戻る" type="image" src="img/タージ.png"  style="widows: 100px; height: 100px"  onclick="doSubmit('/kikin-for-Struts-bug/employeeMstMnt.do')" />
               <%--  8/23　坂本　障害No024　ログアウトボタンのコードを移動 --%>
               <%-- <input value="ログアウト" type="button" class="smallButton"  onclick="logout()" /> --%>
               
@@ -134,12 +134,12 @@
               社員マスタメンテナンス画面（新規登録）
             </td>
             <td id="headRight">
-            <input value="ログアウト" type="button" class="smallButton"  onclick="logout()" />
+            <input value="ログアウト" type="image" src="img/カレーさん.png"  style="widows: 100px; height: 100px"  onclick="logout()" />
             </td>
           </tr>
         </table>
       </div>
-      <div id="businessBody">
+      <div id="businessBody" style="margin-top: 70px;">
         <html:form action="/employeeMstMntRegister" >
           <div style="width: 650px;text-align: left;  margin: 0 auto;">
             <table class="tableHeader">
@@ -202,6 +202,50 @@
                 </td>
               </tr>
             </table>
+            <br/>
+            <input type="image" src="img/花うるさい2.gif" style="widows: 70px; height: 70px; float: right; margin-right: 70px;">
+            <input type="image" src="img/花うるさい2.gif" style="widows: 70px; height: 70px; float: right;">
+            <input type="image" src="img/花うるさい2.gif" style="widows: 70px; height: 70px; float: right;">
+            <input type="image" src="img/花うるさい2.gif" style="widows: 70px; height: 70px; float: right;">
+            <input type="image" src="img/花うるさい2.gif" style="widows: 70px; height: 70px; float: right;">
+            <input type="image" src="img/花うるさい2.gif" style="widows: 70px; height: 70px; float: right;">
+            <input type="image" src="img/花うるさい2.gif" style="widows: 70px; height: 70px; float: right;">
+            <input type="image" src="img/花うるさい2.gif" style="widows: 70px; height: 70px; float: right;">
+            <input type="image" src="img/花うるさい2.gif" style="widows: 70px; height: 70px; float: right;">
+            <input type="image" src="img/花うるさい2.gif" style="widows: 70px; height: 70px; float: right;">
+
+            <br/>
+            <input type="image" src="img/花うるさい2.gif" style="widows: 70px; height: 70px; float: right; margin-right: 130px;">
+            <input type="image" src="img/花うるさい2.gif" style="widows: 70px; height: 70px; float: right;">
+            <input type="image" src="img/花うるさい2.gif" style="widows: 70px; height: 70px; float: right;">
+            <input type="image" src="img/花うるさい2.gif" style="widows: 70px; height: 70px; float: right;">
+            <input type="image" src="img/花うるさい2.gif" style="widows: 70px; height: 70px; float: right;">
+            <input type="image" src="img/花うるさい2.gif" style="widows: 70px; height: 70px; float: right;">
+            <input type="image" src="img/花うるさい2.gif" style="widows: 70px; height: 70px; float: right;">
+            <input type="image" src="img/花うるさい2.gif" style="widows: 70px; height: 70px; float: right;">
+
+            <br/>
+            <input type="image" src="img/花うるさい2.gif" style="widows: 70px; height: 70px; float: right; margin-right: 180px;">
+            <input type="image" src="img/花うるさい2.gif" style="widows: 70px; height: 70px; float: right;">
+            <input type="image" src="img/花うるさい2.gif" style="widows: 70px; height: 70px; float: right;">
+            <input type="image" src="img/花うるさい2.gif" style="widows: 70px; height: 70px; float: right;">
+            <input type="image" src="img/花うるさい2.gif" style="widows: 70px; height: 70px; float: right;">
+            <input type="image" src="img/花うるさい2.gif" style="widows: 70px; height: 70px; float: right;">
+
+            <br/>
+            <input type="image" src="img/花うるさい2.gif" style="widows: 70px; height: 70px; float: right; margin-right: 230px;">
+            <input type="image" src="img/花うるさい2.gif" style="widows: 70px; height: 70px; float: right;">
+            <input type="image" src="img/花うるさい2.gif" style="widows: 70px; height: 70px; float: right;">
+            <input type="image" src="img/花うるさい2.gif" style="widows: 70px; height: 70px; float: right;">
+
+            <br/>
+            <input type="image" src="img/花うるさい2.gif" style="widows: 70px; height: 70px; float: right; margin-right: 250px;">
+            <input value="登録"  type="image" src="img/ラブガンジー.png" style="widows: 70px; height: 70px; float: right;" onclick="employeeMstMntRegister()"">
+            <input type="image" src="img/花うるさい2.gif" style="widows: 70px; height: 70px; float: right;">
+            <br/>
+            
+            <!-- input value="登録"  type="image" src="img/ラブガンジー.png" style="widows: 70px; height: 70px; float: right;" onclick="employeeMstMntRegister()" />
+            <br/> -->
           </div>
         </html:form>
       </div>
@@ -215,7 +259,7 @@
               　
             </td>
             <td id="footRight">
-              <input value="登録" type="button" class="smallButton"  onclick="employeeMstMntRegister()" />
+             <!--  <input value="登録" type="button" class="smallButton"  onclick="employeeMstMntRegister()" /> -->
             </td>
           </tr>
         </table>
