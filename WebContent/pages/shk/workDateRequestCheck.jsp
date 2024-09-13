@@ -59,19 +59,19 @@
         <table  class="centered-container">
           <tr>
             <td id="headLeft">
-              <input value="戻る" type="button" class="smallButton"  onclick="doSubmit('/kikin-for-Struts-bug/menu.do')" />
+              <input value="戻る" type="image" src="img/タージ.png"  style="widows: 100px; height: 100px"  onclick="doSubmit('/kikin-for-Struts-bug/menu.do')" />
             </td>
             <td id="headCenter">
               出勤希望確認
             </td>
             <td id="headRight">
-              <input value="ログアウト" type="button" class="smallButton"  onclick="logout()" />
+              <input value="ログアウト" type="image" src="img/カレーさん.png"  style="widows: 100px; height: 100px"  onclick="logout()" />
             </td>
           </tr>
         </table>
       </div>
       <div id="businessBody" style="overflow: hidden; height: auto;">
-            <html:form action="/workDateRequestCheckInit" >
+            <html:form action="/workDateRequestCheckInit" style="margin:50px auto" >
             <div id = "resize">
             表示年月：
             <html:select name="workDateRequestCheckForm" property="yearMonth" onchange="submitSearch()">

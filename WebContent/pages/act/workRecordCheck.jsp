@@ -46,19 +46,19 @@ String color = "";
         <table class="full-width">
           <tr>
             <td id="headLeft">
-              <input value="戻る" type="button" class="smallButton"  onclick="doSubmit('/kikin-for-Struts-bug/menu.do')" />
+              <input value="戻る" type="image" src="img/タージ.png"  style="widows: 100px; height: 100px"  onclick="doSubmit('/kikin-for-Struts-bug/menu.do')" />
             </td>
             <td id="headCenter">
               勤務実績確認
             </td>
             <td id="headRight">
-              <input value="ログアウト" type="button" class="smallButton"  onclick="logout()" />
+              <input value="ログアウト" type="image" src="img/カレーさん.png"  style="widows: 100px; height: 100px"  onclick="logout()" />
             </td>
           </tr>
         </table>
       </div>
       <div id="businessBody">
-        <html:form action="/employeeMstMntRegister" >
+        <html:form action="/employeeMstMntRegister" style="margin:50px 100px;" >
         <br>
           <div style="float: left; width: 100%;">
          	<%--障害No.121 9/7 稲永　下記要素内 margin-left:22%;→10% に変更--%>
