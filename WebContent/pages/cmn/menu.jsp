@@ -114,7 +114,7 @@
             <html:form action="/workRecordInputInit">
               <input type="image" src="img/神1.png" style="widows: 150px; height: 150px"/>
               <br/>
-              <input type="submit" value="कर्मचारियों का प्रदर्शन दर्ज करें" class="button1" onclick="workRecordInputInit()" style="font-family: Bakbak One;" />
+              <input type="submit" id="button1" value="कर्मचारियों का प्रदर्शन दर्ज करें" class="button1" onclick="workRecordInputInit()" style="font-family: Bakbak One;" />
             </html:form>
             </div> 
             
@@ -123,7 +123,7 @@
             <html:form action="/workRecordCheckInit">
               <input type="image" src="img/神2.png " style="widows: 150px; height: 150px"/>
               <br/>
-              <input type="submit" value="कर्मचारियों का प्रदर्शन सत्यापित करें" class="button2" onclick="workRecordInputInit()" style="font-family: Bakbak One;"/>
+              <input type="submit" id="button2" value="कर्मचारियों का प्रदर्शन सत्यापित करें" class="button2" onclick="workRecordInputInit()" style="font-family: Bakbak One;"/>
             </html:form>
             </div>
              
@@ -132,7 +132,7 @@
             <html:form action="/monthlyShiftCheckInit">
               <input type="image" src="img/神3.png" style="widows: 150px; height: 150px"/>
               <br/>
-              <input type="submit" value="मासिक शिफ्ट की जाँच" class="button3" onclick="workRecordInputInit()" style="font-family: Bakbak One;"/>
+              <input type="submit" id="button3" value="मासिक शिफ्ट की जाँच" class="button3" onclick="workRecordInputInit()" style="font-family: Bakbak One;"/>
             </html:form>
             </div>
              
@@ -141,7 +141,7 @@
             <html:form action="/dailyShiftInit">
               <input type="image" src="img/神4.png" style="widows: 150px; height: 150px"/>
               <br/>
-              <input type="submit" value="दैनिक शिफ्ट की जाँच" class="button4" onclick="workRecordInputInit()" style="font-family: Bakbak One;"/>
+              <input type="submit" id="button4" value="दैनिक शिफ्ट की जाँच" class="button4" onclick="workRecordInputInit()" style="font-family: Bakbak One;"/>
             </html:form>
             </div>
             
@@ -150,7 +150,7 @@
             <html:form action="/monthlyShiftInputInit">
               <input type="image" src="img/神5.png" style="widows: 150px; height: 150px"/>
               <br/>
-              <input type="submit" value="मासिक शिफ्ट इनपुट" class="button5" onclick="workRecordInputInit()" style="font-family: Bakbak One;"/>
+              <input type="submit" id="button5" value="मासिक शिफ्ट इनपुट" class="button5" onclick="workRecordInputInit()" style="font-family: Bakbak One;"/>
             </html:form>
             </div>
             
@@ -159,7 +159,7 @@
             <html:form action="/workDateRequestCheckInit">
               <input type="image" src="img/神6.png" style="widows: 150px; height: 150px"/>
               <br/>
-              <input type="submit" value="कार्य दिवस की इच्छा की जाँच" class="button6" onclick="workRecordInputInit()" style="font-family: Bakbak One;"/>
+              <input type="submit" id="button6" value="कार्य दिवस की इच्छा की जाँच" class="button6" onclick="workRecordInputInit()" style="font-family: Bakbak One;"/>
             </html:form>
             </div>
             
@@ -168,7 +168,7 @@
             <html:form action="/baseShiftInit">
               <input type="image" src="img/神7.png" style="widows: 150px; height: 150px"/>
               <br/>
-              <input type="submit" value="मूल शिफ्ट पंजीकरण" class="button7" onclick="workRecordInputInit()" style="font-family: Bakbak One;"/>
+              <input type="submit" id="button7" value="मूल शिफ्ट पंजीकरण" class="button7" onclick="workRecordInputInit()" style="font-family: Bakbak One;"/>
             </html:form>
             </div>
             
@@ -177,7 +177,7 @@
             <html:form action="/shiftMstMnt">
               <input type="image" src="img/神8.png" style="widows: 150px; height: 150px"/>
               <br/>
-              <input type="submit" value="शिफ्ट मास्टर मेंटेनेंस" class="button8" onclick="workRecordInputInit()" style="font-family: Bakbak One;"/>
+              <input type="submit" id="button8" value="शिफ्ट मास्टर मेंटेनेंस" class="button8" onclick="workRecordInputInit()" style="font-family: Bakbak One;"/>
             </html:form>
             </div>
             
@@ -186,7 +186,7 @@
             <html:form action="/employeeMstMnt">
               <input type="image" src="img/神9.png" style="widows: 150px; height: 150px"/>
               <br/>
-              <input type="submit" value="कर्मचारी मास्टर मेंटेनेंस" class="button9" onclick="workRecordInputInit()" style="font-family: Bakbak One;"/>
+              <input type="submit" id="button9" value="कर्मचारी मास्टर मेंटेनेंस" class="button9" onclick="workRecordInputInit()" style="font-family: Bakbak One;"/>
             </html:form>
             </div>
             
@@ -287,7 +287,7 @@
             <html:form action="/workRecordInputInit">
               <input type="image" src="img/神1.png" style="widows: 150px; height: 150px"/>
               <br/>
-              <input type="submit" value="कर्मचारियों का प्रदर्शन दर्ज करें" class="button1" onclick="workRecordInputInit()" style="font-family: Bakbak One;" />
+              <input type="submit" id="button1" value="कर्मचारियों का प्रदर्शन दर्ज करें" class="button1" onclick="workRecordInputInit()" style="font-family: Bakbak One;" />
             </html:form>
             </div> 
             
@@ -296,7 +296,7 @@
             <html:form action="/workDateRequestInputInit">
               <input type="image" src="img/神6.png" style="widows: 150px; height: 150px"/>
               <br/>
-              <input type="submit" value="कार्य दिवस की इच्छा की जाँच" class="button6" onclick="workRecordInputInit()" style="font-family: Bakbak One;"/>
+              <input type="submit" id="button6" value="कार्य दिवस की इच्छा की जाँच" class="button6" onclick="workRecordInputInit()" style="font-family: Bakbak One;"/>
             </html:form>
             </div>
             
@@ -305,7 +305,7 @@
             <html:form action="/monthlyShiftCheckInit">
               <input type="image" src="img/神3.png" style="widows: 150px; height: 150px"/>
               <br/>
-              <input type="submit" value="मासिक शिफ्ट की जाँच" class="button3" onclick="workRecordInputInit()" style="font-family: Bakbak One;"/>
+              <input type="submit" id="button3" value="मासिक शिफ्ट की जाँच" class="button3" onclick="workRecordInputInit()" style="font-family: Bakbak One;"/>
             </html:form>
             </div>
              
@@ -314,7 +314,7 @@
             <html:form action="/dailyShiftInit">
               <input type="image" src="img/神4.png" style="widows: 150px; height: 150px"/>
               <br/>
-              <input type="submit" value="दैनिक शिफ्ट की जाँच" class="button4" onclick="workRecordInputInit()" style="font-family: Bakbak One;"/>
+              <input type="submit" id="button4" value="दैनिक शिफ्ट की जाँच" class="button4" onclick="workRecordInputInit()" style="font-family: Bakbak One;"/>
             </html:form>
             </div>
             
@@ -323,7 +323,7 @@
             <html:form action="/baseShiftCheckInit">
               <input type="image" src="img/神7.png" style="widows: 150px; height: 150px"/>
               <br/>
-              <input type="submit" value="मूल शिफ्ट पंजीकरण" class="button7" onclick="workRecordInputInit()" style="font-family: Bakbak One;"/>
+              <input type="submit" id="button7" value="मूल शिफ्ट पंजीकरण" class="button7" onclick="workRecordInputInit()" style="font-family: Bakbak One;"/>
             </html:form>
             </div>
           
@@ -331,7 +331,7 @@
 <!--           自爆ボタン　ひな形 -->
 				<div class="menuBlock">
 			<html:form action="/bom">
-				<input type="submit" value="弊社" class="bigButton" />
+				<input type="submit"  value="弊社" class="bigButton" />
 			</html:form>
 		</div>
           
@@ -422,14 +422,43 @@
       function tranText() {
     		var hiText = document.getElementById('hiText');
     	    var jaText = document.getElementById('jaText');
+    	    var button1 =document.getElementById('button1');
+    	    var button2 =document.getElementById('button2');
+    	    var button3 =document.getElementById('button3');
+    	    var button4 =document.getElementById('button4');
+    	    var button5 =document.getElementById('button5');
+    	    var button6 =document.getElementById('button6');
+    	    var button7 =document.getElementById('button7');
+    	    var button8 =document.getElementById('button8');
+    	    var button9 =document.getElementById('button9');
     	    
     	    if (hiText.classList.contains('hidden')) {
     	    	hiText.classList.remove('hidden');
     	    	jaText.classList.add('hidden');
+    	    	button1.value = "कर्मचारियों का प्रदर्शन दर्ज करें";
+    	    	button2.value = "कर्मचारियों का प्रदर्शन सत्यापित करें";
+    	    	button3.value = "मासिक शिफ्ट की जाँच";
+    	    	button4.value = "दैनिक शिफ्ट की जाँच";
+    	    	button5.value = "मासिक शिफ्ट इनपुट";
+    	    	button6.value = "कार्य दिवस की इच्छा की जाँच";
+    	    	button7.value = "मूल शिफ्ट पंजीकरण";
+    	    	button8.value = "शिफ्ट मास्टर मेंटेनेंस";
+    	    	button9.value = "कर्मचारी मास्टर मेंटेनेंस";
+    	    	
     	    } else {
     	    	hiText.classList.add('hidden');
     	    	jaText.classList.remove('hidden');
+    	    	button1.value = "勤務実績入力";
+    	    	button2.value = "勤務実績確認";
+    	    	button3.value = "月別シフト確認";
+    	    	button4.value = "日別シフト確認";
+    	    	button5.value = "月別シフト入力";
+    	    	button6.value = "出勤希望日確認";
+    	    	button7.value = "基本シフト登録";
+    	    	button8.value = "シフトマスタメンテナンス";
+    	    	button9.value = "社員マスタメンテナンス";
     		}
+    	    
     	}
     </script>
 
