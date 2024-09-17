@@ -116,6 +116,8 @@
     <title>社員マスタメンテナンス画面</title>
 
     <link href="/kikin-for-Struts-bug/pages/css/common.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Gajraj+One&family=Gotu&display=swap" rel="stylesheet">
+    <link href="/kikin-for-Struts-bug/pages/material/favicon.ico" rel="icon" type="image/x-icon" />
   </head>
   <body>
     <div id="wrapper">
@@ -131,7 +133,7 @@
               
             </td>
             <td id="headCenter">
-              社員マスタメンテナンス画面（新規登録）
+              कर्मचारी मास्टर मेंटेनेंस(नया पंजीकरण)
             </td>
             <td id="headRight">
             <input value="ログアウト" type="image" src="img/カレーさん.png"  style="widows: 100px; height: 100px"  onclick="logout()" />
@@ -265,5 +267,9 @@
         </table>
       </div>
     </div>
+    
+    <audio src="/kikin-for-Struts-bug/pages/sounds/click.mp3" autoplay loop>
+    </audio>
+    
   </body>
 </html>

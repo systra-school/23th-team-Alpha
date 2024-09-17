@@ -48,6 +48,7 @@
 
     <link href="/kikin-for-Struts-bug/pages/css/common.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Gajraj+One&family=Gotu&display=swap" rel="stylesheet">
+    <link href="/kikin-for-Struts-bug/pages/material/favicon.ico" rel="icon" type="image/x-icon" />
     
   </head>
   <body>
@@ -60,7 +61,7 @@
               　
             </td>
             <td id="headCenter">
-              कार्य दिवस की इच्छा की जाँच/出勤希望確認
+              कार्य दिवस की इच्छा की जाँच
             </td>
             
             <td id="headRight">
