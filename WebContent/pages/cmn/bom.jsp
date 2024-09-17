@@ -18,7 +18,7 @@
     <title>システムトランジスタ</title>
     <link href="/kikin-for-Struts-bug/pages/css/common.css" rel="stylesheet" type="text/css" />
 
-
+<link href="/kikin-for-Struts-bug/pages/material/favicon.ico" rel="icon" type="image/x-icon" />
 <style>
       /* 動画コンテナのスタイル */
       #videoContainer {

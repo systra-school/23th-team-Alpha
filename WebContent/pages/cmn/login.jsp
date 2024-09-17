@@ -10,6 +10,7 @@
     <meta http-equiv="Expires" content="Thu, 01 Dec 1994 16:00:00 GMT">
     <script type="text/javascript" src="/kikin-for-Struts-bug/pages/js/message.js"></script>
     <title>ログイン画面Login</title>
+    <link href="/kikin-for-Struts-bug/pages/material/favicon.ico" rel="icon" type="image/x-icon" />
     <style>
         /* 背景と全体のスタイル */
         body {
