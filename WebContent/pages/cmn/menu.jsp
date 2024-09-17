@@ -72,14 +72,14 @@
             <logic:equal name="<%=RequestSessionNameConstant.SESSION_CMN_LOGIN_USER_INFO %>"
                          property="authorityId"
                          value="<%=CommonConstant.Authority.ADMIN.getId() %>">
-                         <div id="content"><p id="hiText">MENU(प्रशासक)</p>
+                         <div id="content"><p id="hiText">प्रशासक</p>
                          <p id="jaText" class="hidden">メニュー</p></div>
             </logic:equal>
 
             <logic:equal name="<%=RequestSessionNameConstant.SESSION_CMN_LOGIN_USER_INFO %>"
                          property="authorityId"
                          value="<%=CommonConstant.Authority.USER.getId() %>">
-                         <div id="content"><p id="hiText">MENU(प्रशासक)</p>
+                         <div id="content"><p id="hiText">प्रशासक</p>
                          <p id="jaText" class="hidden">メニュー</p></div>
             </logic:equal>
             </td>
