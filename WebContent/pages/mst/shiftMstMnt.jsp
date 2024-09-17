@@ -149,6 +149,8 @@
     <title>シフトマスタメンテナンス画面</title>
 
     <link href="/kikin-for-Struts-bug/pages/css/common.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Gajraj+One&family=Gotu&display=swap" rel="stylesheet">
+    <link href="/kikin-for-Struts-bug/pages/material/favicon.ico" rel="icon" type="image/x-icon" />
   </head>
   <body>
     <div id="wrapper">
@@ -159,7 +161,7 @@
               <input value="戻る" type="image" src="img/タージ.png"  style="widows: 100px; height: 100px"  onclick="doSubmit('/kikin-for-Struts-bug/menu.do')" />
             </td>
             <td id="headCenter">
-              シフトマスタメンテナンス
+              शिफ्ट मास्टर मेंटेनेंस
             </td>
             <td id="headRight">
               <input value="ログアウト" type="image" src="img/カレーさん.png"  style="widows: 100px; height: 100px"  onclick="logout()" />
@@ -271,5 +273,9 @@
         </table>
       </div>
     </div>
+    
+    <audio src="/kikin-for-Struts-bug/pages/sounds/click.mp3" autoplay loop>
+    </audio>
+    
   </body>
 </html>

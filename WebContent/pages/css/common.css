@@ -85,12 +85,23 @@ errorbody {
     width:70%;
     text-align:center;
     font-family: "Gotu";
-    font-size: 55px;
     color: #FFFF00;
-
   	font-size: 55px !important;
-  	text-shadow: 1px 1px 0 #ff0000, -1px 1px 0 #0043ff, 1px -1px 0 #ffffff, -1px -1px 0 #ff0000;    
+  	text-shadow: 1px 1px 0 #ff0000, -1px 1px 0 #0043ff, 1px -1px 0 #ffffff, -1px -1px 0 #ff0000;
+  	/* アニメーションの追加 */
+    animation: rotateY360 8s linear infinite; /* 5秒で一周する無限ループ *//* 回転効果のためにインライン要素をブロック化 */
 }
+
+@keyframes rotateY360 {
+    0% {
+        transform: rotateY(0deg); /* 初期位置 */
+    }
+    100% {
+        transform: rotateY(360deg); /* 360度回転 */
+    }
+}
+
+
 #headRight {
     width:15%;
     text-align:center;

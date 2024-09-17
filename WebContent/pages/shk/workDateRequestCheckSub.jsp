@@ -47,6 +47,8 @@
     <title>出勤希望確認画面</title>
 
     <link href="/kikin-for-Struts-bug/pages/css/common.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Gajraj+One&family=Gotu&display=swap" rel="stylesheet">
+    
   </head>
   <body>
     <div id="wrapper">
@@ -58,7 +60,7 @@
               　
             </td>
             <td id="headCenter">
-              出勤希望確認
+              कार्य दिवस की इच्छा की जाँच/出勤希望確認
             </td>
             
             <td id="headRight">

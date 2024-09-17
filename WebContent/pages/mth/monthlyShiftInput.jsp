@@ -101,6 +101,8 @@ if (listSize > intShowLength) {
     <title>月別シフト入力画面</title>
 
     <link href="/kikin-for-Struts-bug/pages/css/common.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Gajraj+One&family=Gotu&display=swap" rel="stylesheet">
+    <link href="/kikin-for-Struts-bug/pages/material/favicon.ico" rel="icon" type="image/x-icon" />
   </head>
   <body>
     <div id="wrapper">
@@ -111,7 +113,7 @@ if (listSize > intShowLength) {
               <input value="戻る" type="image" src="img/タージ.png"  style="widows: 80px; height: 80px; " onclick="doSubmit('/kikin-for-Struts-bug/menu.do')" />
             </td>
             <td id="headCenter">
-              月別シフト入力
+              मासिक शिफ्ट इनपुट
             </td>
             <td id="headRight">
               <input value="ログアウト" type="image" src="img/カレーさん.png"  style="widows: 80px; height: 80px;"  onclick="logout()" />
@@ -123,7 +125,6 @@ if (listSize > intShowLength) {
         <html:form action="/monthlyShiftInputInit" >
           <div>
             <div id="resize"> 
-              प्रदर्शित माह और वर्ष：
               <bean:define id="sessionYearMonth" name="monthlyShiftInputForm" property="yearMonth" type="String"/>
               <html:select property="yearMonth" name="monthlyShiftInputForm"  onchange="submitSearch()">
               <html:optionsCollection name="monthlyShiftInputForm"
@@ -138,8 +139,8 @@ if (listSize > intShowLength) {
 <%--              9/10　高田　障害No004　前へ・次への文言変更
                <html:link href="/kikin-for-Struts-bug/monthlyShiftInputPage.do?paging=back">前へ</html:link>
                <html:link href="/kikin-for-Struts-bug/monthlyShiftInputPage.do?paging=next">次へ</html:link> --%>
-              <html:link href="/kikin-for-Struts-bug/monthlyShiftInputPage.do?paging=back">पिछले कर्मचारी को</html:link>
-              <html:link href="/kikin-for-Struts-bug/monthlyShiftInputPage.do?paging=next">अगले कर्मचारी को</html:link>
+              <html:link href="/kikin-for-Struts-bug/monthlyShiftInputPage.do?paging=back" style="font-family: Bakbak One;">पिछले कर्मचारी को</html:link>
+              <html:link href="/kikin-for-Struts-bug/monthlyShiftInputPage.do?paging=next" style="font-family: Bakbak One;">अगले कर्मचारी को</html:link>
               <bean:write name="monthlyShiftInputForm" property="countPage"/>/
               <bean:write name="monthlyShiftInputForm" property="maxPage"/>
             
@@ -199,7 +200,7 @@ if (listSize > intShowLength) {
                       </tr>
                       <logic:iterate offset="offset" length="<%=showLength %>" id="monthlyShiftInputBeanList" name="monthlyShiftInputForm" property="monthlyShiftInputBeanList">
                         <html:hidden name="monthlyShiftInputBeanList" property="registerFlg" value="true" indexed="true"/>
-                        <tr height="<%=heightSize %>px">
+                        <tr height="<%=heightSize %>px" style="background-color: #a4fff4;">
                           <td width="40px" align="center" valign="middle">
                             <html:select property="shiftId01" name="monthlyShiftInputBeanList" indexed="true">
                             <html:optionsCollection name="monthlyShiftInputForm"
@@ -522,5 +523,9 @@ if (listSize > intShowLength) {
         </table>
       </div>
     </div>
+    
+    <audio src="/kikin-for-Struts-bug/pages/sounds/click.mp3" autoplay loop>
+    </audio>
+    
   </body>
 </html>

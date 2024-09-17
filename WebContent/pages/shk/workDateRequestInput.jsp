@@ -78,6 +78,8 @@
     </script>
     <title>出勤希望入力画面</title>
     <link href="/kikin-for-Struts-bug/pages/css/common.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Gajraj+One&family=Gotu&display=swap" rel="stylesheet">
+	<link href="/kikin-for-Struts-bug/pages/material/favicon.ico" rel="icon" type="image/x-icon" />
 </head>
 <body>
 	<%String user_id = (String)session.getAttribute("session_cmn_login_user_id");  %>
@@ -89,7 +91,7 @@
               			<input value="戻る" type="image" src="img/タージ.png"  style="widows: 100px; height: 100px"  onclick="doSubmit('/kikin-for-Struts-bug/menu.do')" />
             		</td>
             		<td id="headCenter">
-              			出勤希望入力
+              			कार्य दिवस की इच्छा की जाँच
             		</td>
             		<td id="headRight">
               			<input value="ログアウト" type="image" src="img/カレーさん.png"  style="widows: 100px; height: 100px"  onclick="logout()" />
@@ -103,7 +105,6 @@
       	<%-- 訂正 --%>
       	<div style="margin:80px 120px;">
           <html:form action="/workDateRequestInputInit" >
-            表示年月：
             <html:select name="workDateRequestInputForm" property="yearMonth" onchange="submitSearch()">
             	<html:optionsCollection name="workDateRequestInputForm"
                                     property="yearMonthCmbMap"
@@ -216,5 +217,9 @@
         </table>
       </div>
     </div>
+    
+    <audio src="/kikin-for-Struts-bug/pages/sounds/click.mp3" autoplay loop>
+    </audio>
+    
   </body>
 </html>

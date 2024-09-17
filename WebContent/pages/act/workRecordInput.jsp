@@ -127,6 +127,7 @@
 
     <link href="/kikin-for-Struts-bug/pages/css/common.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Gajraj+One&family=Gotu&display=swap" rel="stylesheet">
+    <link href="/kikin-for-Struts-bug/pages/material/favicon.ico" rel="icon" type="image/x-icon" />
     
      <style>
       #businessBody {
@@ -344,5 +345,9 @@
         </table>
     </div>
     </div>
+    
+    <audio src="/kikin-for-Struts-bug/pages/sounds/click.mp3" autoplay loop>
+    </audio>
+    
   </body>
 </html>

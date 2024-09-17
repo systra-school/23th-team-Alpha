@@ -52,6 +52,8 @@
     <title>出勤希望確認画面</title>
 
     <link href="/kikin-for-Struts-bug/pages/css/common.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Gajraj+One&family=Gotu&display=swap" rel="stylesheet">
+    <link href="/kikin-for-Struts-bug/pages/material/favicon.ico" rel="icon" type="image/x-icon" />
   </head>
   <body>
     <div id="wrapper">
@@ -62,7 +64,7 @@
               <input value="戻る" type="image" src="img/タージ.png"  style="widows: 100px; height: 100px"  onclick="doSubmit('/kikin-for-Struts-bug/menu.do')" />
             </td>
             <td id="headCenter">
-              出勤希望確認
+              कार्य दिवस की इच्छा की जाँच
             </td>
             <td id="headRight">
               <input value="ログアウト" type="image" src="img/カレーさん.png"  style="widows: 100px; height: 100px"  onclick="logout()" />
@@ -73,7 +75,6 @@
       <div id="businessBody" style="overflow: hidden; height: auto;">
             <html:form action="/workDateRequestCheckInit" style="margin:50px auto" >
             <div id = "resize">
-            表示年月：
             <html:select name="workDateRequestCheckForm" property="yearMonth" onchange="submitSearch()">
             <html:optionsCollection name="workDateRequestCheckForm"
                                     property="yearMonthCmbMap"
@@ -82,13 +83,13 @@
             </html:select>
 <%--            9/10　高田　障害No003　前への文言を変更
              <html:link href="/kikin-for-Struts-bug/workDateRequestCheckPage.do?paging=back">前へ</html:link> --%>
-            <html:link href="/kikin-for-Struts-bug/workDateRequestCheckPage.do?paging=back">前の社員へ</html:link>
+            <html:link href="/kikin-for-Struts-bug/workDateRequestCheckPage.do?paging=back" style="font-family: Bakbak One;">पिछले कर्मचारी को</html:link>
             <%--9/5 障害No90 泊
             URLがトムキャットに飛ぶようになってたので変更
              --%>
 <%--             9/10　高田　障害No003　次への文言変更
              <html:link href="/kikin-for-Struts-bug/workDateRequestCheckPage.do?paging=next">次へ</html:link> --%>
-            <html:link href="/kikin-for-Struts-bug/workDateRequestCheckPage.do?paging=next">次の社員へ</html:link>
+            <html:link href="/kikin-for-Struts-bug/workDateRequestCheckPage.do?paging=next" style="font-family: Bakbak One;">अगले कर्मचारी को</html:link>
             <bean:write name="workDateRequestCheckForm" property="countPage"/>/
             <bean:write name="workDateRequestCheckForm" property="maxPage"/>
               <table class="widthTable">
@@ -189,5 +190,9 @@
         </table>
       </div>
     </div>
+    
+    <audio src="/kikin-for-Struts-bug/pages/sounds/click.mp3" autoplay loop>
+    </audio>
+    
   </body>
 </html>

@@ -101,6 +101,8 @@
     <title>シフトマスタメンテナンス画面</title>
 
     <link href="/kikin-for-Struts-bug/pages/css/common.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Gajraj+One&family=Gotu&display=swap" rel="stylesheet">
+    
   </head>
   <body>
     <div id="wrapper">
@@ -114,7 +116,7 @@
               
             </td>
             <td id="headCenter">
-              シフトマスタメンテナンス（新規登録）
+              शिफ्ट मास्टर मेंटेनेंस(नया पंजीकरण)
             </td>
             <td id="headRight">
               <input value="ログアウト" type="button" class="smallButton"  onclick="logout()" />

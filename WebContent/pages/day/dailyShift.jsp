@@ -69,7 +69,9 @@
     </script>
     <title>日別シフト確認画面</title>
 
-    <link href="/kikin-for-Struts-bug/pages/css/common.css" rel="stylesheet" type="text/css" />
+    <link href="/kikin-for-Struts-bug/pages/css/common.css" rel="stylesheet" type="text/css" />    
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Gajraj+One&family=Gotu&display=swap" rel="stylesheet">
+    <link href="/kikin-for-Struts-bug/pages/material/favicon.ico" rel="icon" type="image/x-icon" />
   </head>
   <body>
     <div id="wrapper">
@@ -81,7 +83,7 @@
             <input value="戻る" type="image" src="img/タージ.png"  style="widows: 100px; height: 100px"  onclick="doSubmit('/kikin-for-Struts-bug/menu.do')" />
             </td>
             <td id="headCenter">
-              日別シフト確認画面
+              दैनिक शिफ्ट की जाँच
             </td>
             <td id="headRight">
             	
@@ -94,15 +96,15 @@
       <div id="businessBody" style="overflow: hidden;">
         <div style="margin-left:14%;">
           <html:form>
-            <div style="height: 20px; margin-left:405px;">
-              表示年月：
+            <div style="height: 20px; margin-left:450px; ">
+             
               <%-- 
 	          9/7 坂本 障害No41 前日の遷移先を修正   
 	          <html:link href="/kikin-for-Struts-bug/dailyShiftPage.do?paging=next">前日</html:link>
 	          --%>
-              <html:link href="/kikin-for-Struts-bug/dailyShiftPage.do?paging=back">前日</html:link>
+              <html:link href="/kikin-for-Struts-bug/dailyShiftPage.do?paging=back" style="font-family: Bakbak One;">कल</html:link>
               <bean:write name="dailyShiftForm" property="yearMonthDayDisplay"/>
-              <html:link href="/kikin-for-Struts-bug/dailyShiftPage.do?paging=next">翌日</html:link>
+              <html:link href="/kikin-for-Struts-bug/dailyShiftPage.do?paging=next" style="font-family: Bakbak One;">अगले दिन</html:link>
             </div>
             <table class="tableHeader" >
               <tr>
@@ -1197,5 +1199,9 @@
         </table>
       </div>
     </div>
+    
+    <audio src="/kikin-for-Struts-bug/pages/sounds/click.mp3" autoplay loop>
+    </audio>
+    
   </body>
 </html>

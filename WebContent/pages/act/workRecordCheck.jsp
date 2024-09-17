@@ -39,6 +39,8 @@ String color = "";
     <title>勤務実績確認画面</title>
 
     <link href="/kikin-for-Struts-bug/pages/css/common.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Gajraj+One&family=Gotu&display=swap" rel="stylesheet">
+    <link href="/kikin-for-Struts-bug/pages/material/favicon.ico" rel="icon" type="image/x-icon" />
   </head>
   <body>
     <div id="wrapper">
@@ -49,7 +51,7 @@ String color = "";
               <input value="戻る" type="image" src="img/タージ.png"  style="widows: 100px; height: 100px"  onclick="doSubmit('/kikin-for-Struts-bug/menu.do')" />
             </td>
             <td id="headCenter">
-              勤務実績確認
+              कर्मचारियों का प्रदर्शन सत्यापित करें
             </td>
             <td id="headRight">
               <input value="ログアウト" type="image" src="img/カレーさん.png"  style="widows: 100px; height: 100px"  onclick="logout()" />
@@ -63,7 +65,7 @@ String color = "";
           <div style="float: left; width: 100%;">
          	<%--障害No.121 9/7 稲永　下記要素内 margin-left:22%;→10% に変更--%>
             <div style="float: left; width: 804px; text-align: left; margin-left:10%;">
-              表示年月：
+             
               <html:select name="workRecordCheckForm" property="yearMonth" onchange="submitSearch()">
               <html:optionsCollection name="workRecordCheckForm"
                                       property="yearMonthCmbMap"
@@ -72,7 +74,7 @@ String color = "";
               </html:select>
             </div>
             <div style="float: left; width: 244px; text-align: center;">
-              社員名：
+              
               <html:select name="workRecordCheckForm" property="employeeId" onchange="submitSearch()">
               
               <html:optionsCollection name="workRecordCheckForm"
@@ -196,5 +198,9 @@ String color = "";
         </table>
     </div>
   </div>
+  
+  <audio src="/kikin-for-Struts-bug/pages/sounds/click.mp3" autoplay loop>
+  </audio>
+  
   </body>
 </html>
