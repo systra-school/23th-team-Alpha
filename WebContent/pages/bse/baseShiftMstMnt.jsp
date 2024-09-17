@@ -67,7 +67,7 @@
         <html:form action="/baseShiftRegister" >
           <div class="centered-container">
           <%-- 凡例 --%>
-          <div id="pattern" style="width:476px; margin-left:20%; float:left">
+          <div id="pattern" style="width:476px; margin-left:3%; float:left">
             <div>
             <%-- <table> --%>
             <%-- 　8/28 花田　障害No045　記入漏れのタグを追加　 --%>

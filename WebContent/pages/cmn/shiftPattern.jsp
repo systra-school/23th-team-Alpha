@@ -39,7 +39,7 @@
             <td id="headLeft">
             </td>
             <td id="headCenter">
-              シフト凡例
+              शिफ्ट लीजेंड
             </td>
             <td id="headRight">
             </td>
