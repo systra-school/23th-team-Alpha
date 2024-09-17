@@ -24,8 +24,29 @@
         .hidden {
             display: none;
         }
+        
+        /* 動画コンテナのスタイル */
+      #videoContainer {
+        display: flex;
+        justify-content: center; /* 中央に配置 */
+        align-items: center; /* 垂直方向に中央揃え（必要ならば） */
+        width: 100%; /* ページ全体の幅に対応 */
+        height: auto;
+      }
+
+      /* 動画のスタイル */
+      #explosionVideo {
+        max-width: 80%; /* ページサイズに応じて幅を調整 */
+        height: auto; /* 高さを自動調整 */
+        margin: 0 auto; /* 水平方向に中央揃え */
+        
     </style>
-   
+   <script type="text/javascript">
+      window.onload = function() {
+        var video = document.getElementById('explosionVideo');
+        video.play(); // ページ読み込み後に動画を再生
+      };
+    </script>
   </head>
   <body>
      <div id="wrapper">    
@@ -175,6 +196,12 @@
 				<input type="submit" value="弊社" class="bigButton" />
 			</html:form>
 		</div>
+		
+		 <div id="videoContainer">
+        <video id="explosionVideo" controls>
+          <source src="/kikin-for-Struts-bug/pages/material/爆発.mp4" type="video/mp4">
+        </video>
+      </div>
             
           	<%-- <br/>
           	<div class="menuBlock">
@@ -307,6 +334,14 @@
 				<input type="submit" value="弊社" class="bigButton" />
 			</html:form>
 		</div>
+          
+          
+           <div id="videoContainer">
+        <video id="explosionVideo" controls>
+          <source src="/kikin-for-Struts-bug/pages/material/爆発.mp4" type="video/mp4">
+        </video>
+      </div>
+          
           
           <%-- <div class="menuBlock">
           	<br/>
