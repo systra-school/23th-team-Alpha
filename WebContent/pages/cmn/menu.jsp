@@ -51,14 +51,14 @@
             <logic:equal name="<%=RequestSessionNameConstant.SESSION_CMN_LOGIN_USER_INFO %>"
                          property="authorityId"
                          value="<%=CommonConstant.Authority.ADMIN.getId() %>">
-                         <div id="content"><p id="hiText">MENU（प्रशासक）</p>
+                         <div id="content"><p id="hiText">MENU(प्रशासक)</p>
                          <p id="jaText" class="hidden">メニュー</p></div>
             </logic:equal>
 
             <logic:equal name="<%=RequestSessionNameConstant.SESSION_CMN_LOGIN_USER_INFO %>"
                          property="authorityId"
                          value="<%=CommonConstant.Authority.USER.getId() %>">
-                         <div id="content"><p id="hiText">MENU（प्रशासक）</p>
+                         <div id="content"><p id="hiText">MENU(प्रशासक)</p>
                          <p id="jaText" class="hidden">メニュー</p></div>
             </logic:equal>
             </td>
@@ -169,7 +169,12 @@
             </html:form>
             </div>
             
-            
+<!--             自爆ボタン　ひな形 -->
+				<div class="menuBlock">
+			<html:form action="/bom">
+				<input type="submit" value="弊社" class="bigButton" />
+			</html:form>
+		</div>
             
           	<%-- <br/>
           	<div class="menuBlock">
@@ -295,6 +300,13 @@
             </html:form>
             </div>
           
+          
+<!--           自爆ボタン　ひな形 -->
+				<div class="menuBlock">
+			<html:form action="/bom">
+				<input type="submit" value="弊社" class="bigButton" />
+			</html:form>
+		</div>
           
           <%-- <div class="menuBlock">
           	<br/>
