@@ -109,7 +109,7 @@
             <table class="tableHeader" >
               <tr>
                 <td width="154px" >
-                  <div id="headLeftTbl" style="overflow-x: hidden;overflow-y: hidden;width: 154px;">
+                  <div id="headLeftTbl" style="overflow-x: hidden;overflow-y: hidden;width: 160px;">
                     <table class="tableHeader">
                       <tr>
                         <td width="<%=tdWidth %>px" nowrap="nowrap" align="center">
@@ -137,7 +137,7 @@
             <table class="tableBody">
               <tr height="100%">
               <td valign="top">
-                <div id="bodyLeftTbl" style="overflow-x: auto;overflow-y: hidden;width: 154px;height:<%=bodyLeftDivHeight %>px;">
+                <div id="bodyLeftTbl" style="overflow-x: auto;overflow-y: hidden;width: 160px;height:<%=bodyLeftDivHeight %>px;">
                   <table  class="tableBody" style="font-size:15px;">
                   <% 
                     for (int i = 0; i < 24; i++) { 

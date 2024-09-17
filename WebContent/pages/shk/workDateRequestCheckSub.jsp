@@ -60,7 +60,7 @@
             <td id="headLeft">
               　
             </td>
-            <td id="headCenter">
+            <td id="headCenter" style="font-size: 30px;">
               कार्य दिवस की इच्छा की जाँच
             </td>
             
@@ -73,15 +73,14 @@
       <div id="businessBody" style="overflow: auto; height : auto;">
         <div id = "resize">
           <html:form action="/workDateRequestCheckInit" >
-            表示年月：
             <html:select name="workDateRequestCheckForm" property="yearMonth" onchange="submitSearch()">
             <html:optionsCollection name="workDateRequestCheckForm"
                                     property="yearMonthCmbMap"
                                     value="key"
                                     label="value"/>
             </html:select>
-            <html:link href="/kikin-for-Struts-bug/workDateRequestCheckSubPage.do?paging=back">前へ</html:link>
-            <html:link href="/kikin-for-Struts-bug/workDateRequestCheckSubPage.do?paging=next">次へ</html:link>
+            <html:link href="/kikin-for-Struts-bug/workDateRequestCheckSubPage.do?paging=back" style="font-family: Bakbak One;">पिछले कर्मचारी को</html:link>
+            <html:link href="/kikin-for-Struts-bug/workDateRequestCheckSubPage.do?paging=next" style="font-family: Bakbak One;">अगले कर्मचारी को</html:link>
             <bean:write name="workDateRequestCheckForm" property="countPage"/>/
             <bean:write name="workDateRequestCheckForm" property="maxPage"/>
 

@@ -71,7 +71,7 @@ if (listSize > intShowLength) {
         // サブミット
         //　9/10　高田　デザイン障害No023　出勤希望日確認doSubmitをwindow.openへ変更
         //         doSubmit('/kikin-for-Struts-bug/monthlyShiftInputWorkDateRequest.do');
-        window.open("/kikin-for-Struts-bug/workDateRequestCheckSubInit.do?param=", "windowBPopup", "menubar=no, toolbar=no, scrollbars=auto, resizable=yes, width=1000px, height=250px");
+        window.open("/kikin-for-Struts-bug/workDateRequestCheckSubInit.do?param=", "windowBPopup", "menubar=no, toolbar=no, scrollbars=auto, resizable=yes, width=1000px, height=800px");
     }
 
     /**
