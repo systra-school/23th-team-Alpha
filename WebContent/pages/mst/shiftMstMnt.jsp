@@ -253,6 +253,14 @@
                 </tr>
               </logic:iterate>
             </table>
+            <br/>
+            <input type="image" src="img/花うるさい2.gif"  style="widows: 100px; height: 100px"/>
+            <input type="image" src="img/花うるさい.webp"  style="widows: 100px; height: 100px"/>
+            <input value="新規登録" type="image" src="img/ラブガンジー2.png"  style="widows: 100px; height: 100px"  onclick="shiftMstMntRegisterInit()" />
+            <input type="image" src="img/花うるさい2.gif"  style="widows: 100px; height: 100px"/>
+            <input value="更新" type="image" src="img/ラブガンジー.png"  style="widows: 100px; height: 100px"  onclick="shiftMstMntUpdate()" />
+            <input type="image" src="img/花うるさい.webp"  style="widows: 100px; height: 100px"/>
+            <input type="image" src="img/花うるさい2.gif"  style="widows: 100px; height: 100px"/>
           </div>
         </html:form>
       </div>
@@ -266,8 +274,8 @@
               　
             </td>
             <td id="footRight">
-              <input value="新規登録" type="button" class="smallButtonSubmit"  onclick="shiftMstMntRegisterInit()" />
-              <input value="更新" type="button" class="smallButtonSubmit"  onclick="shiftMstMntUpdate()" />
+              <!-- <input value="新規登録" type="button" class="smallButtonSubmit"  onclick="shiftMstMntRegisterInit()" />
+              <input value="更新" type="button" class="smallButtonSubmit"  onclick="shiftMstMntUpdate()" /> -->
             </td>
           </tr>
         </table>
